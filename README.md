@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Html, CSS, SASS, GIT, GITHUB, Bootstrap**
 
-- 📄 Know about my experiences [It's my first time in Web Development, and I'm eager to keep learning!](It's my first time in Web Development, and I'm eager to keep learning!)
+- 📄 Know about my experiences **It's my first time in Web Development, and I'm eager to keep learning!** 
 
 - ⚡ Fun fact **I also would love to learn coding for IA Development, did I said I'm a Lawyer? You may think I've lost my judgement**
 
