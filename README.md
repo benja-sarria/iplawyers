@@ -23,10 +23,10 @@ npm start
 "><pre><code>npm init
 </code></pre></div>
 <p>At this point, the node modules should be installed, and you should be able open the <code>index.html</code> file in
-your browser and see the example page.</p>
-<p>You can modify the example page's HTML at <code>index.html</code>, or you can
-edit its SASS at <code>sass/styles.scss</code>.</p>
-<p>Whenever you make changes to the SASS, it will automatically be
+your browser and see the IPLawyers page.</p>
+<p>You can modify the IPLawyers page's HTML at <code>index.html</code>, or you can
+edit its SASS Files at <code>scss/styles.scss</code>.</p>
+<p>Whenever you make changes to the SASS Files, it will automatically be
 compiled to CSS, and you can reload the page in your web browser to
 see the changes.</p>
 <p>¡Happy Coding!</p>
