@@ -20,13 +20,13 @@
 <p>Run the following at the terminal to get started:</p>
 <div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="npm install
 npm start
-"><pre><code>npm install
-npm start
+"><pre><code>npm init
 </code></pre></div>
-<p>At this point, you should be able to visit <code>http://localhost:8000</code> in
+<p>At this point, the node modules should be installed, and you should be able open the <code>index.html</code> file in
 your browser and see the example page.</p>
 <p>You can modify the example page's HTML at <code>index.html</code>, or you can
-edit its SASS at <code>sass/main.scss</code>.</p>
+edit its SASS at <code>sass/styles.scss</code>.</p>
 <p>Whenever you make changes to the SASS, it will automatically be
 compiled to CSS, and you can reload the page in your web browser to
 see the changes.</p>
+<p>¡Happy Coding!</p>
