@@ -1,0 +1,230 @@
+.planes-onboarding {
+    padding-top: 8em;
+    background-image: linear-gradient(to bottom, rgb(15, 15, 15), #f6f2f300 );
+    .onboarding-accordion-mobile {
+        margin: 0 auto;
+        max-width: 90%;
+        @media (min-width: 550px) and (max-width: 767.9px) {
+            max-width: 75%;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            display: none;
+        }
+        @media (min-width: 992px) {
+            display: none;
+        }
+        .accordion-item {
+            background-color: transparent;
+            border: 2px solid rgba(map-get($map: $colorpallet, $key: maincolor), 0.50);
+            .accordion-header {
+                .accordion-button {
+                    padding: 1.5em 1em;
+                    background-color: transparent;
+                    @include mobileparagraphs(center, bold);
+                    &::after {
+                        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                    }
+                    @media (max-width: 316px) {
+                        padding: 0.25em 0.50em;
+                    } 
+                    // @media (min-width: 450px) and (max-width: 767.9px) {
+                    //     padding: 1.5em 2em;
+                    // }
+                }
+            }
+            .accordion-collapse {
+                overflow:hidden;
+                .accordion-body {
+                    @media (max-width: 294px) {
+                        padding-left: 0.1em;
+                    } 
+                    @media (min-width: 295px) and (max-width: 316px) {
+                        padding-left: 0em;
+                    } 
+                    @media (min-width: 450px) and (max-width: 482px) {
+                        padding-left: 0.7em;
+                    }
+                    .button-container{
+                        margin-top: 2em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        max-height: 4.5em;
+                        .btn-primary {
+                            background-color: map-get($map: $colorpallet, $key: maincolor);
+                            background-image: linear-gradient(to bottom, #a01541, #ff0015b2 );
+                            border: solid rgba(255, 255, 255, 0.13) 0.01em;
+                            transition: all .15s ease-in-out;
+                            min-width: 10em;
+                            margin: 0 auto;
+                            font-size: 1.25em;
+                            &:focus {
+                                box-shadow: 0 0 15px .20rem rgba(map-get($map: $colorpallet, $key: maincolor),.5);
+                            }
+                            &:hover {
+                                background-image: linear-gradient(to bottom, darken($color: #a01541, $amount: 10%), darken($color: #ff0015b2, $amount: 10%));
+                                transition: all .15s ease-in-out;
+                            }
+                        }
+                    }
+                    .list-group {
+                        .list-group-item {
+                            margin: 0 auto;
+                            border: solid rgba(map-get($map: $colorpallet, $key: colortext), 0.30);
+                            border-width: 1px 0 0.5px;
+                            background-color: transparent;
+                            @include mobileparagraphs(center, semibold);
+                            font-size: 1.2em;
+                            max-width: 15em;
+                            min-width: 15em;
+                            @media (min-width: 450px) and (max-width: 575.9px) {
+                                max-width: 17em;
+                                min-width: 17em;
+                            } 
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                            .text-list-item {
+                                width: 100%;
+                            }
+                            @media (min-width: 386px) and (max-width: 449px) {
+                                margin-left: -1;
+                                font-size: 1.15em;
+                            } 
+                            @media (max-width: 385px) {
+                                margin-left: -1;
+                                font-size: 0.9em;
+                            } 
+                            @media (min-width: 450px) and (max-width: 767.9px) {
+                                margin-left: -1;
+                                font-size: 1.25em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .basic-card {
+            @include background-onb-cards("https://i.ibb.co/LnGxWCp/plan-background-basic.png")
+        }
+        .regular-card {
+            @include background-onb-cards("https://i.ibb.co/Zz5Bd4B/plan-background-regular.png")
+        }
+        .premium-card {
+            @include background-onb-cards("https://i.ibb.co/bsXTN6C/plan-background-premium.png")
+        }
+    }
+    .onboarding-planes-cards {
+        display: none;
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            display: flex;
+        }
+        @media (min-width: 992px) {
+            display: flex;
+        }
+        .card-container {
+            .card {
+                min-height: 37.5em;
+                border: 3.5px solid rgba(darken($color: map-get($map: $colorpallet, $key: maincolor), $amount: 30%), 0.80);
+                @media (min-width: 992px) {
+                    min-height: 35em;
+                    height: 5em;
+                    max-width: 21.5em;
+                    margin: 0 auto;
+                }
+                .card-title {
+                    @include mobileparagraphs(center, bold);
+                    font-size: 1.55em;
+                    padding: 1em 0 0.5em 0;
+                }
+                .card-body {
+                    display: flex;
+                    justify-content: center;
+                    border-top: 2px solid rgba(map-get($map: $colorpallet, $key: maincolor), 0.50);
+                    .list-group {
+                        
+                        .list-group-item {
+                            background-color: transparent;
+                            @include mobileparagraphs(center, semibold);
+                            font-size: 1em;
+                            padding: 0.4em;
+                            border-bottom: 2px solid rgba(map-get($map: $colorpallet, $key: colortext), 0.25);
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                    .btn-primary {
+                        max-height: 2.5em
+                    }
+                }
+                .button-container{
+                    align-items: flex-end;
+                    max-height: 4.5em;
+                    .btn-primary {
+                        background-color: map-get($map: $colorpallet, $key: maincolor);
+                        background-image: linear-gradient(to bottom, #a01541, #ff0015b2 );
+                        border: solid rgba(255, 255, 255, 0.13) 0.01em;
+                        transition: all .15s ease-in-out;
+                        &:focus {
+                            box-shadow: 0 0 15px .20rem rgba(map-get($map: $colorpallet, $key: maincolor),.5);
+                        }
+                        &:hover {
+                            background-image: linear-gradient(to bottom, darken($color: #a01541, $amount: 10%), darken($color: #ff0015b2, $amount: 10%));
+                            transition: all .15s ease-in-out;
+                        }
+                    }
+                }
+            }
+            .basic-card {
+                @include background-onb-cards("https://i.ibb.co/LnGxWCp/plan-background-basic.png");
+                background-color: transparent;
+                outline: solid #00000000 60em;
+                transition: map-get($map: $transitions, $key: faster);
+                &:hover {
+                    @include transforms(scale(1.15) translate(0.5em, 0));
+                    min-height: 22em;
+                    transition: map-get($map: $transitions, $key: faster);
+                    outline: solid #0000009d 60em;
+                    z-index: 5000;
+                    @media (min-width: 992px) {
+                        min-height: 30em;
+                    }
+                }
+            }
+            .regular-card {
+                @include background-onb-cards("https://i.ibb.co/Zz5Bd4B/plan-background-regular.png");
+                background-color: transparent;
+                outline: solid #00000000 60em;
+                transition: map-get($map: $transitions, $key: faster);
+                &:hover {
+                    @include transforms(scale(1.15));
+                    min-height: 22em;
+                    transition: map-get($map: $transitions, $key: faster);
+                    outline: solid #0000009d 60em;
+                    z-index: 5000;
+                    @media (min-width: 992px) {
+                        min-height: 30em;
+                    }
+                }
+            }
+            .premium-card {
+                @include background-onb-cards("https://i.ibb.co/bsXTN6C/plan-background-premium.png");
+                background-color: transparent;
+                outline: solid #00000000 60em;
+                transition: map-get($map: $transitions, $key: faster);
+                &:hover {
+                    @include transforms(scale(1.15) translate(-0.5em, 0));
+                    min-height: 22em;
+                    transition: map-get($map: $transitions, $key: faster);
+                    outline: solid #0000009d 60em;
+                    z-index: 5000;
+                    @media (min-width: 992px) {
+                        min-height: 30em;
+                    }
+                }
+            }
+        }
+    }
+}

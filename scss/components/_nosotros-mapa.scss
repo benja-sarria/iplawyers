@@ -1,0 +1,40 @@
+.nosotros-mapa {
+    background-image: linear-gradient(to bottom, rgb(15, 15, 15), #f6f2f300 );
+    padding-top: 6em;
+    .mapa-title {
+        @include mobileparagraphs(center, bold);
+        font-size: 1.8em;
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            @include mobileparagraphs(left, bold);
+            font-size: 1.8em;
+            margin-left: 2em;
+        }
+        @media (min-width: 992px) {
+            @include mobileparagraphs(left, bold);
+            font-size: 1.8em;
+            margin-left: 3%;
+        }
+    }
+    .map-iframe {
+        border-radius: 2em;
+        padding-top: 1em;
+        display: block;
+        max-width: 14em;
+        margin: 0 auto;
+        @media (min-width: 320px) and (max-width: 410px) {
+            max-width: 16em;
+        }
+        @media (min-width: 411px) and (max-width: 550px) {
+            max-width: 21em;
+        }
+        @media (min-width: 551px) and (max-width: 767.9px) {
+            max-width: 30em;
+        }
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            max-width: 42em;;
+        }
+        @media (min-width: 992px) {
+            max-width: 90%;
+        }
+    }
+}

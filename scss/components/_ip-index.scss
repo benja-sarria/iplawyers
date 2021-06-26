@@ -1,0 +1,136 @@
+// COMIENZO INDEX IP
+.ip-container {
+    @include backgroundip;
+    padding-top: 5em;
+    padding-bottom: 8em;
+    @media (min-width: 450px) and (max-width: 767.9px) {
+        background-position-y: 4em;
+        background-size:cover;
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
+    @media (min-width: 320px) and (max-width: 449.9px) {
+        background-position-y: 6em;
+    }
+    @media (min-width: 768px) and (max-width: 991.99px) {
+        background-size:cover;
+        padding-top: 10em;
+        height: 50em;
+    }
+    @media (min-width: 992px) {
+        padding: 7em 0;
+        background-size:contain;
+        padding-top: 10em;
+        height: 60em;
+    }
+    .ip-title-continer {
+        @media (min-width: 992px) {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        .trademark-seal {
+            width: 40%;
+            position: absolute;
+            left: -2em;
+            top: 4em;
+            z-index: -1;
+            @media (min-width: 450px) and (max-width: 767.9px) {
+                width: 30%;
+                left: -2em;
+                top: 9em;
+            }
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                max-width: 20%;
+            }
+            @media (min-width: 992px) {
+                width: 18%;
+                left: -2em;
+                top: 8em;
+            }
+        }
+        .ip-title {
+            @include sectiontitles;
+            @media (min-width: 450px) and (max-width: 767.9px) {
+                font-size: 2.5em;
+            }
+            @media (min-width: 320px) and (max-width: 449.9px) {
+                font-size: 2.15em;
+            }
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                font-size: 2.5em;
+            }
+            @media (min-width: 992px) {
+                font-size:2.8em;
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .ip-paragraph-container {
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            padding-top: 1em;
+        }
+        @media (min-width: 992px) {
+            padding-top: 1em;
+            width: 85%;
+            margin: 0 auto;
+        }
+        .ip-paragraph {
+            display: none;
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: flex;
+                @include mobileparagraphs(center, regular);
+                font-size: 1.5em;
+            }
+            @media (min-width: 992px) {
+                display: flex;
+                @include mobileparagraphs(center, regular);
+                font-size: 1.35em;
+                line-height: 2em;
+            }
+        }
+        .ip-paragraph-mobile {
+            @include mobileparagraphs(center, regular);
+            @media (min-width: 450px) and (max-width: 767.9px) {
+                font-size: 1.5em;
+            }
+            @media (min-width: 320px) and (max-width: 449.9px) {
+                font-size: 1.25em;
+            }
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: none;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+    .registrar-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .registrar-link {
+            @include onboardinglink;
+            @media (min-width: 450px) and (max-width: 767.9px) {
+                font-size: 1.5em;
+                margin-top: 0.5em;
+            }
+            @media (min-width: 320px) and (max-width: 449.9px) {
+                font-size: 1.25em;
+            }
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                font-size: 1.5em;
+                margin-top: 0.5em;
+            }
+            @media (min-width: 992px) {
+                display: flex;
+                @include mobileparagraphs(center, medium);
+                font-size: 1.55em;
+                margin-top: 0.5em;
+                border-bottom: 3px solid map-get($map: $colorpallet, $key: colortext);
+                border-top: 3px solid map-get($map: $colorpallet, $key: colortext);
+            }
+        }
+    }
+}
+// FIN INDEX IP

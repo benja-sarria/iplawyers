@@ -1,0 +1,134 @@
+.body-error {
+    background-image: url("../imagenes/error-bkg.jpg");
+    background-size: 500%;
+    background-repeat: no-repeat;
+    .contenido-error-container {
+        // background-image: url("../imagenes/error-bkg.jpg");
+        // background-size: 500%;
+        // background-repeat: no-repeat;
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .error-title-container {
+                padding-top: 5em;
+                @include mobileparagraphs(center, boldita);
+                h2 {
+                    .highlight-letters {
+                        color: map-get($map: $colorpallet, $key: maincolor);;
+                    }
+                }
+            }
+            .central-container {
+                padding: 1em 0 1.5em;
+                width: 95%;
+                margin: 0 auto;
+                .numbers-container {
+                    padding-top: 2em;
+                    box-sizing: border-box;
+                    @media (min-width: 991px) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                    }
+                    h1 {
+                        .highlight-letters {
+                            color: map-get($map: $colorpallet, $key: maincolor);
+                        }
+                    }
+                    .numbers-item {
+                        @include mobileparagraphs(center, boldita);
+                        font-size: 5em;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        width: 100%;
+                        @media (min-width: 991px) {
+                            text-align: start;
+                            font-size: 7em;
+                            padding-left: 0.5em;
+                        }
+                        
+                    }
+                }
+                .paragraph-desktop-container {
+                    margin: 0 auto;
+                    padding-top: 2em;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    width: 90%;
+                    @include mobileparagraphs(center, regular);
+                    display: none;
+                    @media (min-width: 991px) {
+                        display: flex;
+                        width: 35%;
+                        align-items: center;
+                    }
+                    .paragraph-desktop-item {
+                        line-height: 2em;
+                        @media (min-width: 991px) {
+                            @include mobileparagraphs(justify, regular);
+                            font-size: 1.25em;
+                        }
+                    }
+                }
+            }
+            .paragraph-container {
+                margin: 0 auto;
+                padding-top: 2em;
+                box-sizing: border-box;
+                overflow: hidden;
+                width: 90%;
+                @include mobileparagraphs(center, regular);
+                @media (min-width: 991px) {
+                    display: none;
+                }
+                .paragraph-item {
+                    font-size: 1.15em;
+                }
+            }
+            
+            .goback-link-container {
+                padding: 3em 0 0em 0;
+                box-sizing: border-box;
+                overflow: hidden;
+                width: 20%;
+                margin: 0 auto;
+                transition: map-get($map: $transitions, $key: rapid);
+                @include mobileparagraphs(center, boldita);
+                a {
+                    text-decoration: none;
+                    color: map-get($map: $colorpallet, $key: colortext);
+                    h2 {
+                        font-size: 1.25em;
+                    }
+                    &:visited {
+                        text-decoration: none;
+                        color: map-get($map: $colorpallet, $key: colortext);
+                    }
+                    &:hover {
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                        transition: map-get($map: $transitions, $key: rapid);
+                    }
+                    &:focus {
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                        transition: map-get($map: $transitions, $key: rapid);
+                    }
+                }
+            }
+    
+        }
+        .footer-error {
+            .footer-error-container {
+                margin-top: 2em;
+                padding-top: 1em;
+                @include mobileparagraphs(center, medium);
+                border-top: 1px solid map-get($map: $colorpallet, $key: maincolor);
+                .footer-copyright {
+                    color: map-get($map: $colorpallet, $key: colortext);
+                    font-size: 1em;
+    
+                }
+            }
+        }
+    }
+}

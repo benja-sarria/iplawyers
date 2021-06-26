@@ -1,0 +1,91 @@
+@mixin textobannerindex ($weight){
+    font-family: map-get($map: $font-list, $key: $weight);
+    color: map-get($map: $colorpallet, $key: colortext);
+    font-size: 1.25em;
+}
+
+@mixin bgshadows {
+    background: map-get($map: $colorpallet, $key: backgrounds);
+    border-radius:0.30em;
+}
+
+@mixin sectiontitles {
+    font-family:  map-get($map: $font-list, $key: bold);
+    font-size: 1.5em;
+    color: map-get($map: $colorpallet, $key: colortext);
+    text-align: center;
+}
+
+@mixin mobileparagraphs ($alignment, $fontweight){
+    font-family:  map-get($map: $font-list, $key: $fontweight);
+    font-size: 1em;
+    color: map-get($map: $colorpallet, $key: colortext);
+    text-align: $alignment;
+}
+
+@mixin backgroundip {
+    background-image: url("https://i.ibb.co/C778Kxf/fondo-tarjetas3.png");
+    background-size: 300% contain;
+    background-position-y: 5em;
+    background-repeat: no-repeat;
+}
+
+@mixin onboardinglink {
+    font-family:  map-get($map: $font-list, $key: semibold);
+    font-size: 1em;
+    color: map-get($map: $colorpallet, $key: colortext);
+    text-align: center;
+    border-bottom: 2px solid map-get($map: $colorpallet, $key: colortext);
+    border-top: 2px solid map-get($map: $colorpallet, $key: colortext);
+
+}
+
+@mixin transforms ($transformation) {
+    transform: $transformation;
+    -o-transform: $transformation;
+    -ms-transform: $transformation;
+    -moz-transform: $transformation;
+    -webkit-transform: $transformation;
+}
+
+@mixin articletitle {
+    font-family:  map-get($map: $font-list, $key: bold);
+    font-size: 1.5em;
+    color: map-get($map: $colorpallet, $key: colortext);
+    text-align: left;
+}
+
+@mixin borderaside {
+    border-bottom: 3px solid map-get($map: $colorpallet, $key: colortext);
+    border-top: 3px solid map-get($map: $colorpallet, $key: colortext);
+}
+
+@mixin titulonoticias {
+    font-family:  map-get($map: $font-list, $key: semibold);
+    font-size: 1.15em;
+    color: map-get($map: $colorpallet, $key: colortext);
+    text-align: right;
+    padding-right: 1em;
+}
+
+@mixin footermobileindex ($fontweight){
+    font-family:  map-get($map: $font-list, $key: $fontweight);
+    font-size: 1em;
+    color: map-get($map: $colorpallet, $key: colortext);
+}
+
+@mixin bordertopfooter ($color) {
+    border-top: 2px solid $color;
+}
+
+@mixin backgroundfooterdesk {
+    background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@mixin background-onb-cards ($backgroundimg) {
+    background-image: url($backgroundimg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

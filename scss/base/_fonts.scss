@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "raleway-bold";
+    src: url("../fuentes/Raleway/static/Raleway-Bold.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-extrabold";
+    src: url("../fuentes/Raleway/static/Raleway-ExtraBold.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-medium";
+    src: url("../fuentes/Raleway/static/Raleway-Medium.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-regular";
+    src: url("../fuentes/Raleway/static/Raleway-Regular.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-light";
+    src: url("../fuentes/Raleway/static/Raleway-ExtraLight.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-boldita";
+    src: url("../fuentes/Raleway/static/Raleway-BoldItalic.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-semibold";
+    src: url("../fuentes/Raleway/static/Raleway-SemiBold.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-lightita";
+    src: url("../fuentes/Raleway/static/Raleway-ExtraLightItalic.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-thin";
+    src: url("../fuentes/Raleway/static/Raleway-Thin.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "raleway-regularita";
+    src: url("../fuentes/Raleway/static/Raleway-Italic.ttf");
+    font-display: swap;
+}
+
+$font-list:(
+    extrabold: "raleway-extrabold",
+    bold: "raleway-bold",
+    boldita: "raleway-boldita",
+    semibold: "raleway-semibold",
+    medium: "raleway-medium",
+    regular: "raleway-regular",
+    regularita: "raleway-regularita",
+    light: "raleway-light",
+    lightita: "raleway-lightita",
+    thin: "raleway-thin"
+) 

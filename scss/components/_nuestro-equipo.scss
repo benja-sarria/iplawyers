@@ -1,0 +1,129 @@
+.nosotros-container {
+    padding-top: 5em;
+    h4 {
+        @include mobileparagraphs(center, bold);
+        font-size: 1.8em;
+    }
+    .carousel-nuestro-equipo {
+        .carousel-inner {
+            // padding-left: 3.2em;
+            flex-wrap: wrap;
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: none;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+            .carousel-item {
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    max-width: 14em;
+                    margin: 0 auto;
+                    background-color: transparent;
+                    .card-img-top {
+                        width: 70%;
+                        border-radius: 50em;
+                        margin: 0 auto;
+                    }
+                    .card-body {
+                        .card-title {
+                            text-align: center;
+                            @include mobileparagraphs(center, bold);
+                            font-size: 1.2em;
+                        }
+                        .card-text {
+                            padding-top: 0.1em;
+                            min-height: 5em;
+                            text-align: center;
+                            @include mobileparagraphs(center, regular);
+                            font-size: 1em;
+                            line-height: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-control-prev {
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: none;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+            .carousel-control-prev-icon {
+                @media (min-width: 768px) and (max-width: 991.99px) {
+                    display: none;
+                }
+                @media (min-width: 992px) {
+                    display: none;
+                }
+            }
+        }
+        .carousel-control-next {
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: none;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+            .carousel-control-next-icon {
+                @media (min-width: 768px) and (max-width: 991.99px) {
+                    display: none;
+                    visibility: hidden;
+                    z-index: -300;
+                    height: 0 !important;
+                    width: 0 !important;
+                }
+                @media (min-width: 992px) {
+                    display: none;
+                    visibility: hidden;
+                    z-index: -300;
+                    height: 0 !important;
+                    width: 0 !important;
+                }
+            }
+        }
+    }
+
+    .nuestro-equipo-container-desktop {
+        display: none;
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            display: flex;
+        }
+        @media (min-width: 992px) {
+            display: flex;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            max-width: 14em;
+            margin: 0 auto;
+            background-color: transparent;
+           .card-img-top {
+            width: 70%;
+            border-radius: 50em;
+            margin: 0 auto;
+           } 
+           .card-body {
+               .card-title {
+                text-align: center;
+                @include mobileparagraphs(center, bold);
+                font-size: 1.2em;
+               }
+               .card-text {
+                padding-top: 0.1em;
+                min-height: 5em;
+                text-align: center;
+                @include mobileparagraphs(center, regular);
+                font-size: 1em;
+                line-height: 1.2em;
+               }
+           }
+        }
+    }
+}

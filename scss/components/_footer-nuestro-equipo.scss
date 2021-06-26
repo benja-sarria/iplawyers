@@ -1,0 +1,93 @@
+// COMIENZO NOSOTROS MOBILE FOOTER
+.footer-mobile-version-nosotros {
+    padding-top: 5em;
+    width: 90%;
+    margin: 0 auto;
+    @include backgroundfooterdesk;
+    background-size: cover;
+    @media (min-width: 992px) {
+        display: none;
+    } 
+    .mobile-footer-inner-container {
+        .social-net-container-mobile {
+            padding-inline-start: 0px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: flex;
+                flex-direction: row;
+
+            }
+            .left-elem {
+                text-align: end;
+            }
+            .social-net-element {
+                .link-social-network {
+                    .social-icon {
+                        width: 40%;
+                        border-radius: 10em;
+                        background-color: map-get($map: $colorpallet, $key: maincolor);
+                        transition: map-get($map: $transitions, $key: rapid);
+                        &:hover {
+                                background-color: darken(map-get($map: $colorpallet, $key: maincolor), $amount: 15);
+                                transition: map-get($map: $transitions, $key: rapid);
+                        }
+                        &:focus {
+                                background-color: darken(map-get($map: $colorpallet, $key: maincolor), $amount: 15);
+                                transition: map-get($map: $transitions, $key: rapid);
+                        }
+                        @media (min-width: 768px) and (max-width: 991.99px) {
+                            width: 100%;
+                            justify-items: stretch;
+                        }
+                    }
+                }
+            }
+            .separation-element {
+                height: 0.5em;
+                @media (min-width: 768px) and (max-width: 991.99px) {
+                    display: none;
+                }
+            }
+        }
+        .foot-dat-container-mobile {
+            border-top: 2px solid map-get($map: $colorpallet, $key: maincolor);
+            padding-inline-start: 0px;
+            padding-top: 1em;
+            .foot-dat-container-item {
+                list-style: none;
+                .foot-cont-dat {
+                    @include mobileparagraphs(center, medium);
+                    @media (min-width: 450px) and (max-width: 599.9px) {
+                        font-size: 1.25em;
+                    }
+                    @media (min-width: 600px) and (max-width: 767.9px) {
+                        font-size: 1.5em;
+                    }
+                    @media (min-width: 768px) and (max-width: 991.99px) {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+        .footer-copyright-text-mobile {
+            padding-top: 0.2em;
+            .footer-copyright {
+                @include mobileparagraphs(center, light);
+                color: rgba($color:  map-get($map: $colorpallet, $key: colortext), $alpha: 0.70);
+                @media (min-width: 450px) and (max-width: 599.9px) {
+                    font-size: 1.15em;
+                }
+                @media (min-width: 600px) and (max-width: 767.9px) {
+                    font-size: 1.25em;
+                }
+                @media (min-width: 768px) and (max-width: 991.99px) {
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+}
+// FIN INDEX MOBILE FOOTER

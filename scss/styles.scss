@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+@import "base/colors";
+@import "base/fonts";
+@import "base/transitionsAnimat";
+@import "base/mixins";
+@import "components/contenidocontainer";
+@import "components/headerindex";
+@import "components/ip-index";
+@import "components/index-article-noticias";
+@import "components/index-servicios";
+@import "components/index-reviews";
+@import "components/index-footer-mobile";
+@import "components/login-modal";
+@import "components/fundamentos-modal";
+@import "components/index-footer-desktop";
+@import "components/onboarding-header";
+@import "components/planes-onboarding";
+@import "components/onboarding-footer-mobile";
+@import "components/onboarding-footer-desktop";
+@import "components/nuestro-equipo";
+@import "components/nosotros-header";
+@import "components/nosotros-mapa";
+@import "components/nosotros-footer-desktop";
+@import "components/footer-nuestro-equipo";
+@import "components/index-tocs-modal";
+@import "components/errorpage";
+
+html {
+    scroll-behavior: smooth;
+}

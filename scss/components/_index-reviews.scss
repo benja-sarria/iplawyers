@@ -1,0 +1,482 @@
+// COMIENZO INDEX REVIEWS
+.reviews-container {
+    padding-top: 10em;
+    @media (min-width: 450px) and (max-width: 767.9px) {
+        margin-bottom: 8em;
+    }
+    @media (min-width: 768px) and (max-width: 991.99px) {
+        margin-bottom: 8em;
+    }
+    @media (min-width: 992px) {
+        margin-bottom: 8em;
+    }
+    .inner-container-reviews {
+        background-image: url("../imagenes/fondo-article4.png");
+        background-size: cover;
+        height: 28em;
+        @media (min-width: 450px) and (max-width: 599.9px) {
+            height: 35em;
+        }
+        @media (min-width: 600px) and (max-width: 767.9px) {
+            height: 43em;
+        }
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            height: 43em;
+        }
+        @media (min-width: 992px) {
+            height: 43em;
+        }
+        .reviews-title-container {
+            padding-top: 1em;
+            .reviews-title {
+                @include articletitle;
+                @include transforms (rotate(-1deg));
+                @include borderaside;
+                text-align: center;
+                @media (min-width: 450px) and (max-width: 767.9px) {
+                    @include transforms (rotate(-1deg));
+                    font-size: 2em;
+                    margin-top: 0.3em;
+                }
+                @media (min-width: 320px) and (max-width: 449.9px) {
+                    @include transforms (rotate(-1deg));
+                }
+                @media (min-width: 768px) and (max-width: 991.99px) {
+                    display: none;
+                }
+                @media (min-width: 992px) {
+                    display: none;
+                }
+            }
+            .reviews-title2 {
+                display: none;
+                @media (min-width: 768px) and (max-width: 991.99px) {
+                    display: flex;
+                    @include articletitle;
+                    @include transforms (rotate(-3.5deg));
+                    @include borderaside;
+                    @include transforms (rotate(-0.8deg));
+                    font-size: 2em;
+                    margin-top: 0.4em;
+                    width: 76%;
+                }
+                @media (min-width: 992px) {
+                    display: flex;
+                    @include articletitle;
+                    @include transforms (rotate(-3.5deg));
+                    @include borderaside;
+                    @include transforms (rotate(-0.8deg));
+                    font-size: 1.8em;
+                    margin-top: 0.4em;
+                    width: 40%;
+                }
+            }
+        }
+        .carousel-reviews-mobile {
+            padding-top: 2em;
+            @media (min-width: 450px) and (max-width: 767.9px) {
+                padding-top: 4em;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+            .carousel-inner {
+                .carousel-item {
+                    .single-review-container {
+                        @media (min-width: 450px) and (max-width: 767.9px) {
+                            @include transforms (rotate(-1deg));
+                        }
+                        @media (min-width: 320px) and (max-width: 449.9px) {
+                            @include transforms (rotate(-1deg));
+                        }
+                        @media (min-width: 768px) and (max-width: 991.99px) {
+                            display: none;
+                        }
+                        .header-review-profile {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            .imagen-review-container {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                @media (min-width: 450px) and (max-width: 767.9px) {
+                                    width: 100%;
+                                    max-width: 100%;
+                                }
+                                .profile-image {
+                                    width: 40%;
+                                    border-radius: 5em;
+                                    @media (min-width: 450px) and (max-width: 767.9px) {
+                                        width: 60%;
+                                        max-width: 30%;
+                                        border-radius: 10em;
+                                    }
+                                }
+                            }
+                            .nombre-review-container {
+                                .nombre-review {
+                                    @include titulonoticias;
+                                    text-align: center;
+                                    padding-right: 0em;
+                                    @media (min-width: 450px) and (max-width: 767.9px) {
+                                        font-size: 1.5em;
+                                        padding-top: 0.3em;
+                                    }
+                                }
+                            }
+                        }
+                        .texto-review-container {
+                            width: 95%;
+                            margin: 0 auto;
+                            .review-paragraph {
+                                @include mobileparagraphs(justify, light);
+                                text-indent: 1.5em;
+                                border-top: 0.1px solid darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 20%);
+                                padding-top: 0.5em;
+                                @media (min-width: 450px) and (max-width: 599.9px) {
+                                    font-size: 1.27em;
+                                    padding-top: 0.8em;
+                                }
+                                @media (min-width: 600px) and (max-width: 767.9px) {
+                                    @include mobileparagraphs(justify, regular);
+                                    font-size: 1.5em;
+                                    padding-top: 1.1em;
+                                }
+                            }
+                        }
+                    }
+                    .review-page {
+                        display: none;
+                        @media (min-width: 768px) and (max-width: 991.99px) {
+                            display: flex;
+                            padding-top: 2em;
+                            .single-review-container-page {
+                                width: 45%;
+                                margin: 0 auto;
+                                @media (min-width: 768px) and (max-width: 991.99px) {
+                                    @include transforms (rotate(-0.8deg));
+                                    
+                                }
+                                .header-review-profile {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .imagen-review-container {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        @media (min-width: 450px) and (max-width: 767.9px) {
+                                            width: 100%;
+                                            max-width: 100%;
+                                        }
+                                        @media (min-width: 768px) and (max-width: 991.99px) {
+                                            max-width: 100%;
+                                            width: 100%;
+                                        }
+                                        .profile-image {
+                                            width: 40%;
+                                            border-radius: 5em;
+                                            @media (min-width: 450px) and (max-width: 767.9px) {
+                                                width: 60%;
+                                                max-width: 30%;
+                                            }
+                                            @media (min-width: 768px) and (max-width: 991.99px) {
+                                                box-shadow: 3px 5px 10px 0 map-get($map: $colorpallet, $key: modaldark);
+                                                
+                                            }
+                                        }
+                                    }
+                                    .nombre-review-container {
+                                        .nombre-review {
+                                            @include titulonoticias;
+                                            text-align: center;
+                                            padding-right: 0em;
+                                            @media (min-width: 450px) and (max-width: 767.9px) {
+                                                font-size: 1.5em;
+                                                padding-top: 0.3em;
+                                            }
+                                            @media (min-width: 768px) and (max-width: 991.99px) {
+                                                font-size: 1.8em;
+                                                padding-top: 0.5em;
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                                .texto-review-container {
+                                    width: 95%;
+                                    margin: 0 auto;
+                                    .review-paragraph {
+                                        @include mobileparagraphs(justify, light);
+                                        text-indent: 1.5em;
+                                        border-top: 0.1px solid darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 20%);
+                                        padding-top: 0.5em;
+                                        @media (min-width: 450px) and (max-width: 599.9px) {
+                                            font-size: 1.27em;
+                                            padding-top: 0.8em;
+                                        }
+                                        @media (min-width: 600px) and (max-width: 767.9px) {
+                                            @include mobileparagraphs(justify, regular);
+                                            font-size: 1.5em;
+                                            padding-top: 1.1em;
+                                        }
+                                        @media (min-width: 768px) and (max-width: 991.99px) {
+                                            @include mobileparagraphs(justify, regular);
+                                            font-size: 1.25em;
+                                            padding-top: 0.5em;
+                                            text-indent: 3em;
+                                            border-top: 2px solid darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 20%);
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-reviews-desktop {
+            display: none;
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: flex;
+            }
+            @media (min-width: 992px) {
+                display: flex;
+            }
+            .carousel-item {
+                .single-review-container {
+                    @media (min-width: 450px) and (max-width: 767.9px) {
+                        @include transforms (rotate(-2.5deg));
+                    }
+                    @media (min-width: 320px) and (max-width: 449.9px) {
+                        @include transforms (rotate(-2.2deg));
+                    }
+                    @media (min-width: 768px) and (max-width: 991.99px) {
+                        display: none;
+                    }
+                    @media (min-width: 992px) {
+                        display: none;
+                    }
+                    .header-review-profile {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .imagen-review-container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            @media (min-width: 450px) and (max-width: 767.9px) {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                            .profile-image {
+                                width: 40%;
+                                border-radius: 5em;
+                                @media (min-width: 450px) and (max-width: 767.9px) {
+                                    width: 60%;
+                                    max-width: 30%;
+                                    border-radius: 10em;
+                                }
+                            }
+                        }
+                        .nombre-review-container {
+                            .nombre-review {
+                                @include titulonoticias;
+                                text-align: center;
+                                padding-right: 0em;
+                                @media (min-width: 450px) and (max-width: 767.9px) {
+                                    font-size: 1.5em;
+                                    padding-top: 0.3em;
+                                }
+                            }
+                        }
+                    }
+                    .texto-review-container {
+                        width: 95%;
+                        margin: 0 auto;
+                        .review-paragraph {
+                            @include mobileparagraphs(justify, light);
+                            text-indent: 1.5em;
+                            border-top: 0.1px solid darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 20%);
+                            padding-top: 0.5em;
+                            @media (min-width: 450px) and (max-width: 599.9px) {
+                                font-size: 1.27em;
+                                padding-top: 0.8em;
+                            }
+                            @media (min-width: 600px) and (max-width: 767.9px) {
+                                @include mobileparagraphs(justify, regular);
+                                font-size: 1.5em;
+                                padding-top: 1.1em;
+                            }
+                        }
+                    }
+                }
+                .review-page {
+                    display: none;
+                    @media (min-width: 768px) and (max-width: 991.99px) {
+                        display: flex;
+                        padding-top: 2em;
+                        .single-review-container-page {
+                            width: 45%;
+                            margin: 0 auto;
+                            @media (min-width: 768px) and (max-width: 991.99px) {
+                                @include transforms (rotate(-0.8deg));
+                            }
+                            .header-review-profile {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                .imagen-review-container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    @media (min-width: 450px) and (max-width: 767.9px) {
+                                        width: 100%;
+                                        max-width: 100%;
+                                    }
+                                    @media (min-width: 768px) and (max-width: 991.99px) {
+                                        max-width: 100%;
+                                        width: 100%;
+                                    }
+                                    .profile-image {
+                                        width: 40%;
+                                        border-radius: 5em;
+                                        @media (min-width: 450px) and (max-width: 767.9px) {
+                                            width: 60%;
+                                            max-width: 30%;
+                                        }
+                                        @media (min-width: 768px) and (max-width: 991.99px) {
+                                            box-shadow: 3px 5px 10px 0 map-get($map: $colorpallet, $key: modaldark);
+                                            
+                                        }
+                                    }
+                                }
+                                .nombre-review-container {
+                                    .nombre-review {
+                                        @include titulonoticias;
+                                        text-align: center;
+                                        padding-right: 0em;
+                                        @media (min-width: 450px) and (max-width: 767.9px) {
+                                            font-size: 1.5em;
+                                            padding-top: 0.3em;
+                                        }
+                                        @media (min-width: 768px) and (max-width: 991.99px) {
+                                            font-size: 1.8em;
+                                            padding-top: 0.5em;
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            .texto-review-container {
+                                width: 95%;
+                                margin: 0 auto;
+                                .review-paragraph {
+                                    @include mobileparagraphs(justify, light);
+                                    text-indent: 1.5em;
+                                    border-top: 0.1px solid darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 20%);
+                                    padding-top: 0.5em;
+                                    @media (min-width: 450px) and (max-width: 599.9px) {
+                                        font-size: 1.27em;
+                                        padding-top: 0.8em;
+                                    }
+                                    @media (min-width: 600px) and (max-width: 767.9px) {
+                                        @include mobileparagraphs(justify, regular);
+                                        font-size: 1.5em;
+                                        padding-top: 1.1em;
+                                    }
+                                    @media (min-width: 768px) and (max-width: 991.99px) {
+                                        @include mobileparagraphs(justify, regular);
+                                        font-size: 1.25em;
+                                        padding-top: 0.5em;
+                                        text-indent: 3em;
+                                        border-top: 2px solid darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 20%);
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @media (min-width: 992px) {
+                        display: flex;
+                        padding-top: 3em;
+                        .single-review-container-page {
+                            width: 44%;
+                            margin: 0 auto;
+                            @media (min-width: 992px) {
+                                @include transforms (rotate(-0.8deg));
+                            }
+                            .header-review-profile {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                .imagen-review-container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    @media (min-width: 992px) {
+                                        max-width: 100%;
+                                        width: 100%;
+                                    }
+                                    .profile-image {
+                                        width: 35%;
+                                        border-radius: 10em;
+                                        @media (min-width: 992px) {
+                                            box-shadow: 3px 5px 10px 0 map-get($map: $colorpallet, $key: modaldark);
+                                            
+                                        }
+                                    }
+                                }
+                                .nombre-review-container {
+                                    .nombre-review {
+                                        @include titulonoticias;
+                                        text-align: center;
+                                        padding-right: 0em;
+                                        @media (min-width: 992px) {
+                                            font-size: 1.8em;
+                                            padding-top: 0.5em;
+                                        }
+                                    }
+                                }
+                            }
+                            .texto-review-container {
+                                width: 90%;
+                                margin: 0 auto;
+                                .review-paragraph {
+                                    @include mobileparagraphs(justify, light);
+                                    text-indent: 1.5em;
+                                    border-top: 0.1px solid darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 20%);
+                                    padding-top: 0.5em;
+                                    @media (min-width: 992px) {
+                                        @include mobileparagraphs(justify, regular);
+                                        font-size: 1.25em;
+                                        padding-top: 0.5em;
+                                        text-indent: 3em;
+                                        border-top: 2px solid darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 20%);
+                                        line-height: 2em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+// FIN INDEX REVIEWS

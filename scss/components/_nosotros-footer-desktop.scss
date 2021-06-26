@@ -1,0 +1,97 @@
+ol, ul {
+    padding-left: 0;
+}
+
+.footer-desktop-nosotros-container {
+   display: none;
+   padding-top: 5em;
+   width: 90%;
+   margin: 0 auto;
+   @include backgroundfooterdesk;
+   @media (min-width: 992px) {
+       display: flex;
+       padding-top: 12em;
+       background-size: cover;
+   } 
+   .footer-nav-list {
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-start;
+       width: 70%;
+       margin: 0 auto;
+       list-style: none;
+       text-align: center;
+       margin-bottom: 0.8em;
+       @media (min-width: 992px) {
+        margin-left: 1em;
+    } 
+       .footer-nav-link {
+           display: flex;
+           justify-content: left;
+           width: 100%;
+           .footer-nav-link-item {
+               font-size: 1.35em;
+               font-family: map-get($map: $font-list, $key: medium);
+               color: map-get($map: $colorpallet, $key: colortext);
+               transition: map-get($map: $transitions, $key: rapid);
+               &:hover {
+                   color: map-get($map: $colorpallet, $key: maincolor);
+               }
+           }
+       }
+   }
+   .footer-index-content {
+       @include bordertopfooter (rgba($color: map-get($map: $colorpallet, $key: maincolor), $alpha: 0.50));
+       padding-top: 2em;
+       .footer-contact-data {
+           .social-net-container {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-around;
+               list-style: none;
+               margin-bottom: 1.25em;
+               .social-net-element {
+                   .link-social-network {
+                       max-width: 20%;
+                       .social-icon {
+                            width: 4em;
+                            border-radius: 10em;
+                            background-color: map-get($map: $colorpallet, $key: maincolor);
+                            transition: map-get($map: $transitions, $key: rapid);
+                            &:hover {
+                                    background-color: darken(map-get($map: $colorpallet, $key: maincolor), $amount: 15);
+                                    transition: map-get($map: $transitions, $key: rapid);
+                            }
+                            &:focus {
+                                    background-color: darken(map-get($map: $colorpallet, $key: maincolor), $amount: 15);
+                                    transition: map-get($map: $transitions, $key: rapid);
+                            }
+                       }
+                   }
+               }
+           }
+           .foot-dat-container {
+               list-style: none;
+               @media (min-width: 992px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 60%;
+            } 
+               .foot-dat-container-item {
+                   .foot-cont-dat {
+                       @include mobileparagraphs (left, medium);
+                       font-size: 1.25em;
+                   }
+               }
+           }
+       }
+       .footer-copyright-text {
+           .footer-copyright {
+               @include mobileparagraphs (justify, light);
+               font-size: 1.25em;
+               line-height: 1.8em;
+           }
+       }
+   }
+}

@@ -1,0 +1,178 @@
+// COMIENZO INDEX SERVICIOS
+.servicios-container{
+    padding-top: 10em;
+    background-image: url("https://i.ibb.co/fdDkvCB/fondo-tarjetas4.png");
+    background-size: 200%;
+    background-position-y: 12em;
+    background-repeat:no-repeat;
+    @media (min-width: 450px) and (max-width: 767.9px) {
+        background-size: 250%;
+        height: 50em;
+        margin-bottom: 5em;
+    }
+    @media (min-width: 768px) and (max-width: 991.99px) {
+        background-size: 120%;
+        height: 55em;
+        margin-bottom: 0em;
+        padding-top: 13em;
+    }
+    @media (min-width: 992px) {
+        background-size: contain;
+        height: 55em;
+        margin-bottom: 0em;
+        padding-top: 13em;
+    }
+    .servicios-titulo-container {
+        .servicios-title {
+            display: none;
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: flex;
+                justify-content: center;
+                @include sectiontitles;
+                font-size: 2.5em;
+                padding-top: 1em;
+            }
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: center;
+                @include sectiontitles;
+                font-size: 2.8em;
+                padding-top: 1em;
+            }
+        }
+        .servicios-title-mobile {
+            @include sectiontitles;
+            @media (min-width: 450px) and (max-width: 767.9px) {
+                font-size: 2.5em;
+                padding-top: 1em;;
+            }
+            @media (min-width: 320px) and (max-width: 449.9px) {
+                font-size: 2.15em;
+            }
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: none;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+    .carousel-servicios {
+        margin-top: 1em;
+        height: 15em;
+        @media (min-width: 450px) and (max-width: 575.9px) {
+            margin-top: 0.5em;
+            height: 21.5em;
+        }
+        @media (min-width: 576px) and (max-width: 767.9px) {
+            height: 28.5em;
+        }
+        @media (min-width: 320px) and (max-width: 449.9px) {
+            margin-top: 0.40em;
+            height: 20em;
+        }
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            display: none;
+        }
+        @media (min-width: 992px) {
+            display: none;
+        }
+        .carousel-indicators {
+            width: 50%;
+            margin: 0 auto;
+            .boton {
+                width: 0.8em;
+                height: 0.8em;
+                clip-path: circle();
+                margin: 0 auto;
+                background-color:  darken($color: map-get($map: $colorpallet, $key: maincolor), $amount: 10%) ;
+                @media (min-width: 450px) and (max-width: 767.9px) {
+                    width: 1.5em;
+                height: 1.5em;
+                }
+            }
+            .active {
+                background-color: lighten($color: map-get($map: $colorpallet, $key: maincolor), $amount: 5%) ;
+                opacity: 1;
+            }
+        }
+        .carousel-inner {
+            .carousel-item {
+                .servicio-ima {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    width: 95%;
+                    @media (min-width: 450px) and (max-width: 767.9px) {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+    .servicios-ima-container {
+        display: none;
+        flex-direction: column;
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            display: flex;
+            flex-direction: row;
+            padding-top: 2em;
+        }
+        @media (min-width: 992px) {
+            display: flex;
+            flex-direction: row;
+            padding-top: 2em;
+        }
+        .servicio-ima-box {
+            .servicio-ima {
+                width: 95%;
+                @media (min-width: 768px) and (max-width: 991.99px) {
+                    width: 98%;
+                }
+            }
+        }
+    }
+    .servicios-paragraph-container {
+        margin: 0 auto;
+        .servicios-paragraph {
+            display: none;
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: flex;
+                justify-content: center;
+                @include mobileparagraphs (center, regular);
+                font-size: 1.5em;
+                padding-top: 1em;
+                width: 95%;
+                margin: 0 auto;
+            }
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: center;
+                @include mobileparagraphs (center, regular);
+                font-size: 1.35em;
+                line-height: 2em;
+                padding-top: 1em;
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+        .servicios-paragraph-mobile { 
+            @include mobileparagraphs (center, regular);
+            @media (min-width: 450px) and (max-width: 767.9px) {
+                font-size: 1.5em;
+                padding-top: 1em;
+            }
+            @media (min-width: 320px) and (max-width: 449.9px) {
+                font-size: 1.15em;
+            }
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                display: none;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}
+// FIN INDEX SERVICIOS
