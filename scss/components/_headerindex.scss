@@ -152,6 +152,17 @@ a {
                                 transition: map-get($map: $transitions, $key: rapid);
                             }
                             li {
+                                transition: map-get($map: $transitions, $key: faster);
+                                &:hover {
+                                    background-color: lighten($color: map-get($map: $colorpallet, $key: maincolor), $amount: 10);
+                                    transition: map-get($map: $transitions, $key: faster);
+                                    border-radius: 0.75em;
+                                }
+                                &:focus {
+                                    background-color: lighten($color: map-get($map: $colorpallet, $key: maincolor), $amount: 10);
+                                    transition: map-get($map: $transitions, $key: faster);
+                                    border-radius: 0.75em;
+                                }
                                 @media (min-width: 992px) {
                                     justify-content: center;
                                 }
