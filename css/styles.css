@@ -729,27 +729,104 @@ a {
 }
 .ip-container .registrar-button-container .registrar-link {
   font-family: "raleway-semibold";
-  font-size: 1em;
   color: #F6F2F3;
   text-align: center;
   border-bottom: 2px solid #F6F2F3;
   border-top: 2px solid #F6F2F3;
+  font-size: 1em;
+  transition: all 0.2s ease-out;
+}
+.ip-container .registrar-button-container .registrar-link:hover {
+  font-family: "raleway-semibold";
+  color: #83d6de;
+  text-align: center;
+  border-bottom: 2px solid #83d6de;
+  border-top: 2px solid #83d6de;
+  font-size: 1em;
+  transition: all 0.2s ease-out;
+}
+.ip-container .registrar-button-container .registrar-link:focus {
+  font-family: "raleway-semibold";
+  color: #83d6de;
+  text-align: center;
+  border-bottom: 2px solid #83d6de;
+  border-top: 2px solid #83d6de;
+  font-size: 1em;
+  transition: all 0.2s ease-out;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
   .ip-container .registrar-button-container .registrar-link {
     font-size: 1.5em;
     margin-top: 0.5em;
   }
+  .ip-container .registrar-button-container .registrar-link:hover {
+    font-family: "raleway-semibold";
+    color: #83d6de;
+    text-align: center;
+    border-bottom: 2px solid #83d6de;
+    border-top: 2px solid #83d6de;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    transition: all 0.2s ease-out;
+  }
+  .ip-container .registrar-button-container .registrar-link:focus {
+    font-family: "raleway-semibold";
+    color: #83d6de;
+    text-align: center;
+    border-bottom: 2px solid #83d6de;
+    border-top: 2px solid #83d6de;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    transition: all 0.2s ease-out;
+  }
 }
 @media (min-width: 320px) and (max-width: 449.9px) {
   .ip-container .registrar-button-container .registrar-link {
     font-size: 1.25em;
+  }
+  .ip-container .registrar-button-container .registrar-link:hover {
+    font-family: "raleway-semibold";
+    color: #83d6de;
+    text-align: center;
+    border-bottom: 2px solid #83d6de;
+    border-top: 2px solid #83d6de;
+    font-size: 1.25em;
+    transition: all 0.2s ease-out;
+  }
+  .ip-container .registrar-button-container .registrar-link:focus {
+    font-family: "raleway-semibold";
+    color: #83d6de;
+    text-align: center;
+    border-bottom: 2px solid #83d6de;
+    border-top: 2px solid #83d6de;
+    font-size: 1.25em;
+    transition: all 0.2s ease-out;
   }
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
   .ip-container .registrar-button-container .registrar-link {
     font-size: 1.5em;
     margin-top: 0.5em;
+  }
+  .ip-container .registrar-button-container .registrar-link:hover {
+    font-family: "raleway-semibold";
+    color: #83d6de;
+    text-align: center;
+    border-bottom: 2px solid #83d6de;
+    border-top: 2px solid #83d6de;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    transition: all 0.2s ease-out;
+  }
+  .ip-container .registrar-button-container .registrar-link:focus {
+    font-family: "raleway-semibold";
+    color: #83d6de;
+    text-align: center;
+    border-bottom: 2px solid #83d6de;
+    border-top: 2px solid #83d6de;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    transition: all 0.2s ease-out;
   }
 }
 @media (min-width: 992px) {
@@ -763,6 +840,28 @@ a {
     margin-top: 0.5em;
     border-bottom: 3px solid #F6F2F3;
     border-top: 3px solid #F6F2F3;
+  }
+  .ip-container .registrar-button-container .registrar-link:hover {
+    font-family: "raleway-medium";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: center;
+    font-size: 1.55em;
+    margin-top: 0.5em;
+    border-bottom: 3px solid #83d6de;
+    border-top: 3px solid #83d6de;
+    color: #83d6de;
+  }
+  .ip-container .registrar-button-container .registrar-link:focus {
+    font-family: "raleway-medium";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: center;
+    font-size: 1.55em;
+    margin-top: 0.5em;
+    border-bottom: 3px solid #83d6de;
+    border-top: 3px solid #83d6de;
+    color: #83d6de;
   }
 }
 

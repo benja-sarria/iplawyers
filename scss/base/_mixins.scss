@@ -30,13 +30,12 @@
     background-repeat: no-repeat;
 }
 
-@mixin onboardinglink {
+@mixin onboardinglink ($colorlink) {
     font-family:  map-get($map: $font-list, $key: semibold);
-    font-size: 1em;
-    color: map-get($map: $colorpallet, $key: colortext);
+    color: map-get($map: $colorpallet, $key: $colorlink);
     text-align: center;
-    border-bottom: 2px solid map-get($map: $colorpallet, $key: colortext);
-    border-top: 2px solid map-get($map: $colorpallet, $key: colortext);
+    border-bottom: 2px solid map-get($map: $colorpallet, $key: $colorlink);
+    border-top: 2px solid map-get($map: $colorpallet, $key: $colorlink);
 
 }
 

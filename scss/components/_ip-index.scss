@@ -110,17 +110,63 @@
         justify-content: center;
         align-items: center;
         .registrar-link {
-            @include onboardinglink;
+            @include onboardinglink ("colortext");
+            font-size: 1em;
+            transition: map-get($map: $transitions, $key: rapid);
+            &:hover {
+                @include onboardinglink ("loginfocus");
+                font-size: 1em;
+                transition: map-get($map: $transitions, $key: rapid);
+            }
+            &:focus {
+                @include onboardinglink ("loginfocus");
+                font-size: 1em;
+                transition: map-get($map: $transitions, $key: rapid);
+            }
             @media (min-width: 450px) and (max-width: 767.9px) {
                 font-size: 1.5em;
                 margin-top: 0.5em;
+                &:hover {
+                    @include onboardinglink ("loginfocus");
+                    font-size: 1.5em;
+                    margin-top: 0.5em;
+                    transition: map-get($map: $transitions, $key: rapid);
+                }
+                &:focus {
+                    @include onboardinglink ("loginfocus");
+                    font-size: 1.5em;
+                    margin-top: 0.5em;
+                    transition: map-get($map: $transitions, $key: rapid);
+                }
             }
             @media (min-width: 320px) and (max-width: 449.9px) {
                 font-size: 1.25em;
+                &:hover {
+                    @include onboardinglink ("loginfocus");
+                    font-size: 1.25em;
+                    transition: map-get($map: $transitions, $key: rapid);
+                }
+                &:focus {
+                    @include onboardinglink ("loginfocus");
+                    font-size: 1.25em;
+                    transition: map-get($map: $transitions, $key: rapid);
+                }
             }
             @media (min-width: 768px) and (max-width: 991.99px) {
                 font-size: 1.5em;
                 margin-top: 0.5em;
+                &:hover {
+                    @include onboardinglink ("loginfocus");
+                    font-size: 1.5em;
+                    margin-top: 0.5em;
+                    transition: map-get($map: $transitions, $key: rapid);
+                }
+                &:focus {
+                    @include onboardinglink ("loginfocus");
+                    font-size: 1.5em;
+                    margin-top: 0.5em;
+                    transition: map-get($map: $transitions, $key: rapid);
+                }
             }
             @media (min-width: 992px) {
                 display: flex;
@@ -129,6 +175,22 @@
                 margin-top: 0.5em;
                 border-bottom: 3px solid map-get($map: $colorpallet, $key: colortext);
                 border-top: 3px solid map-get($map: $colorpallet, $key: colortext);
+                &:hover {
+                    @include mobileparagraphs(center, medium);
+                    font-size: 1.55em;
+                    margin-top: 0.5em;
+                    border-bottom: 3px solid map-get($map: $colorpallet, $key: loginfocus);
+                    border-top: 3px solid map-get($map: $colorpallet, $key: loginfocus);
+                    color: map-get($map: $colorpallet, $key: loginfocus);
+                }
+                &:focus {
+                    @include mobileparagraphs(center, medium);
+                    font-size: 1.55em;
+                    margin-top: 0.5em;
+                    border-bottom: 3px solid map-get($map: $colorpallet, $key: loginfocus);
+                    border-top: 3px solid map-get($map: $colorpallet, $key: loginfocus);
+                    color: map-get($map: $colorpallet, $key: loginfocus);
+                }
             }
         }
     }
