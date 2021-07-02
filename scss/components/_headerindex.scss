@@ -24,6 +24,7 @@ a {
                 padding-top: 1%;
             }
             .logo-prueba{
+                z-index: 1000;
                 .logo-estudioprueba {
                     width: 55%;
                     max-width: 55%;
@@ -46,11 +47,15 @@ a {
                 color: map-get($map: $colorpallet, $key: toglerborder1);
                 border-color: map-get($map: $colorpallet, $key: toglerborder2);
                 transition: all 0.8s ease-out;
+                z-index: 1000;
                 @media (min-width: 450px) and (max-width: 767.9px) {
                     max-width: 17%;
                 }
                 @media (min-width: 768px) and (max-width: 991.99px) {
                     width: 10%;
+                }
+                @media (min-width: 992px) {
+                    transition: map-get($map: $transitions, $key: rapid);
                 }
                 .haburguer-toggle-container {
                     img {
@@ -61,18 +66,21 @@ a {
             .navbar-collapse {
                 position: absolute;
                 top: 80%;
-                right: 0.5em;
+                right: 0;
                 @include bgshadows;
+                outline: solid #020202e1 60em;
+                transition: map-get($map: $transitions, $key: rapid);
                 @media (min-width: 992px) {
                     position: initial;
                     background: none;
                     border-radius: unset;
                     padding-top: 0.5%;
                     padding-left: 3.5em;
+                    outline: none;
                 }
                 .navbar-nav {
                     width: 100%;
-                    padding-right: 5%;
+                    padding-right: 2%;
                     align-items: flex-end;
                     @media (min-width: 768px) and (max-width: 991.99px) {
                         padding-right: 2%;
@@ -164,12 +172,12 @@ a {
                                 transition: map-get($map: $transitions, $key: faster);
                                 &:hover {
                                     background-color: lighten($color: map-get($map: $colorpallet, $key: maincolor), $amount: 10);
-                                    transition: map-get($map: $transitions, $key: faster);
+                                    transition: map-get($map: $transitions, $key: rapid);
                                     border-radius: 0.75em;
                                 }
                                 &:focus {
                                     background-color: lighten($color: map-get($map: $colorpallet, $key: maincolor), $amount: 10);
-                                    transition: map-get($map: $transitions, $key: faster);
+                                    transition: map-get($map: $transitions, $key: rapid);
                                     border-radius: 0.75em;
                                 }
                                 @media (min-width: 992px) {
@@ -275,6 +283,9 @@ a {
                             }
                             .spaces-dropdown-arrow {
                                 display: none;
+                                @media (min-width: 992px) {
+                                    display: flex;
+                                }
                             }
                             .arrow-dropdwn-pc {
                                 display: none;
@@ -305,7 +316,7 @@ a {
                 flex-basis: 100%;
                 flex-grow: 1;
                 align-items: center;
-                width: 80%;
+                width: 100%;
                 .apart {
                     display: flex;
                     justify-content: flex-end;

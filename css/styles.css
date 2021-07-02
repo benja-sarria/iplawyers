@@ -87,6 +87,9 @@ a {
     padding-top: 1%;
   }
 }
+.header-index .navbar-index div .logo-prueba {
+  z-index: 1000;
+}
 .header-index .navbar-index div .logo-prueba .logo-estudioprueba {
   width: 55%;
   max-width: 55%;
@@ -114,6 +117,7 @@ a {
   color: #e0115325;
   border-color: #e0115318;
   transition: all 0.8s ease-out;
+  z-index: 1000;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
   .header-index .navbar-index div .navbar-toggler {
@@ -125,19 +129,26 @@ a {
     width: 10%;
   }
 }
+@media (min-width: 992px) {
+  .header-index .navbar-index div .navbar-toggler {
+    transition: all 0.2s ease-out;
+  }
+}
 .header-index .navbar-index div .navbar-toggler .haburguer-toggle-container img {
   width: 100%;
 }
 .header-index .navbar-index div .navbar-collapse {
   position: absolute;
   top: 80%;
-  right: 0.5em;
-  background: #020202c0;
+  right: 0;
+  background: #020202e1;
   border-radius: 0.3em;
+  outline: solid #020202e1 60em;
+  transition: all 0.2s ease-out;
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 @media (min-width: 992px) {
   .header-index .navbar-index div .navbar-collapse {
@@ -146,11 +157,12 @@ a {
     border-radius: unset;
     padding-top: 0.5%;
     padding-left: 3.5em;
+    outline: none;
   }
 }
 .header-index .navbar-index div .navbar-collapse .navbar-nav {
   width: 100%;
-  padding-right: 5%;
+  padding-right: 2%;
   align-items: flex-end;
   padding-left: 3.5em;
 }
@@ -269,12 +281,12 @@ a {
 }
 .header-index .navbar-index div .navbar-collapse .navbar-nav .dropdown .dropdown-index li:hover {
   background-color: #f03470;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   border-radius: 0.75em;
 }
 .header-index .navbar-index div .navbar-collapse .navbar-nav .dropdown .dropdown-index li:focus {
   background-color: #f03470;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   border-radius: 0.75em;
 }
 @media (min-width: 992px) {
@@ -401,6 +413,11 @@ a {
 }
 .header-index .navbar-index div .navbar-collapse .navbar-nav .nav-item .nav-link .spaces-dropdown-arrow {
   display: none;
+}
+@media (min-width: 992px) {
+  .header-index .navbar-index div .navbar-collapse .navbar-nav .nav-item .nav-link .spaces-dropdown-arrow {
+    display: flex;
+  }
 }
 .header-index .navbar-index div .navbar-collapse .navbar-nav .nav-item .nav-link .arrow-dropdwn-pc {
   display: none;
@@ -3052,7 +3069,7 @@ a {
   position: absolute;
   top: 80%;
   right: 0.5em;
-  background: #020202c0;
+  background: #020202e1;
   border-radius: 0.3em;
   flex-basis: 100%;
   flex-grow: 1;
@@ -4205,7 +4222,7 @@ a {
   position: absolute;
   top: 80%;
   right: 0.5em;
-  background: #020202c0;
+  background: #020202e1;
   border-radius: 0.3em;
   flex-basis: 100%;
   flex-grow: 1;
