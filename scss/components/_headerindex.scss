@@ -92,6 +92,15 @@ a {
                     }
                     padding-left: 3.5em;
                     .dropdown {
+                        transition: map-get($map: $transitions, $key: rapid);
+                        &:hover .arrow-dropdwn-pc {
+                            @include transforms (rotate(90deg));
+                            transition: map-get($map: $transitions, $key: rapid);
+                        }
+                        &:focus .arrow-dropdwn-pc {
+                            @include transforms (rotate(90deg));
+                            transition: map-get($map: $transitions, $key: rapid);
+                        }
                         .dropdown-menu.show {
                             display: flex;
                             justify-content: flex-end;
@@ -106,7 +115,7 @@ a {
                                 align-items: center;
                                 position: absolute;
                                 top:  3em;
-                                left: 2.2em;
+                                left: 3em;
                                 min-width: 11em;
                                 height: 11em;
                             }
@@ -122,7 +131,7 @@ a {
                                 align-items: center;
                                 position: absolute;
                                 top:  3em;
-                                left: 2.2em;
+                                left: 3em;
                                 min-width: 11em;
                                 height: 11em;
                             }
@@ -147,7 +156,7 @@ a {
                                 align-items: center;
                                 position: absolute;
                                 top:  3em;
-                                left: 2.2em;
+                                left: 3em;
                                 min-width: 11em;
                                 transition: map-get($map: $transitions, $key: rapid);
                             }
@@ -260,6 +269,9 @@ a {
                             &:focus {
                                 color: map-get($map: $colorpallet, $key: maincolor);
                                 transition: map-get($map: $transitions, $key: normal);
+                                @media (min-width: 992px) {
+                                    transition: map-get($map: $transitions, $key: rapid)
+                                }
                             }
                             .spaces-dropdown-arrow {
                                 display: none;
