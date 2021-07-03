@@ -92,6 +92,51 @@ ol, ul {
                font-size: 1.25em;
                line-height: 1.8em;
            }
+           ul {
+            list-style: inside;
+        }
+        .site-map-container {
+            padding-left: 2em;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            list-style: none;
+            &::marker {
+                display: none
+            }
+            .site-map-item  {
+                @include mobileparagraphs(left, medium);
+                font-size: 1.1em;
+                color: map-get($map: $colorpallet, $key: colortext);
+                line-height: 1.8em;
+                text-decoration: none;
+                transition: map-get($map: $transitions, $key: rapid);
+                &:last-child {
+                    .site-map-subitem-container {
+                        text-align: center;
+                    }
+                }
+                .map-item-title:hover {
+                    color: map-get($map: $colorpallet, $key: maincolor);
+                    transition: map-get($map: $transitions, $key: rapid);
+                }
+                .site-map-subitem-container {
+                    text-align: left;
+                    li {
+                        color: darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 40);
+                        font-size: 0.8em;
+                        line-height: 1.35em;
+                        transition: map-get($map: $transitions, $key: rapid);
+                        &:hover {
+                            color: map-get($map: $colorpallet, $key: maincolor);
+                            transition: map-get($map: $transitions, $key: rapid);
+                        }
+                    }
+                }
+            }
+        }
        }
    }
 }

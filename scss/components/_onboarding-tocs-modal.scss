@@ -1,0 +1,109 @@
+// COMIENZO INDEX MODAL FUNDAMENTOS
+.modal-tocs-onboarding {
+    display: none;
+    @media (min-width: 450px) and (max-width: 767.9px) {
+        max-height: 98%;
+    }
+    @media (min-width: 768px) and (max-width: 991.99px) {
+        max-height: 98%;
+    }
+    .tocs-onboarding-modal {
+        @media (min-width: 450px) and (max-width: 767.9px) {
+            width: 90%;
+            margin: 1em auto 0;
+        }
+        .modal-content {
+            background-color: map-get($map: $colorpallet, $key: modallight);
+            background-image: linear-gradient(to bottom, map-get($map: $colorpallet, $key: modaldark) , map-get($map: $colorpallet, $key: modallight));
+            @media (min-width: 768px) and (max-width: 991.99px) {
+                width: 90%;
+                margin: 1em auto 0;
+            }
+            @media (min-width: 992px) {
+                width: 300em;
+                margin: 1em auto 0;
+            }
+            .modal-header {
+                @include mobileparagraphs(justify, semibold);
+                // align-self: center;
+                border-bottom: 1px solid rgba($color: map-get($map: $colorpallet, $key: colortext), $alpha: 0.25);
+                .modal-title {
+                    width: 100%;
+                    margin-left: 1em;
+                    text-align: center;
+                    font-size: 1.10em;
+                    @media (min-width: 450px) and (max-width: 767.9px) {
+                        font-size: 1.5em;
+                    }
+                    @media (min-width: 768px) and (max-width: 991.99px) {
+                        font-size: 1.5em;
+                    }
+                }
+                .btn-close {
+                    @include mobileparagraphs(unset, light);
+                    font-size: 3em;
+                    background: none;
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: -0.55em;
+                    right: 0.55em;
+                    transition: map-get($map: $transitions, $key: rapid);
+                    @media (min-width: 450px) and (max-width: 767.9px) {
+                        top: -0.55em;
+                        right: 0.60em;
+                        font-size: 4em;
+                    }
+                    @media (min-width: 768px) and (max-width: 991.99px) {
+                        font-size: 3em;
+                        top: -0.50em;
+                        right: 0.65em;
+                    }
+                    &:hover {
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                        transition: map-get($map: $transitions, $key: rapid);
+                    }
+                    &:focus {
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                        transition: map-get($map: $transitions, $key: rapid);
+                    }
+                    &:active {
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                        transition: map-get($map: $transitions, $key: rapid);
+                    }
+                }
+            }
+            .modal-body {
+                width: 98%;
+                margin: 0.8em 0.9em 0.8em 0;
+                p {
+                    @include mobileparagraphs(justify, regular);
+                    text-indent: 2em;
+                    @media (min-width: 450px) and (max-width: 767.9px) {
+                        font-size: 1.25em;
+                    }
+                    @media (min-width: 768px) and (max-width: 991.99px) {
+                        font-size: 1.25em;
+                    }
+                }
+                .last-paragraph-popup {
+                    .ip-popup-phrase {
+                        @include mobileparagraphs(justify, bold);
+                        color: lighten($color: map-get($map: $colorpallet, $key: maincolor), $amount: 5%) ;
+                        font-size: 1.05em;
+                        @media (min-width: 450px) and (max-width: 767.9px) {
+                            font-size: 1.15em;
+                        }
+                        @media (min-width: 768px) and (max-width: 991.99px) {
+                            font-size: 1.15em;
+                        }
+                    }
+                }
+            }
+            .modal-footer {
+                border-top: 1px solid rgba($color: map-get($map: $colorpallet, $key: colortext), $alpha: 0.25);
+            }
+        }
+    }
+}
+// FIN INDEX MODAL FUNDAMENTOS

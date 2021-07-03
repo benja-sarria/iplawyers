@@ -2405,7 +2405,7 @@ a {
   width: 90%;
   margin: 0 auto;
   background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2910,6 +2910,17 @@ a {
 
 ol, ul {
   padding-left: 0;
+  list-style: inside;
+}
+
+a {
+  color: unset;
+}
+a:hover {
+  color: unset;
+}
+a:focus {
+  color: unset;
 }
 
 .footer-desktop-container {
@@ -2918,8 +2929,9 @@ ol, ul {
   width: 90%;
   margin: 0 auto;
   background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -8em;
 }
 @media (min-width: 992px) {
   .footer-desktop-container {
@@ -2993,6 +3005,52 @@ ol, ul {
   text-align: justify;
   font-size: 1.25em;
   line-height: 1.8em;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text ul {
+  list-style: inside;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text .site-map-container {
+  padding-left: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text .site-map-container::marker {
+  display: none;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item {
+  font-family: "raleway-medium";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: left;
+  font-size: 1.1em;
+  color: #F6F2F3;
+  line-height: 1.8em;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item:last-child .site-map-subitem-container {
+  text-align: center;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .map-item-title:hover {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container {
+  text-align: left;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container li {
+  color: #a37984;
+  font-size: 0.8em;
+  line-height: 1.35em;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container li:hover {
+  color: #e01153;
+  transition: all 0.2s ease-out;
 }
 
 /*COMIENZO HEADER INDEX*/
@@ -3785,7 +3843,7 @@ a {
   width: 90%;
   margin: 0 auto;
   background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -3895,6 +3953,11 @@ a {
 
 ol, ul {
   padding-left: 0;
+  list-style-type: disc;
+}
+
+::marker {
+  content: " ";
 }
 
 .footer-desktop-onboarding-container {
@@ -3903,7 +3966,7 @@ ol, ul {
   width: 90%;
   margin: 0 auto;
   background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 992px) {
@@ -3995,6 +4058,52 @@ ol, ul {
   text-align: justify;
   font-size: 1.25em;
   line-height: 1.8em;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text ul {
+  list-style: inside;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text .site-map-container {
+  padding-left: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text .site-map-container::marker {
+  display: none;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item {
+  font-family: "raleway-medium";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: left;
+  font-size: 1.1em;
+  color: #F6F2F3;
+  line-height: 1.8em;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item:last-child .site-map-subitem-container {
+  text-align: center;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .map-item-title:hover {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container {
+  text-align: left;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container li {
+  color: #a37984;
+  font-size: 0.8em;
+  line-height: 1.35em;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-onboarding-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container li:hover {
+  color: #e01153;
+  transition: all 0.2s ease-out;
 }
 
 .nosotros-container {
@@ -4811,7 +4920,7 @@ ol, ul {
   width: 90%;
   margin: 0 auto;
   background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 992px) {
@@ -4904,13 +5013,59 @@ ol, ul {
   font-size: 1.25em;
   line-height: 1.8em;
 }
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text ul {
+  list-style: inside;
+}
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text .site-map-container {
+  padding-left: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+}
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text .site-map-container::marker {
+  display: none;
+}
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item {
+  font-family: "raleway-medium";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: left;
+  font-size: 1.1em;
+  color: #F6F2F3;
+  line-height: 1.8em;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item:last-child .site-map-subitem-container {
+  text-align: center;
+}
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .map-item-title:hover {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container {
+  text-align: left;
+}
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container li {
+  color: #a37984;
+  font-size: 0.8em;
+  line-height: 1.35em;
+  transition: all 0.2s ease-out;
+}
+.footer-desktop-nosotros-container .footer-index-content .footer-copyright-text .site-map-container .site-map-item .site-map-subitem-container li:hover {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
 
 .footer-mobile-version-nosotros {
   padding-top: 5em;
   width: 90%;
   margin: 0 auto;
   background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -5308,6 +5463,147 @@ ol, ul {
 .body-error .contenido-error-container .footer-error .footer-error-container .footer-copyright {
   color: #F6F2F3;
   font-size: 1em;
+}
+
+.modal-tocs-onboarding {
+  display: none;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-onboarding {
+    max-height: 98%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-onboarding {
+    max-height: 98%;
+  }
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal {
+    width: 90%;
+    margin: 1em auto 0;
+  }
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content {
+  background-color: rgba(32, 32, 32, 0.862745098);
+  background-image: linear-gradient(to bottom, #131313dc, rgba(32, 32, 32, 0.862745098));
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content {
+    width: 90%;
+    margin: 1em auto 0;
+  }
+}
+@media (min-width: 992px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content {
+    width: 300em;
+    margin: 1em auto 0;
+  }
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header {
+  font-family: "raleway-semibold";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: justify;
+  border-bottom: 1px solid rgba(246, 242, 243, 0.25);
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .modal-title {
+  width: 100%;
+  margin-left: 1em;
+  text-align: center;
+  font-size: 1.1em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .modal-title {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .modal-title {
+    font-size: 1.5em;
+  }
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .btn-close {
+  font-family: "raleway-light";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: unset;
+  font-size: 3em;
+  background: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -0.55em;
+  right: 0.55em;
+  transition: all 0.2s ease-out;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .btn-close {
+    top: -0.55em;
+    right: 0.6em;
+    font-size: 4em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .btn-close {
+    font-size: 3em;
+    top: -0.5em;
+    right: 0.65em;
+  }
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .btn-close:hover {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .btn-close:focus {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-header .btn-close:active {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-body {
+  width: 98%;
+  margin: 0.8em 0.9em 0.8em 0;
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-body p {
+  font-family: "raleway-regular";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: justify;
+  text-indent: 2em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-body p {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-body p {
+    font-size: 1.25em;
+  }
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-body .last-paragraph-popup .ip-popup-phrase {
+  font-family: "raleway-bold";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: justify;
+  color: #ee1d5f;
+  font-size: 1.05em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-body .last-paragraph-popup .ip-popup-phrase {
+    font-size: 1.15em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-body .last-paragraph-popup .ip-popup-phrase {
+    font-size: 1.15em;
+  }
+}
+.modal-tocs-onboarding .tocs-onboarding-modal .modal-content .modal-footer {
+  border-top: 1px solid rgba(246, 242, 243, 0.25);
 }
 
 html {

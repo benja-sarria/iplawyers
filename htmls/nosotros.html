@@ -30,7 +30,7 @@
     <div class="container-fluid main-cont">
 
         <!-- COMIENZO HEADER -->
-        <header class="header-nosotros row">
+        <header class="header-nosotros row" id="header-nosotros-section">
             <!-- Navbar -->
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-nosotros col-12">
                 <div class="container-fluid">
@@ -65,14 +65,14 @@
         <!-- FIN HEADER -->
 
         <!-- COMIENZO MAPA NOSOTROS-->
-        <section class="nosotros-mapa container-fluid" data-aos="fade-up" data-aos-duration="1500">
+        <section class="nosotros-mapa container-fluid" data-aos="fade-up" data-aos-duration="1500" id="mapa-nosotros-section">
             <h4 class="mapa-title">Dónde encontrarnos:</h4>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10499.966498430253!2d2.2944813!3d48.8583701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses-419!2sar!4v1622581327006!5m2!1ses-419!2sar" width=   "1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map-iframe" title="Mapa de dónde ubicarnos"></iframe>
         </section>
         <!-- FIN MAPA NOSOTROS-->
 
         <!-- COMIENZO EQUIPO NOSOTROS-->
-        <section class="nosotros-container container-fluid" data-aos="fade-up" data-aos-duration="1500">
+        <section class="nosotros-container container-fluid" data-aos="fade-up" data-aos-duration="1500" id="equipo-nosotros-section">
             <h4>Nuestro Equipo:</h4>
             <div id="carouselExampleControls" class="carousel slide carousel-nuestro-equipo" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -296,11 +296,42 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-copyright-text col-lg-8">
-                    <h5 class="footer-copyright">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi veniam non inventore perferendis sit nulla explicabo neque nam magni illo? Odio nobis natus commodi odit molestias molestiae ullam sint unde.
-                        Lorem, sit amet consectetur adipisicing elit. Commodi veniam non inventore perferendis sit nulla explicabo neque nam consectetur. Copyright 2021, IP Lawyers LLC. Todos los derechos reservados.
+                <div class="footer-copyright-text col-lg-8 row">
+                    <h5 class="footer-copyright col-lg-6">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi veniam non inventore perferendis sit nulla explicabo neque nam magni illo? Copyright 2021, IP Lawyers LLC. Todos los derechos reservados.
                     </h5>
+                    <ul class="site-map-container col-lg-6">
+                        <li class="site-map-item map-index">
+                            <a href="index.html" class="map-item-title" title="Enlace a Página Principal">Página principal</a>
+                            <ul class="site-map-subitem-container">
+                                <li><a href="#marcas-comerciales-section" title="Enlace a Marcas en Index">Marcas</a></li>
+                                <li><a href="#noticias-aside-index" title="Enlace a Noticias en Index">Noticias IP</a></li>
+                                <li><a href="#seccion-servicios" title="Enlace a Servicios en Index">Servicios</a> </li>
+                                <li><a href="#reviews-index-section" title="Enlace a Calificaciones de Usuarios en Index">Calificaciones</a> </li>
+                            </ul>
+                        </li>
+                        <li class="site-map-item map-nosotros">
+                            <a href="htmls\nosotros.html" class="map-item-title" title="Enlace a página Nosotros">Nosotros</a>
+                            <ul class="site-map-subitem-container">
+                                <li><a href="htmls\nosotros.html#header-nosotros-section" title="Enlace a Nuestro estudio en Nosotros">Nuestro Estudio</a></li>
+                                <li><a href="htmls\nosotros.html#mapa-nosotros-section" title="Enlace a mapa en Nosotros">Dónde encontrarnos</a></li>
+                                <li><a href="htmls\nosotros.html#equipo-nosotros-section" title="Enlace a Nuestro equipo en Nosotros">Nuestro Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li class="site-map-item map-onboarding">
+                            <a href="htmls\registrar-onboarding.html" class="map-item-title" title="Enlace a página Quiero Registrar">Quiero Registrar</a>
+                            <ul class="site-map-subitem-container">
+                                <li><a href="htmls\registrar-onboarding.html#planes-onboarding-section">Nuestros Packs</a></li>
+                            </ul>
+                        </li>
+                        <li class="site-map-item">
+                            <ul class="site-map-subitem-container">
+                                <li><a href="#popup2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" title="Enlace a Login">Iniciar sesión</a></li>
+                                <li><a href="#popup1" data-bs-toggle="modal" data-bs-target="#exampleModal2" title="Enlace a popup ¿Qué es IP?">¿Qué es IP?</a></li>
+                                <li><a href="#popup3" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="footer-nav-link-item" title="Enlace a popup de términos y condiciones">Términos y Condiciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
