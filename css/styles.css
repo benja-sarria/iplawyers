@@ -5606,6 +5606,147 @@ ol, ul {
   border-top: 1px solid rgba(246, 242, 243, 0.25);
 }
 
+.modal-tocs-nosotros {
+  display: none;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-nosotros {
+    max-height: 98%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-nosotros {
+    max-height: 98%;
+  }
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal {
+    width: 90%;
+    margin: 1em auto 0;
+  }
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content {
+  background-color: rgba(32, 32, 32, 0.862745098);
+  background-image: linear-gradient(to bottom, #131313dc, rgba(32, 32, 32, 0.862745098));
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content {
+    width: 90%;
+    margin: 1em auto 0;
+  }
+}
+@media (min-width: 992px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content {
+    width: 300em;
+    margin: 1em auto 0;
+  }
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header {
+  font-family: "raleway-semibold";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: justify;
+  border-bottom: 1px solid rgba(246, 242, 243, 0.25);
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .modal-title {
+  width: 100%;
+  margin-left: 1em;
+  text-align: center;
+  font-size: 1.1em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .modal-title {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .modal-title {
+    font-size: 1.5em;
+  }
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .btn-close {
+  font-family: "raleway-light";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: unset;
+  font-size: 3em;
+  background: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -0.55em;
+  right: 0.55em;
+  transition: all 0.2s ease-out;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .btn-close {
+    top: -0.55em;
+    right: 0.6em;
+    font-size: 4em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .btn-close {
+    font-size: 3em;
+    top: -0.5em;
+    right: 0.65em;
+  }
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .btn-close:hover {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .btn-close:focus {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-header .btn-close:active {
+  color: #e01153;
+  transition: all 0.2s ease-out;
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-body {
+  width: 98%;
+  margin: 0.8em 0.9em 0.8em 0;
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-body p {
+  font-family: "raleway-regular";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: justify;
+  text-indent: 2em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-body p {
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-body p {
+    font-size: 1.25em;
+  }
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-body .last-paragraph-popup .ip-popup-phrase {
+  font-family: "raleway-bold";
+  font-size: 1em;
+  color: #F6F2F3;
+  text-align: justify;
+  color: #ee1d5f;
+  font-size: 1.05em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-body .last-paragraph-popup .ip-popup-phrase {
+    font-size: 1.15em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-body .last-paragraph-popup .ip-popup-phrase {
+    font-size: 1.15em;
+  }
+}
+.modal-tocs-nosotros .tocs-nosotros-modal .modal-content .modal-footer {
+  border-top: 1px solid rgba(246, 242, 243, 0.25);
+}
+
 html {
   scroll-behavior: smooth;
 }
