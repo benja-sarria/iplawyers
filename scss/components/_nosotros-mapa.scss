@@ -1,9 +1,67 @@
 .nosotros-mapa {
-    background-image: linear-gradient(to bottom, rgb(15, 15, 15), #f6f2f300 );
+    background-image: linear-gradient(to bottom, rgb(15, 15, 15), #f6f2f309 );
     padding-top: 6em;
+    max-width: 100%;
+    overflow: hidden;
+    &:hover {
+        outline: solid #020202e1 60em;
+        z-index: 1000;
+        @media (min-width: 1200px) {
+            height: 75vh;
+            position: relative;
+        }
+    }
+    &:focus {
+        outline: solid #020202e1 60em;
+        z-index: 1000;
+        @media (min-width: 1200px) {
+            height: 75vh;
+            position: relative;
+        }
+    }
+    &:hover .map-iframe{
+        @include transforms(scale(1.08));
+        transition: map-get($map: $transitions, $key: rapid);
+        opacity: 1;
+    }
+    &:hover .mapa-title{
+        @include transforms(scale(1.08));
+        @include transforms(translate(2%,-100%));
+        font-size: 2.2em;
+        transition: map-get($map: $transitions, $key: rapid);
+        opacity: 1;
+        line-height: 1em;
+        margin-left: 0;
+        position: absolute;
+        @media (min-width: 410px) {
+            line-height: 0.5em;
+            position: initial;
+        }
+    }
+    &:focus .map-iframe{
+        @include transforms(scale(1.08));
+        transition: map-get($map: $transitions, $key: rapid);
+        opacity: 1;
+    }
+    &:focus .mapa-title{
+        @include transforms(scale(1.08));
+        @include transforms(translate(2%,-100%));
+        font-size: 2.2em;
+        transition: map-get($map: $transitions, $key: rapid);
+        opacity: 1;
+        line-height: 1em;
+        margin-left: 0;
+        position: absolute;
+        @media (min-width: 410px) {
+            line-height: 0.5em;
+            position: initial;
+        }
+    }
     .mapa-title {
         @include mobileparagraphs(center, bold);
         font-size: 1.8em;
+        opacity: 0.45;
+        transition: map-get($map: $transitions, $key: faster);
         @media (min-width: 768px) and (max-width: 991.99px) {
             @include mobileparagraphs(left, bold);
             font-size: 1.8em;
@@ -21,6 +79,8 @@
         display: block;
         max-width: 14em;
         margin: 0 auto;
+        opacity: 0.45;
+        transition: map-get($map: $transitions, $key: faster);
         @media (min-width: 320px) and (max-width: 410px) {
             max-width: 16em;
         }
