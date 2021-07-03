@@ -104,11 +104,36 @@
             max-width: 14em;
             margin: 0 auto;
             background-color: transparent;
+            background-image: radial-gradient(1px at 108px 40%, #e01153 1%, transparent, transparent);
+            transition: image 0.2s ease-out;
+            &:hover .card-background{
+                background-image: radial-gradient(240px at 108px 40%, #e01153 5%, transparent, transparent);
+                background-size: 150%;
+                background-repeat: no-repeat;
+                background-color: unset;
+                opacity: 1;
+                transition: map-get($map: $transitions, $key: rapid);
+            }
            .card-img-top {
             width: 70%;
             border-radius: 50em;
             margin: 0 auto;
-           } 
+           }
+           .card-background  {
+                display: block;
+                align-self: center;
+                position: absolute;
+                width: 120%;
+                height: 100%;
+                opacity: 0;
+                background-image: radial-gradient(240px at 108px 40%, #e01153 1%, transparent, transparent);
+                background-size: 150%;
+                background-repeat: no-repeat;
+                background-color: unset;
+                background-position-x: 1.5em;
+                transition: map-get($map: $transitions, $key: rapid);
+                z-index: -1000;
+           }
            .card-body {
                .card-title {
                 text-align: center;

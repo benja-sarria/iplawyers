@@ -4122,11 +4122,36 @@ ol, ul {
   max-width: 14em;
   margin: 0 auto;
   background-color: transparent;
+  background-image: radial-gradient(1px at 108px 40%, #e01153 1%, transparent, transparent);
+  transition: image 0.2s ease-out;
+}
+.nosotros-container .nuestro-equipo-container-desktop .card:hover .card-background {
+  background-image: radial-gradient(240px at 108px 40%, #e01153 5%, transparent, transparent);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-color: unset;
+  opacity: 1;
+  transition: all 0.2s ease-out;
 }
 .nosotros-container .nuestro-equipo-container-desktop .card .card-img-top {
   width: 70%;
   border-radius: 50em;
   margin: 0 auto;
+}
+.nosotros-container .nuestro-equipo-container-desktop .card .card-background {
+  display: block;
+  align-self: center;
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  opacity: 0;
+  background-image: radial-gradient(240px at 108px 40%, #e01153 1%, transparent, transparent);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-color: unset;
+  background-position-x: 1.5em;
+  transition: all 0.2s ease-out;
+  z-index: -1000;
 }
 .nosotros-container .nuestro-equipo-container-desktop .card .card-body .card-title {
   text-align: center;
@@ -4161,7 +4186,7 @@ a {
 .header-nosotros {
   width: 99%;
   margin: 0 auto 0em;
-  background-image: linear-gradient(to top, #0f0f0f, #f6f2f300);
+  background-image: linear-gradient(to top, #0f0f0f, #f6f2f309);
 }
 .header-nosotros .navbar-nosotros div {
   padding: 2%;
@@ -4621,8 +4646,96 @@ a {
 }
 
 .nosotros-mapa {
-  background-image: linear-gradient(to bottom, #0f0f0f, #f6f2f300);
+  background-image: linear-gradient(to bottom, #0f0f0f, #f6f2f309);
   padding-top: 6em;
+  max-width: 100%;
+  overflow: hidden;
+}
+.nosotros-mapa:hover {
+  outline: solid #020202e1 60em;
+  z-index: 1000;
+}
+@media (min-width: 1200px) {
+  .nosotros-mapa:hover {
+    height: 75vh;
+    position: relative;
+  }
+}
+.nosotros-mapa:focus {
+  outline: solid #020202e1 60em;
+  z-index: 1000;
+}
+@media (min-width: 1200px) {
+  .nosotros-mapa:focus {
+    height: 75vh;
+    position: relative;
+  }
+}
+.nosotros-mapa:hover .map-iframe {
+  transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transition: all 0.2s ease-out;
+  opacity: 1;
+}
+.nosotros-mapa:hover .mapa-title {
+  transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: translate(2%, -100%);
+  -o-transform: translate(2%, -100%);
+  -ms-transform: translate(2%, -100%);
+  -moz-transform: translate(2%, -100%);
+  -webkit-transform: translate(2%, -100%);
+  font-size: 2.2em;
+  transition: all 0.2s ease-out;
+  opacity: 1;
+  line-height: 1em;
+  margin-left: 0;
+  position: absolute;
+}
+@media (min-width: 410px) {
+  .nosotros-mapa:hover .mapa-title {
+    line-height: 0.5em;
+    position: initial;
+  }
+}
+.nosotros-mapa:focus .map-iframe {
+  transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transition: all 0.2s ease-out;
+  opacity: 1;
+}
+.nosotros-mapa:focus .mapa-title {
+  transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: translate(2%, -100%);
+  -o-transform: translate(2%, -100%);
+  -ms-transform: translate(2%, -100%);
+  -moz-transform: translate(2%, -100%);
+  -webkit-transform: translate(2%, -100%);
+  font-size: 2.2em;
+  transition: all 0.2s ease-out;
+  opacity: 1;
+  line-height: 1em;
+  margin-left: 0;
+  position: absolute;
+}
+@media (min-width: 410px) {
+  .nosotros-mapa:focus .mapa-title {
+    line-height: 0.5em;
+    position: initial;
+  }
 }
 .nosotros-mapa .mapa-title {
   font-family: "raleway-bold";
@@ -4630,6 +4743,8 @@ a {
   color: #F6F2F3;
   text-align: center;
   font-size: 1.8em;
+  opacity: 0.45;
+  transition: all 0.3s ease-out;
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
   .nosotros-mapa .mapa-title {
@@ -4657,6 +4772,8 @@ a {
   display: block;
   max-width: 14em;
   margin: 0 auto;
+  opacity: 0.45;
+  transition: all 0.3s ease-out;
 }
 @media (min-width: 320px) and (max-width: 410px) {
   .nosotros-mapa .map-iframe {
