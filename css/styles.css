@@ -92,11 +92,21 @@ a {
 }
 .header-index .navbar-index div .logo-prueba .logo-estudioprueba {
   width: 55%;
-  max-width: 55%;
+  max-width: 40%;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
   .header-index .navbar-index div .logo-prueba .logo-estudioprueba {
-    max-width: 40%;
+    max-width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .header-index .navbar-index div .logo-prueba .logo-estudioprueba {
+    max-width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .header-index .navbar-index div .logo-prueba .logo-estudioprueba {
+    max-width: 55%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -136,6 +146,12 @@ a {
 }
 .header-index .navbar-index div .navbar-toggler .haburguer-toggle-container img {
   width: 100%;
+  min-width: 1.5em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .header-index .navbar-index div .navbar-toggler .haburguer-toggle-container img {
+    max-width: 70%;
+  }
 }
 .header-index .navbar-index div .navbar-collapse {
   position: absolute;
@@ -617,8 +633,8 @@ a {
 }
 
 .ip-container {
-  background-image: url("https://i.ibb.co/C778Kxf/fondo-tarjetas3.png");
-  background-size: 300% contain;
+  background-image: url("../imagenes/imageswebp/fondo-tarjetas3.webp");
+  background-size: cover;
   background-position-y: 5em;
   background-repeat: no-repeat;
   padding-top: 5em;
@@ -936,7 +952,7 @@ a {
   }
 }
 .article-noticias .containernews {
-  background-image: url("../imagenes/fondo-article3.png");
+  background-image: url("../imagenes/imageswebp/fondo-article3.webp");
   background-size: cover;
   height: 28rem;
   background-repeat: no-repeat;
@@ -954,13 +970,13 @@ a {
 @media (min-width: 768px) and (max-width: 991.99px) {
   .article-noticias .containernews {
     height: 45em;
-    background-image: url("../imagenes/fondo-article5.png");
+    background-image: url("../imagenes/imageswebp/fondo-article5.webp");
   }
 }
 @media (min-width: 992px) {
   .article-noticias .containernews {
     height: 45em;
-    background-image: url("../imagenes/fondo-article2.png");
+    background-image: url("../imagenes/imageswebp/fondo-article2.webp");
   }
 }
 .article-noticias .containernews .news-title-container {
@@ -1697,7 +1713,7 @@ a {
   }
 }
 .reviews-container .inner-container-reviews {
-  background-image: url("../imagenes/fondo-article4.png");
+  background-image: url("../imagenes/imageswebp/fondo-article4.webp");
   background-size: cover;
   height: 28em;
 }
@@ -2404,7 +2420,7 @@ a {
   padding-top: 5em;
   width: 90%;
   margin: 0 auto;
-  background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
+  background-image: url("../imagenes/imageswebp/footerfondo.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2928,7 +2944,7 @@ a:focus {
   padding-top: 5em;
   width: 90%;
   margin: 0 auto;
-  background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
+  background-image: url("../imagenes/imageswebp/footerfondo.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -8em;
@@ -3084,11 +3100,21 @@ a {
 }
 .header-onboarding .navbar-onboarding div .logo-prueba .logo-estudioprueba {
   width: 55%;
-  max-width: 55%;
+  max-width: 40%;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
   .header-onboarding .navbar-onboarding div .logo-prueba .logo-estudioprueba {
-    max-width: 40%;
+    max-width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .header-onboarding .navbar-onboarding div .logo-prueba .logo-estudioprueba {
+    max-width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .header-onboarding .navbar-onboarding div .logo-prueba .logo-estudioprueba {
+    max-width: 55%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -3122,6 +3148,12 @@ a {
 }
 .header-onboarding .navbar-onboarding div .navbar-toggler .haburguer-toggle-container img {
   width: 100%;
+  min-width: 1.5em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .header-onboarding .navbar-onboarding div .navbar-toggler .haburguer-toggle-container img {
+    max-width: 70%;
+  }
 }
 .header-onboarding .navbar-onboarding div .navbar-collapse {
   position: absolute;
@@ -3842,7 +3874,7 @@ a {
   padding-top: 10em;
   width: 90%;
   margin: 0 auto;
-  background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
+  background-image: url("../imagenes/imageswebp/footerfondo.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3965,7 +3997,7 @@ ol, ul {
   padding-top: 5em;
   width: 90%;
   margin: 0 auto;
-  background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
+  background-image: url("../imagenes/imageswebp/footerfondo.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -4313,11 +4345,21 @@ a {
 }
 .header-nosotros .navbar-nosotros div .logo-prueba .logo-estudioprueba {
   width: 55%;
-  max-width: 55%;
+  max-width: 40%;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
   .header-nosotros .navbar-nosotros div .logo-prueba .logo-estudioprueba {
-    max-width: 40%;
+    max-width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .header-nosotros .navbar-nosotros div .logo-prueba .logo-estudioprueba {
+    max-width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .header-nosotros .navbar-nosotros div .logo-prueba .logo-estudioprueba {
+    max-width: 55%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -4351,6 +4393,12 @@ a {
 }
 .header-nosotros .navbar-nosotros div .navbar-toggler .haburguer-toggle-container img {
   width: 100%;
+  min-width: 1.5em;
+}
+@media (min-width: 450px) and (max-width: 767.9px) {
+  .header-nosotros .navbar-nosotros div .navbar-toggler .haburguer-toggle-container img {
+    max-width: 70%;
+  }
 }
 .header-nosotros .navbar-nosotros div .navbar-collapse {
   position: absolute;
@@ -4919,7 +4967,7 @@ ol, ul {
   padding-top: 5em;
   width: 90%;
   margin: 0 auto;
-  background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
+  background-image: url("../imagenes/imageswebp/footerfondo.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -5064,7 +5112,7 @@ ol, ul {
   padding-top: 5em;
   width: 90%;
   margin: 0 auto;
-  background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
+  background-image: url("../imagenes/imageswebp/footerfondo.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;

@@ -24,8 +24,8 @@
 }
 
 @mixin backgroundip {
-    background-image: url("https://i.ibb.co/C778Kxf/fondo-tarjetas3.png");
-    background-size: 300% contain;
+    background-image: url("../imagenes/imageswebp/fondo-tarjetas3.webp");
+    background-size: cover;
     background-position-y: 5em;
     background-repeat: no-repeat;
 }
@@ -78,7 +78,7 @@
 }
 
 @mixin backgroundfooterdesk {
-    background-image: url("https://i.ibb.co/pyp0dXt/footerfondo.png");
+    background-image: url("../imagenes/imageswebp/footerfondo.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
