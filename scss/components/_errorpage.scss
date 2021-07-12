@@ -1,11 +1,9 @@
 .body-error {
-    background-image: url("../imagenes/error-bkg.jpg");
-    background-size: 500%;
+    background-image: url("../imagenes/imageswebp/error-bkg.webp");
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
     .contenido-error-container {
-        // background-image: url("../imagenes/error-bkg.jpg");
-        // background-size: 500%;
-        // background-repeat: no-repeat;
         .error-container {
             display: flex;
             flex-direction: column;

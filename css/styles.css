@@ -519,6 +519,7 @@ a {
   max-height: 10em;
   left: 0;
   z-index: -1;
+  width: fit-content;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
   .header-index .navbar-index .banner-shadow {
@@ -3463,6 +3464,7 @@ a {
   max-height: 7em;
   left: 0;
   z-index: -1;
+  width: fit-content;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
   .header-onboarding .navbar-onboarding .banner-shadow {
@@ -3712,17 +3714,17 @@ a {
   }
 }
 .planes-onboarding .onboarding-accordion-mobile .basic-card {
-  background-image: url("https://i.ibb.co/LnGxWCp/plan-background-basic.png");
+  background-image: url("../imagenes/imageswebp/plan-background-basic.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .planes-onboarding .onboarding-accordion-mobile .regular-card {
-  background-image: url("https://i.ibb.co/Zz5Bd4B/plan-background-regular.png");
+  background-image: url("../imagenes/imageswebp/plan-background-regular.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .planes-onboarding .onboarding-accordion-mobile .premium-card {
-  background-image: url("https://i.ibb.co/bsXTN6C/plan-background-premium.png");
+  background-image: url("../imagenes/imageswebp/plan-background-premium.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -3798,7 +3800,7 @@ a {
   transition: all 0.15s ease-in-out;
 }
 .planes-onboarding .onboarding-planes-cards .card-container .basic-card {
-  background-image: url("https://i.ibb.co/LnGxWCp/plan-background-basic.png");
+  background-image: url("../imagenes/imageswebp/plan-background-basic.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -3822,7 +3824,7 @@ a {
   }
 }
 .planes-onboarding .onboarding-planes-cards .card-container .regular-card {
-  background-image: url("https://i.ibb.co/Zz5Bd4B/plan-background-regular.png");
+  background-image: url("../imagenes/imageswebp/plan-background-regular.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -3846,7 +3848,7 @@ a {
   }
 }
 .planes-onboarding .onboarding-planes-cards .card-container .premium-card {
-  background-image: url("https://i.ibb.co/bsXTN6C/plan-background-premium.png");
+  background-image: url("../imagenes/imageswebp/plan-background-premium.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -4708,6 +4710,7 @@ a {
   max-height: 7em;
   left: 0;
   z-index: -1;
+  width: fit-content;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
   .header-nosotros .navbar-nosotros .banner-shadow {
@@ -5363,8 +5366,9 @@ ol, ul {
 }
 
 .body-error {
-  background-image: url("../imagenes/error-bkg.jpg");
-  background-size: 500%;
+  background-image: url("../imagenes/imageswebp/error-bkg.webp");
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 .body-error .contenido-error-container .error-container {
