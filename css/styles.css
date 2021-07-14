@@ -1465,14 +1465,14 @@ a {
   background-position-y: 12em;
   background-repeat: no-repeat;
 }
-@media (min-width: 450px) and (max-width: 767.9px) {
+@media (min-width: 450px) and (max-width: 767px) {
   .servicios-container {
     background-size: 250%;
     height: 50em;
     margin-bottom: 5em;
   }
 }
-@media (min-width: 768px) and (max-width: 991.99px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .servicios-container {
     background-size: 120%;
     height: 55em;
@@ -1491,7 +1491,7 @@ a {
 .servicios-container .servicios-titulo-container .servicios-title {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 991.99px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .servicios-container .servicios-titulo-container .servicios-title {
     display: flex;
     justify-content: center;
@@ -1521,18 +1521,18 @@ a {
   color: #F6F2F3;
   text-align: center;
 }
-@media (min-width: 450px) and (max-width: 767.9px) {
+@media (min-width: 450px) and (max-width: 767px) {
   .servicios-container .servicios-titulo-container .servicios-title-mobile {
     font-size: 2.5em;
     padding-top: 1em;
   }
 }
-@media (min-width: 320px) and (max-width: 449.9px) {
+@media (min-width: 320px) and (max-width: 449px) {
   .servicios-container .servicios-titulo-container .servicios-title-mobile {
     font-size: 2.15em;
   }
 }
-@media (min-width: 768px) and (max-width: 991.99px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .servicios-container .servicios-titulo-container .servicios-title-mobile {
     display: none;
   }
@@ -1546,24 +1546,24 @@ a {
   margin-top: 1em;
   height: 15em;
 }
-@media (min-width: 450px) and (max-width: 575.9px) {
+@media (min-width: 450px) and (max-width: 575px) {
   .servicios-container .carousel-servicios {
     margin-top: 0.5em;
     height: 21.5em;
   }
 }
-@media (min-width: 576px) and (max-width: 767.9px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .servicios-container .carousel-servicios {
     height: 28.5em;
   }
 }
-@media (min-width: 320px) and (max-width: 449.9px) {
+@media (min-width: 320px) and (max-width: 449px) {
   .servicios-container .carousel-servicios {
     margin-top: 0.4em;
     height: 20em;
   }
 }
-@media (min-width: 768px) and (max-width: 991.99px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .servicios-container .carousel-servicios {
     display: none;
   }
@@ -1584,7 +1584,7 @@ a {
   margin: 0 auto;
   background-color: #b10d41;
 }
-@media (min-width: 450px) and (max-width: 767.9px) {
+@media (min-width: 450px) and (max-width: 767px) {
   .servicios-container .carousel-servicios .carousel-indicators .boton {
     width: 1.5em;
     height: 1.5em;
@@ -1601,7 +1601,7 @@ a {
   align-items: center;
   width: 95%;
 }
-@media (min-width: 450px) and (max-width: 767.9px) {
+@media (min-width: 450px) and (max-width: 767px) {
   .servicios-container .carousel-servicios .carousel-inner .carousel-item .servicio-ima {
     width: 75%;
   }
@@ -1610,7 +1610,7 @@ a {
   display: none;
   flex-direction: column;
 }
-@media (min-width: 768px) and (max-width: 991.99px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .servicios-container .servicios-ima-container {
     display: flex;
     flex-direction: row;
@@ -1624,12 +1624,311 @@ a {
     padding-top: 2em;
   }
 }
+.servicios-container .servicios-ima-container .servicio-ima-box {
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease-out;
+}
+.servicios-container .servicios-ima-container .servicio-ima-box:focus {
+  transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transition: all 0.8s ease-out;
+  z-index: 10000;
+  outline: solid rgba(2, 2, 2, 0.9) 60em;
+  background-color: rgba(2, 2, 2, 0.9);
+}
 .servicios-container .servicios-ima-container .servicio-ima-box .servicio-ima {
   width: 95%;
+  transition: all 0.3s ease-out;
 }
-@media (min-width: 768px) and (max-width: 991.99px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .servicios-container .servicios-ima-container .servicio-ima-box .servicio-ima {
     width: 98%;
+  }
+}
+.servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-patentes {
+  display: none;
+  padding: 5em 5em 5em 1em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-patentes {
+    padding: 2em 2em 2em 0em;
+    width: 150%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-patentes {
+    width: 170%;
+  }
+}
+@media (min-width: 1200px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-patentes {
+    width: 170%;
+  }
+}
+.servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-marcas {
+  display: none;
+  padding: 5em 5em 5em 1em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-marcas {
+    padding: 2em 2em 2em 0em;
+    width: 220%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-marcas {
+    width: 215%;
+  }
+}
+@media (min-width: 1200px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-marcas {
+    width: 235%;
+  }
+}
+.servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-diseno {
+  display: none;
+  padding: 5em 5em 5em 1em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-diseno {
+    padding: 2em 2em 2em 0em;
+    width: 150%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-diseno {
+    width: 185%;
+  }
+}
+@media (min-width: 1200px) {
+  .servicios-container .servicios-ima-container .servicio-ima-box .texto-hover-servicios-diseno {
+    width: 190%;
+  }
+}
+.servicios-container .servicios-ima-container .servicio-ima-box .textos-hover .title-texto-hover {
+  border-bottom: 1px solid rgba(224, 17, 83, 0.8);
+  padding-bottom: 0.5em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .servicios-container .servicios-ima-container .patente-ima:focus .texto-hover-servicios-patentes {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: justify;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 1.5em;
+    left: 15em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .servicios-container .servicios-ima-container .patente-ima:focus .texto-hover-servicios-patentes {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: justify;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 3.5em;
+    left: 16.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .servicios-container .servicios-ima-container .patente-ima:focus .texto-hover-servicios-patentes {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: justify;
+    font-size: 1.5em;
+    padding-top: 1em;
+    position: absolute;
+    top: 3.5em;
+    left: 18em;
+  }
+}
+@media (min-width: 768px) and (max-width: 890px) {
+  .servicios-container .servicios-ima-container .marcas-ima:focus .texto-hover-servicios-marcas {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 9.5em;
+    left: -6.5em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 890px) and (max-width: 991px) {
+  .servicios-container .servicios-ima-container .marcas-ima:focus .texto-hover-servicios-marcas {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 11em;
+    left: -8em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) and (max-width: 1099px) {
+  .servicios-container .servicios-ima-container .marcas-ima:focus .texto-hover-servicios-marcas {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 12.5em;
+    left: -7.5em;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .servicios-container .servicios-ima-container .marcas-ima:focus .texto-hover-servicios-marcas {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 12.5em;
+    left: -9em;
+  }
+}
+@media (min-width: 1200px) {
+  .servicios-container .servicios-ima-container .marcas-ima:focus .texto-hover-servicios-marcas {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 1em;
+    position: absolute;
+    top: 12.5em;
+    left: -9.75em;
+  }
+}
+.servicios-container .servicios-ima-container .patente-ima:focus {
+  position: relative;
+  transform: scale(1.1) translatex(0.75em);
+  -o-transform: scale(1.1) translatex(0.75em);
+  -ms-transform: scale(1.1) translatex(0.75em);
+  -moz-transform: scale(1.1) translatex(0.75em);
+  -webkit-transform: scale(1.1) translatex(0.75em);
+  transition: all 0.8s ease-out;
+}
+.servicios-container .servicios-ima-container .disenos-ima:focus {
+  position: relative;
+  transform: scale(1.1) translatex(-0.75em);
+  -o-transform: scale(1.1) translatex(-0.75em);
+  -ms-transform: scale(1.1) translatex(-0.75em);
+  -moz-transform: scale(1.1) translatex(-0.75em);
+  -webkit-transform: scale(1.1) translatex(-0.75em);
+  transition: all 0.8s ease-out;
+}
+@media (min-width: 768px) and (max-width: 889px) {
+  .servicios-container .servicios-ima-container .disenos-ima:focus .texto-hover-servicios-diseno {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: justify;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 0.5em;
+    left: -20em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 890px) and (max-width: 991px) {
+  .servicios-container .servicios-ima-container .disenos-ima:focus .texto-hover-servicios-diseno {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: justify;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 1.5em;
+    left: -23.5em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) and (max-width: 1089px) {
+  .servicios-container .servicios-ima-container .disenos-ima:focus .texto-hover-servicios-diseno {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: justify;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 1.75em;
+    left: -27em;
+  }
+}
+@media (min-width: 1090px) and (max-width: 1199px) {
+  .servicios-container .servicios-ima-container .disenos-ima:focus .texto-hover-servicios-diseno {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: justify;
+    font-size: 1.3em;
+    padding-top: 1em;
+    position: absolute;
+    top: 2.5em;
+    left: -30em;
+  }
+}
+@media (min-width: 1200px) {
+  .servicios-container .servicios-ima-container .disenos-ima:focus .texto-hover-servicios-diseno {
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway-lightita";
+    font-size: 1em;
+    color: #F6F2F3;
+    text-align: justify;
+    font-size: 1.5em;
+    padding-top: 1em;
+    position: absolute;
+    top: 3.5em;
+    left: -30em;
   }
 }
 .servicios-container .servicios-paragraph-container {

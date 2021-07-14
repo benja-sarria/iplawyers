@@ -5,12 +5,12 @@
     background-size: 200%;
     background-position-y: 12em;
     background-repeat:no-repeat;
-    @media (min-width: 450px) and (max-width: 767.9px) {
+    @media (min-width: 450px) and (max-width: 767px) {
         background-size: 250%;
         height: 50em;
         margin-bottom: 5em;
     }
-    @media (min-width: 768px) and (max-width: 991.99px) {
+    @media (min-width: 768px) and (max-width: 991px) {
         background-size: 120%;
         height: 55em;
         margin-bottom: 0em;
@@ -25,7 +25,7 @@
     .servicios-titulo-container {
         .servicios-title {
             display: none;
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 991px) {
                 display: flex;
                 justify-content: center;
                 @include sectiontitles;
@@ -42,14 +42,14 @@
         }
         .servicios-title-mobile {
             @include sectiontitles;
-            @media (min-width: 450px) and (max-width: 767.9px) {
+            @media (min-width: 450px) and (max-width: 767px) {
                 font-size: 2.5em;
                 padding-top: 1em;;
             }
-            @media (min-width: 320px) and (max-width: 449.9px) {
+            @media (min-width: 320px) and (max-width: 449px) {
                 font-size: 2.15em;
             }
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 991px) {
                 display: none;
             }
             @media (min-width: 992px) {
@@ -60,18 +60,18 @@
     .carousel-servicios {
         margin-top: 1em;
         height: 15em;
-        @media (min-width: 450px) and (max-width: 575.9px) {
+        @media (min-width: 450px) and (max-width: 575px) {
             margin-top: 0.5em;
             height: 21.5em;
         }
-        @media (min-width: 576px) and (max-width: 767.9px) {
+        @media (min-width: 576px) and (max-width: 767px) {
             height: 28.5em;
         }
-        @media (min-width: 320px) and (max-width: 449.9px) {
+        @media (min-width: 320px) and (max-width: 449px) {
             margin-top: 0.40em;
             height: 20em;
         }
-        @media (min-width: 768px) and (max-width: 991.99px) {
+        @media (min-width: 768px) and (max-width: 991px) {
             display: none;
         }
         @media (min-width: 992px) {
@@ -86,7 +86,7 @@
                 clip-path: circle();
                 margin: 0 auto;
                 background-color:  darken($color: map-get($map: $colorpallet, $key: maincolor), $amount: 10%) ;
-                @media (min-width: 450px) and (max-width: 767.9px) {
+                @media (min-width: 450px) and (max-width: 767px) {
                     width: 1.5em;
                 height: 1.5em;
                 }
@@ -104,7 +104,7 @@
                     justify-self: center;
                     align-items: center;
                     width: 95%;
-                    @media (min-width: 450px) and (max-width: 767.9px) {
+                    @media (min-width: 450px) and (max-width: 767px) {
                         width: 75%;
                     }
                 }
@@ -114,7 +114,7 @@
     .servicios-ima-container {
         display: none;
         flex-direction: column;
-        @media (min-width: 768px) and (max-width: 991.99px) {
+        @media (min-width: 768px) and (max-width: 991px) {
             display: flex;
             flex-direction: row;
             padding-top: 2em;
@@ -125,11 +125,233 @@
             padding-top: 2em;
         }
         .servicio-ima-box {
+            background-color: transparent;
+            border: none;
+            transition: transform 0.3s ease-out;
+            &:focus {
+                @include transforms(scale(1.1));
+                transition: map-get($map: $transitions, $key: normal);
+                z-index: 10000;
+                outline: solid rgba($color: #020202e1, $alpha: 0.9) 60em;
+                background-color: rgba($color: #020202e1, $alpha: 0.9);
+            }
             .servicio-ima {
                 width: 95%;
-                @media (min-width: 768px) and (max-width: 991.99px) {
+                transition: map-get($map: $transitions, $key: faster);
+                @media (min-width: 768px) and (max-width: 991px) {
                     width: 98%;
                 }
+            }
+            
+            .texto-hover-servicios-patentes {
+                display: none;
+                padding: 5em 5em 5em 1em;
+                
+                @media (min-width: 768px) and (max-width: 991px) {
+                    padding: 2em 2em 2em 0em;
+                    width: 150%;
+                }
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    width: 170%;
+                }
+                @media (min-width: 1200px) {
+                    width: 170%;
+                }
+            }
+            .texto-hover-servicios-marcas {
+                display: none;
+                padding: 5em 5em 5em 1em;
+                
+                @media (min-width: 768px) and (max-width: 991px) {
+                    padding: 2em 2em 2em 0em;
+                    width: 220%;
+                }
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    width: 215%;
+                }
+                @media (min-width: 1200px) {
+                    width: 235%;
+                }
+            }
+            .texto-hover-servicios-diseno {
+                display: none;
+                padding: 5em 5em 5em 1em;
+                
+                @media (min-width: 768px) and (max-width: 991px) {
+                    padding: 2em 2em 2em 0em;
+                    width: 150%;
+                }
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    width: 185%;
+                }
+                @media (min-width: 1200px) {
+                    width: 190%;
+                }
+            }
+            .textos-hover {
+                .title-texto-hover {
+                    border-bottom: 1px solid rgba(map-get($map: $colorpallet, $key: maincolor), 0.80);
+                    padding-bottom: 0.5em;
+                }
+            }
+        }
+        .patente-ima:focus .texto-hover-servicios-patentes {
+            @media (min-width: 768px) and (max-width: 991px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (justify, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 1.5em;
+                left: 15em;
+                flex-wrap: wrap;
+            }
+            @media (min-width: 992px) and (max-width: 1199px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (justify, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 3.5em;
+                left: 16.5em;
+            }
+            @media (min-width: 1200px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (justify, lightita);
+                font-size: 1.5em;
+                padding-top: 1em;
+                position: absolute;
+                top: 3.5em;
+                left: 18em;
+            }
+        }
+        .marcas-ima:focus .texto-hover-servicios-marcas {
+            @media (min-width: 768px) and (max-width: 890px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (center, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 9.5em;
+                left: -6.5em;
+                flex-wrap: wrap;
+            }
+            @media (min-width: 890px) and (max-width: 991px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (center, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 11em;
+                left: -8em;
+                flex-wrap: wrap;
+            }
+            @media (min-width: 992px) and (max-width: 1099px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (center, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 12.5em;
+                left: -7.5em;
+            }
+            @media (min-width: 1100px) and (max-width: 1199px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (center, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 12.5em;
+                left: -9em;
+            }
+            @media (min-width: 1200px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (center, lightita);
+                font-size: 1.5em;
+                padding-top: 1em;
+                position: absolute;
+                top: 12.5em;
+                left: -9.75em;
+            }
+        }
+        .patente-ima:focus {
+            position: relative;
+            transform: scale(1.1) translatex(0.75em);
+            -o-transform: scale(1.1) translatex(0.75em);
+            -ms-transform: scale(1.1) translatex(0.75em);
+            -moz-transform: scale(1.1) translatex(0.75em);
+            -webkit-transform: scale(1.1) translatex(0.75em);
+            transition: map-get($map: $transitions, $key: normal);
+        }
+        .disenos-ima:focus {
+            position: relative;
+            transform: scale(1.1) translatex(-0.75em);
+            -o-transform: scale(1.1) translatex(-0.75em);
+            -ms-transform: scale(1.1) translatex(-0.75em);
+            -moz-transform: scale(1.1) translatex(-0.75em);
+            -webkit-transform: scale(1.1) translatex(-0.75em);
+            transition: map-get($map: $transitions, $key: normal);
+        }
+        .disenos-ima:focus .texto-hover-servicios-diseno {
+            @media (min-width: 768px) and (max-width: 889px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (justify, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 0.5em;
+                left: -20em;
+                flex-wrap: wrap;
+            }
+            @media (min-width: 890px) and (max-width: 991px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (justify, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 1.5em;
+                left: -23.5em;
+                flex-wrap: wrap;
+            }
+            @media (min-width: 992px) and (max-width: 1089px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (justify, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 1.75em;
+                left: -27em;
+            }
+            @media (min-width: 1090px) and (max-width: 1199px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (justify, lightita);
+                font-size: 1.3em;
+                padding-top: 1em;
+                position: absolute;
+                top: 2.5em;
+                left: -30em;
+            }
+            @media (min-width: 1200px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (justify, lightita);
+                font-size: 1.5em;
+                padding-top: 1em;
+                position: absolute;
+                top: 3.5em;
+                left: -30em;
             }
         }
     }
