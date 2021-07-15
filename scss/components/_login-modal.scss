@@ -118,7 +118,7 @@
                         }
                     }
                     .form-control {
-                        background-color: lighten($color: map-get($map: $colorpallet, $key: modaldark), $amount: 15%)  ;
+                        background-color: lighten($color: map-get($map: $colorpallet, $key: modaldark), $amount: 15%);
                         border: none;
                         color: map-get($map: $colorpallet, $key: colortext);
                         transition: map-get($map: $transitions, $key: rapid);
