@@ -5,12 +5,12 @@
     background-size: 200%;
     background-position-y: 12em;
     background-repeat:no-repeat;
-    @media (min-width: 450px) and (max-width: 767px) {
+    @media (min-width: 450px) and (max-width: 768px) {
         background-size: 250%;
         height: 50em;
         margin-bottom: 5em;
     }
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         background-size: 120%;
         height: 55em;
         margin-bottom: 0em;
@@ -25,7 +25,7 @@
     .servicios-titulo-container {
         .servicios-title {
             display: none;
-            @media (min-width: 768px) and (max-width: 991px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: flex;
                 justify-content: center;
                 @include sectiontitles;
@@ -42,14 +42,14 @@
         }
         .servicios-title-mobile {
             @include sectiontitles;
-            @media (min-width: 450px) and (max-width: 767px) {
+            @media (min-width: 450px) and (max-width: 768px) {
                 font-size: 2.5em;
                 padding-top: 1em;;
             }
-            @media (min-width: 320px) and (max-width: 449px) {
+            @media (min-width: 320px) and (max-width: 450px) {
                 font-size: 2.15em;
             }
-            @media (min-width: 768px) and (max-width: 991px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: none;
             }
             @media (min-width: 992px) {
@@ -60,18 +60,18 @@
     .carousel-servicios {
         margin-top: 1em;
         height: 15em;
-        @media (min-width: 450px) and (max-width: 575px) {
+        @media (min-width: 450px) and (max-width: 576px) {
             margin-top: 0.5em;
             height: 21.5em;
         }
-        @media (min-width: 576px) and (max-width: 767px) {
+        @media (min-width: 576px) and (max-width: 768px) {
             height: 28.5em;
         }
-        @media (min-width: 320px) and (max-width: 449px) {
+        @media (min-width: 320px) and (max-width: 450px) {
             margin-top: 0.40em;
             height: 20em;
         }
-        @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 992px) {
             display: none;
         }
         @media (min-width: 992px) {
@@ -86,7 +86,7 @@
                 clip-path: circle();
                 margin: 0 auto;
                 background-color:  darken($color: map-get($map: $colorpallet, $key: maincolor), $amount: 10%) ;
-                @media (min-width: 450px) and (max-width: 767px) {
+                @media (min-width: 450px) and (max-width: 768px) {
                     width: 1.5em;
                 height: 1.5em;
                 }
@@ -104,7 +104,7 @@
                     justify-self: center;
                     align-items: center;
                     width: 95%;
-                    @media (min-width: 450px) and (max-width: 767px) {
+                    @media (min-width: 450px) and (max-width: 768px) {
                         width: 75%;
                     }
                 }
@@ -114,7 +114,7 @@
     .servicios-ima-container {
         display: none;
         flex-direction: column;
-        @media (min-width: 768px) and (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 992px) {
             display: flex;
             flex-direction: row;
             padding-top: 2em;
@@ -138,7 +138,7 @@
             .servicio-ima {
                 width: 95%;
                 transition: map-get($map: $transitions, $key: faster);
-                @media (min-width: 768px) and (max-width: 991px) {
+                @media (min-width: 768px) and (max-width: 992px) {
                     width: 98%;
                 }
             }
@@ -147,11 +147,11 @@
                 display: none;
                 padding: 5em 5em 5em 1em;
                 
-                @media (min-width: 768px) and (max-width: 991px) {
+                @media (min-width: 768px) and (max-width: 992px) {
                     padding: 2em 2em 2em 0em;
                     width: 150%;
                 }
-                @media (min-width: 992px) and (max-width: 1199px) {
+                @media (min-width: 992px) and (max-width: 1200px) {
                     width: 170%;
                 }
                 @media (min-width: 1200px) {
@@ -161,13 +161,15 @@
             .texto-hover-servicios-marcas {
                 display: none;
                 padding: 5em 5em 5em 1em;
-                
-                @media (min-width: 768px) and (max-width: 991px) {
+                @media (min-width: 768px) and (max-width: 992px) {
                     padding: 2em 2em 2em 0em;
                     width: 220%;
                 }
-                @media (min-width: 992px) and (max-width: 1199px) {
-                    width: 215%;
+                @media (min-width: 992px) and (max-width: 1100) {
+                    width: 280%;
+                }
+                @media (min-width: 1100px) and (max-width: 1200px) {
+                    width: 250%;
                 }
                 @media (min-width: 1200px) {
                     width: 235%;
@@ -177,11 +179,11 @@
                 display: none;
                 padding: 5em 5em 5em 1em;
                 
-                @media (min-width: 768px) and (max-width: 991px) {
+                @media (min-width: 768px) and (max-width: 992px) {
                     padding: 2em 2em 2em 0em;
                     width: 150%;
                 }
-                @media (min-width: 992px) and (max-width: 1199px) {
+                @media (min-width: 992px) and (max-width: 1200px) {
                     width: 185%;
                 }
                 @media (min-width: 1200px) {
@@ -196,36 +198,67 @@
             }
         }
         .patente-ima:focus .texto-hover-servicios-patentes {
-            @media (min-width: 768px) and (max-width: 991px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (justify, lightita);
-                font-size: 1.3em;
+                font-size: 1.1em;
                 padding-top: 1em;
                 position: absolute;
                 top: 1.5em;
-                left: 15em;
+                left: 16.5em;
                 flex-wrap: wrap;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
-            @media (min-width: 992px) and (max-width: 1199px) {
+            @media (min-width: 992px) and (max-width: 1200px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (justify, lightita);
-                font-size: 1.3em;
+                font-size: 1.2em;
                 padding-top: 1em;
                 position: absolute;
-                top: 3.5em;
+                top: 2em;
                 left: 16.5em;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
             @media (min-width: 1200px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (justify, lightita);
-                font-size: 1.5em;
+                font-size: 1.3em;
+                line-height: 1.5em;
                 padding-top: 1em;
                 position: absolute;
-                top: 3.5em;
+                top: 3em;
                 left: 18em;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
         }
         .marcas-ima:focus .texto-hover-servicios-marcas {
@@ -233,53 +266,105 @@
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (center, lightita);
-                font-size: 1.3em;
+                font-size: 1.1em;
                 padding-top: 1em;
                 position: absolute;
                 top: 9.5em;
-                left: -6.5em;
-                flex-wrap: wrap;
-            }
-            @media (min-width: 890px) and (max-width: 991px) {
-                display: flex;
-                flex-direction: column;
-                @include mobileparagraphs (center, lightita);
-                font-size: 1.3em;
-                padding-top: 1em;
-                position: absolute;
-                top: 11em;
-                left: -8em;
-                flex-wrap: wrap;
-            }
-            @media (min-width: 992px) and (max-width: 1099px) {
-                display: flex;
-                flex-direction: column;
-                @include mobileparagraphs (center, lightita);
-                font-size: 1.3em;
-                padding-top: 1em;
-                position: absolute;
-                top: 12.5em;
                 left: -7.5em;
+                flex-wrap: wrap;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.30em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
-            @media (min-width: 1100px) and (max-width: 1199px) {
+            @media (min-width: 890px) and (max-width: 992px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (center, lightita);
+                font-size: 1.15em;
+                padding-top: 1em;
+                position: absolute;
+                top: 12em;
+                left: -9.25em;
+                flex-wrap: wrap;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.30em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
+            }
+            @media (min-width: 992px) and (max-width: 1100px) {
+                display: flex;
+                flex-direction: column;
+                @include mobileparagraphs (center, lightita);
+                font-size: 1.2em;
+                padding-top: 1em;
+                position: absolute;
+                top: 12.5em;
+                left: -10.5em;
+                width: 240%;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.30em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
+            }
+            @media (min-width: 1100px) and (max-width: 1200px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (center, lightita);
                 font-size: 1.3em;
                 padding-top: 1em;
                 position: absolute;
-                top: 12.5em;
-                left: -9em;
+                top: 12.75em;
+                left: -11.5em;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.30em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
             @media (min-width: 1200px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (center, lightita);
-                font-size: 1.5em;
+                font-size: 1.3em;
+                line-height: 1.5em;
                 padding-top: 1em;
                 position: absolute;
-                top: 12.5em;
-                left: -9.75em;
+                top: 14em;
+                left: -12em;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
         }
         .patente-ima:focus {
@@ -301,57 +386,108 @@
             transition: map-get($map: $transitions, $key: normal);
         }
         .disenos-ima:focus .texto-hover-servicios-diseno {
-            @media (min-width: 768px) and (max-width: 889px) {
+            @media (min-width: 768px) and (max-width: 890px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (justify, lightita);
-                font-size: 1.3em;
+                font-size: 1.1em;
                 padding-top: 1em;
                 position: absolute;
-                top: 0.5em;
-                left: -20em;
+                top: 2em;
+                left: -23em;
                 flex-wrap: wrap;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
-            @media (min-width: 890px) and (max-width: 991px) {
+            @media (min-width: 890px) and (max-width: 992px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (justify, lightita);
-                font-size: 1.3em;
+                font-size: 1.15em;
                 padding-top: 1em;
                 position: absolute;
                 top: 1.5em;
-                left: -23.5em;
+                left: -24.25em;
                 flex-wrap: wrap;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
-            @media (min-width: 992px) and (max-width: 1089px) {
+            @media (min-width: 992px) and (max-width: 1090px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (justify, lightita);
-                font-size: 1.3em;
+                font-size: 1.2em;
                 padding-top: 1em;
                 position: absolute;
                 top: 1.75em;
-                left: -27em;
+                left: -29em;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
-            @media (min-width: 1090px) and (max-width: 1199px) {
+            @media (min-width: 1090px) and (max-width: 1200px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (justify, lightita);
-                font-size: 1.3em;
+                font-size: 1.2em;
                 padding-top: 1em;
                 position: absolute;
                 top: 2.5em;
-                left: -30em;
+                left: -28em;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
             @media (min-width: 1200px) {
                 display: flex;
                 flex-direction: column;
                 @include mobileparagraphs (justify, lightita);
-                font-size: 1.5em;
+                font-size: 1.3em;
+                line-height: 1.5em;
                 padding-top: 1em;
                 position: absolute;
-                top: 3.5em;
-                left: -30em;
+                top: 3em;
+                left: -33em;
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 0.75em;
+                    }
+                    .highlighted-text {
+                        @include mobileparagraphs (center, mediumita);
+                        color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                }
             }
         }
     }
@@ -359,7 +495,7 @@
         margin: 0 auto;
         .servicios-paragraph {
             display: none;
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: flex;
                 justify-content: center;
                 @include mobileparagraphs (center, regular);
@@ -381,14 +517,14 @@
         }
         .servicios-paragraph-mobile { 
             @include mobileparagraphs (center, regular);
-            @media (min-width: 450px) and (max-width: 767.9px) {
+            @media (min-width: 450px) and (max-width: 768px) {
                 font-size: 1.5em;
                 padding-top: 1em;
             }
-            @media (min-width: 320px) and (max-width: 449.9px) {
+            @media (min-width: 320px) and (max-width: 450px) {
                 font-size: 1.15em;
             }
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: none;
             }
             @media (min-width: 992px) {

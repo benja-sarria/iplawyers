@@ -350,21 +350,27 @@
                     <img src="imagenes\imageswebp\patenteico.webp" alt="recuadro con estilo circuitos con logotipo de Patentes en el centro en color blanco" class="servicio-ima" loading="lazy">
                     <div class="texto-hover-servicios-patentes  textos-hover">
                         <h3 class="title-texto-hover">PATENTES DE INVENCIÓN</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam animi at ut hic labore fugit fuga, sint voluptas voluptatem sunt dolores nihil magnam provident sit obcaecati aut perferendis architecto?</p>
+                        <p><span class="highlighted-text">¿Sabías que...?</span> &nbsp; Una Patente de Invención <span class="highlighted-text">es un derecho de exclusividad</span> que se concede <span class="highlighted-text">al creador</span> de un invento.<span class="br"></span>
+                        Los inventos <span class="highlighted-text">pueden ser productos o procesos</span> que ofrecen una <span class="highlighted-text">nueva solución técnica o forma de resolver problema</span> determinado.<span class="br"></span> 
+                        Si bien el plazo de duración de dicha protección depende de cada País en particular, generalmente ronda los <span class="highlighted-text">20 años</span>.</p>
                     </div>
                 </button>
                 <button class="servicio-ima-box marcas-ima">
                     <img src="imagenes\imageswebp\marcaico.webp" alt="recuadro con estilo circuitos con logotipo de Marcas en el centro en color blanco" class="servicio-ima" loading="lazy">
                     <div class="texto-hover-servicios-marcas textos-hover">  
                         <h3 class="title-texto-hover">MARCAS COMERCIALES</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam animi at ut hic labore fugit fuga, sint voluptas voluptatem sunt dolores nihil magnam provident sit obcaecati aut perferendis architecto?</p>
+                        <p><span class="highlighted-text">¿Sabías que...?</span> &nbsp; Las Marcas Comerciales son Signos Distintivos, que <span class="highlighted-text">nos  permiten identificar un determinado producto o servicio </span>, y de éste modo diferenciarlo de otros similares. <span class="br"></span>
+                        Así podemos relacionar <span class="highlighted-text">nuestros productos preferidos</span> con las empresas que los crean. <span class="br"></span>
+                        La protección de las Marcas Comerciales es de <span class="highlighted-text"> 10 años </span> generalmente, aunque también depende del País en donde se desee proteger.</p>
                     </div>
                 </button>
                 <button class="servicio-ima-box disenos-ima">
                     <img src="imagenes\imageswebp\disenoico.webp" alt="recuadro con estilo circuitos con logotipo de Diseños en el centro en color blanco" class="servicio-ima" loading="lazy">
                     <div class="texto-hover-servicios-diseno textos-hover">
                         <h3 class="title-texto-hover">DISEÑOS INDUSTRIALES</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam animi at ut hic labore fugit fuga, sint voluptas voluptatem sunt dolores nihil magnam provident sit obcaecati aut perferendis architecto?</p>
+                        <p><span class="highlighted-text">¿Sabías que...?</span> &nbsp; Un Modelo Industrial <span class="highlighted-text">protege el aspecto ornamental</span> de tus productos. Es decir, protege <span class="highlighted-text">la forma que diseñaste</span> para darle una estética particular al mismo.<span class="br"></span>
+                        Los Modelos Industriales <span class="highlighted-text">deben ser nuevos u originales</span>, y la forma <span class="highlighted-text">no debe tener relación con la función</span> del producto.
+                        <span class="br"></span> La protección de los Modelos Industriales tiene una duración de <span class="highlighted-text">10 años</span>, según el país en que se pretenda proteger.</p>
                     </div>
                 </button>
             </div>
@@ -665,7 +671,7 @@
                 </div>
                 <div class="footer-copyright-text col-lg-8 row">
                     <h5 class="footer-copyright col-lg-6">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi veniam non inventore perferendis sit nulla explicabo neque nam magni illo? Copyright 2021, IP Lawyers LLC. Todos los derechos reservados.
+                        IP Lawyers® es una Legaltech dedicada a la protección de los derechos de Propiedad Intelectual. Somos la solución ideal para tus creaciones. Copyright 2021, IP Lawyers LLC. Todos los derechos reservados.
                     </h5>
                     <ul class="site-map-container col-lg-6">
                         <li class="site-map-item map-index">
@@ -822,33 +828,45 @@
          <div class="modal fade modal-contacto-index" id="contactoModalIndex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable contacto-index-modal">
                 <div class="modal-content">
-                    <form action="" class="needs-validation modal-form" novalidate>
+                    <form action="enviar.php" method="POST" name="contact-form" class="needs-validation modal-form" novalidate>
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Escribinos tu consulta</h5>
                             <a class="btn-close" href="index.html" title="Botón para cerrar ventana">&times;</a>
                         </div>
                         <div class="modal-body">
                             <div class="form-floating mb-3 nombre-container">
-                                <input type="text" class="form-control" id="floatingName" placeholder="name@example.com" required>
+                                <input type="text" class="form-control" id="floatingName" name="nombre" placeholder="name@example.com" required>
                                 <label for="floatingName">Nombre</label>
                                 <div class="valid-feedback">
-                                    Looks good!
+                                    Perfecto!
                                 </div>
                                 <div class="invalid-feedback">
-                                    Please choose a username.
+                                    No olvides ingresar tu nombre.
                                 </div>
                             </div>
                             <div class="form-floating email-container">
-                                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
-                                <label for="floatingPassword">E-mail</label>
+                                <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="name@example.com" required>
+                                <label for="floatingEmail">E-mail</label>
+                                <div class="valid-feedback">
+                                    Perfecto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    No olvides ingresar tu correo electrónico.
+                                </div>
                             </div>
                             <div class="form-floating consulta-container">
-                                <textarea class="form-control" placeholder="Escríbenos tu consulta..." id="floatingTextarea2" style="height: 150px"></textarea>
+                                <textarea class="form-control" placeholder="Escríbenos tu consulta..." id="floatingTextarea2" name="consulta" style="height: 130px" required></textarea>
                                 <label for="floatingTextarea2">Consulta</label>
+                                <div class="valid-feedback">
+                                    Perfecto, lo estaremos analizando!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Escribe aquí tu consulta.
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-outline-primary">Enviar &nbsp;<i class="fas fa-paper-plane"></i></button>
+                            <button type="submit" value="Enviar" class="btn btn-outline-primary">Enviar &nbsp;<i class="fas fa-paper-plane"></i></button>
                         </div>
                     </form>
                 </div>
