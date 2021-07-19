@@ -104,8 +104,10 @@
                     justify-self: center;
                     align-items: center;
                     width: 95%;
+                    height: 95%;
                     @media (min-width: 450px) and (max-width: 768px) {
                         width: 75%;
+                        height: 75%;
                     }
                 }
             }

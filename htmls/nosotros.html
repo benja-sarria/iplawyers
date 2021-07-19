@@ -49,7 +49,7 @@
                             </li>
                         </ul>
                         <li class="nav-item apart col-lg-3 text-start text-lg-end login-index-item">
-                            <a class="nav-link login-link" href="#popup2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" title="Enlace a iniciar sesión">Login</a>
+                            <a class="nav-link login-link" href="#popup2" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo" title="Enlace a iniciar sesión">Login</a>
                         </li>
                     </div>
                 </div>
@@ -328,9 +328,9 @@
                         </li>
                         <li class="site-map-item">
                             <ul class="site-map-subitem-container">
-                                <li><a href="#popup2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" title="Enlace a Login">Iniciar sesión</a></li>
-                                <li><a href="#popup1" data-bs-toggle="modal" data-bs-target="#exampleModal2" title="Enlace a popup ¿Qué es IP?">¿Qué es IP?</a></li>
-                                <li><a href="#popup3" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="footer-nav-link-item" title="Enlace a popup de términos y condiciones">Términos y Condiciones</a></li>
+                                <li><a href="#popup2" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo" title="Enlace a Login">Iniciar sesión</a></li>
+                                <li><a href="#popup1" data-bs-toggle="modal" data-bs-target="#fundamentosModal" title="Enlace a popup ¿Qué es IP?">¿Qué es IP?</a></li>
+                                <li><a href="#popup3" aria-current="page" data-bs-toggle="modal" data-bs-target="#tocsModal" class="footer-nav-link-item" title="Enlace a popup de términos y condiciones">Términos y Condiciones</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -340,11 +340,11 @@
         <!-- FIN FOOTER DESKTOP -->
 
         <!-- COMIENZO NOSOTROS MODAL LOGIN -->
-        <div class="modal fade modal-login-index" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-login-index" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered login-index-modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                        <h5 class="modal-title" id="loginModalLabel">LOGIN</h5>
                         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                         <a class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Botón cerrar ventana emergente">&times;</a>
                     </div>
@@ -373,11 +373,11 @@
          <!-- FIN NOSOTROS MODAL LOGIN -->
 
          <!-- COMIENZO NOSOTROS MODAL FUNDAMENTOS -->
-        <div class="modal fade modal-fundamentos-index" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-fundamentos-index" id="fundamentosModal" tabindex="-1" aria-labelledby="fundamentosModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable fundamentos-index-modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">¿Por que proteger la IP?</h5>
+                        <h5 class="modal-title" id="fundamentosModalLabel">¿Por que proteger la IP?</h5>
                         <a class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Botón cerrar ventana emergente">&times;</a>
                     </div>
                     <div class="modal-body">
@@ -395,11 +395,11 @@
          <!-- FIN ONBOARDING NOSOTROS FUNDAMENTOS -->
 
          <!-- COMIENZO NOSOTROS MODAL TOCS -->
-        <div class="modal fade modal-tocs-nosotros" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-tocs-nosotros" id="tocsModal" tabindex="-1" aria-labelledby="tocsModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable tocs-nosotros-modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Términos y Condiciones</h5>
+                        <h5 class="modal-title" id="tocsModalLabel">Términos y Condiciones</h5>
                         <a class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Botón para cerrar ventana">&times;</a>
                     </div>
                     <div class="modal-body">
@@ -454,12 +454,12 @@
         <button class="contacto-button" aria-current="page" data-bs-toggle="modal" data-bs-target="#contactoModalIndex" title="Enlace a popup de contacto">
             <img src="..\imagenes\imageswebp\chatico.webp" alt="ícono de chat para acceder al formulario de contacto en color fucsia" class="contacto-button-ima">
         </button>
-        <div class="modal fade modal-contacto-index" id="contactoModalIndex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-contacto-index" id="contactoModalIndex" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable contacto-index-modal">
                 <div class="modal-content">
                     <form action="enviar.php" method="POST" name="contact-form" class="needs-validation modal-form" novalidate>
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Escribinos tu consulta</h5>
+                            <h5 class="modal-title" id="contactoModalLabel">Escribinos tu consulta</h5>
                             <a class="btn-close" href="nosotros.html" title="Botón para cerrar ventana">&times;</a>
                         </div>
                         <div class="modal-body">

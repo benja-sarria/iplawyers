@@ -16,22 +16,712 @@
     <meta property="og:description" content="Tus ideas son las que llevan a volar a tus emprendimientos, por ello es importante que puedas protegerlas, y nosotros te mostramos cómo.">
 
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"  as="style" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"></noscript>
+
     <!-- ANIMATE ON SCROLL -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css\styles.css">
-    <link rel="preload" href="css\styles.css" as="style">
-    <link rel="preload" href="http://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-Medium.ttf" as="font">
-    <link rel="preload" href="http://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-ExtraLight.ttf" as="font">
-    <link rel="preload" href="http://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-SemiBold.ttf" as="font">
-    <link rel="preload" href="http://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-Regular.ttf" as="font">
-    <link rel="preload" href="http://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-Bold.ttf" as="font">
-    <link rel="preload" href="http://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-ExtraLightItalic.ttf" as="font">
+        <!-- Carga de estilos críticos - Mejora performance Lighthouse -->
+    <style type="text/css">
+        :root {
+            --bs-blue: #0d6efd;
+            --bs-indigo: #6610f2;
+            --bs-purple: #6f42c1;
+            --bs-pink: #d63384;
+            --bs-red: #dc3545;
+            --bs-orange: #fd7e14;
+            --bs-yellow: #ffc107;
+            --bs-green: #198754;
+            --bs-teal: #20c997;
+            --bs-cyan: #0dcaf0;
+            --bs-white: #fff;
+            --bs-gray: #6c757d;
+            --bs-gray-dark: #343a40;
+            --bs-primary: #0d6efd;
+            --bs-secondary: #6c757d;
+            --bs-success: #198754;
+            --bs-info: #0dcaf0;
+            --bs-warning: #ffc107;
+            --bs-danger: #dc3545;
+            --bs-light: #f8f9fa;
+            --bs-dark: #212529;
+            --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+            --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))}; *,::after,::before {
+            box-sizing: border-box}; @media (prefers-reduced-motion:no-preference) {
+            :root {
+                scroll-behavior: smooth
+            }}; body {
+            margin: 0;
+            font-family: var(--bs-font-sans-serif);
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent}; .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2}; .h1,h1 {
+            font-size: calc(1.375rem + 1.5vw)}; .h2,h2 {
+            font-size: calc(1.325rem + .9vw)}; .h3,h3 {
+            font-size: calc(1.3rem + .6vw)}; .h4,h4 {
+            font-size: calc(1.275rem + .3vw)};.h5,h5 {
+            font-size: 1.25rem}; p {
+            margin-top: 0;
+            margin-bottom: 1rem}; ol,ul {
+            padding-left: 2rem}; dl,ol,ul {
+            margin-top: 0;
+            margin-bottom: 1rem}; img,svg {
+            vertical-align: middle}; button {
+            border-radius: 0};button,input,optgroup,select,textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit}; button,select {
+            text-transform: none}; [type=button],[type=reset],[type=submit],button {
+            -webkit-appearance: button}; 
+        [type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled) {
+            cursor: pointer}; textarea {
+            resize: vertical};.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl {
+            width: 100%;
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            margin-right: auto;
+            margin-left: auto}; .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(var(--bs-gutter-y) * -1);
+            margin-right: calc(var(--bs-gutter-x)/ -2);
+            margin-left: calc(var(--bs-gutter-x)/ -2)}; .row>* {
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 100%;
+            padding-right: calc(var(--bs-gutter-x)/ 2);
+            padding-left: calc(var(--bs-gutter-x)/ 2);
+            margin-top: var(--bs-gutter-y)}; .col-2 {
+            flex: 0 0 auto;
+            width: 16.6666666667%}; .col-6 {
+            flex: 0 0 auto;
+            width: 50%}; .col-10 {
+            flex: 0 0 auto;
+            width: 83.3333333333%}; .col-12 {
+            flex: 0 0 auto;
+            width: 100%}; .form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out}; textarea.form-control {
+            min-height: calc(1.5em + .75rem + 2px)};.form-floating {
+            position: relative}; .form-floating>.form-control,.form-floating>.form-select {
+            height: calc(3.5rem + 2px);
+            padding: 1rem .75rem}; .btn {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}; .btn-outline-primary {
+            color: #0d6efd;
+            border-color: #0d6efd}; .fade {
+            transition: opacity .15s linear}; .fade:not(.show) {
+            opacity: 0}; .collapse:not(.show) {
+            display: none}; .navbar {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: .5rem;
+            padding-bottom: .5rem}; .navbar>.container,.navbar>.container-fluid,.navbar>.container-lg,.navbar>.container-md,.navbar>.container-sm,.navbar>.container-xl,.navbar>.container-xxl {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between}; .navbar-brand {
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            text-decoration: none;
+            white-space: nowrap}; .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center}; .navbar-toggler {
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            transition: box-shadow .15s ease-in-out}; .navbar-dark .navbar-brand {
+            color: #fff};  .navbar-dark .navbar-toggler {
+            color: rgba(255,255,255,.55);
+            border-color: rgba(255,255,255,.1)}; .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1060;
+            display: none;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            outline: 0}; .modal-dialog {
+            position: relative;
+            width: auto;
+            margin: .5rem;
+            pointer-events: none}; .modal.fade .modal-dialog {
+            transition: transform .3s ease-out;
+            transform: translate(0,-50px)}; .modal-dialog-scrollable {
+            height: calc(100% - 1rem)}; .modal-dialog-scrollable .modal-content {
+            max-height: 100%;
+            overflow: hidden}; .modal-dialog-scrollable .modal-body {
+            overflow-y: auto}; .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - 1rem)}; .modal-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            pointer-events: auto;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0,0,0,.2);
+            border-radius: .3rem;
+            outline: 0};  .modal-body {
+            position: relative;
+            flex: 1 1 auto;
+            padding: 1rem}; .modal-footer {
+            display: flex;
+            flex-wrap: wrap;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: flex-end;
+            padding: .75rem;
+            border-top: 1px solid #dee2e6;
+            border-bottom-right-radius: calc(.3rem - 1px);
+            border-bottom-left-radius: calc(.3rem - 1px)}; .modal-footer>* {
+            margin: .25rem}; .carousel {
+            position: relative}; .carousel-inner {
+            position: relative;
+            width: 100%;
+            overflow: hidden}; .carousel-inner::after {
+            display: block;
+            clear: both;
+            content: ""}; .carousel-item {
+            position: relative;
+            display: none;
+            float: left;
+            width: 100%;
+            margin-right: -100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transition: transform .6s ease-in-out}; .carousel-item-next,.carousel-item-prev,.carousel-item.active {
+            display: block}; .active.carousel-item-end,.carousel-item-next:not(.carousel-item-start) {
+            transform: translateX(100%)}; .active.carousel-item-start,.carousel-item-prev:not(.carousel-item-end) {
+            transform: translateX(-100%)};  .carousel-control-next,.carousel-control-prev {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            background: 0 0;
+            border: 0;
+            opacity: .5;
+            transition: opacity .15s ease}; .carousel-control-prev {
+            left: 0}; .carousel-control-next {
+            right: 0}; .carousel-control-next-icon,.carousel-control-prev-icon {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 100% 100%}; .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")}; .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")}; .carousel-indicators {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin-right: 15%;
+            margin-bottom: 1rem;
+            margin-left: 15%;
+            list-style: none}; .carousel-indicators [data-bs-target] {
+            box-sizing: content-box;
+            flex: 0 1 auto;
+            width: 30px;
+            height: 3px;
+            padding: 0;
+            margin-right: 3px;
+            margin-left: 3px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            opacity: .5;
+            transition: opacity .6s ease}; .carousel-indicators .active {
+            opacity: 1}; .carousel-caption {
+            position: absolute;
+            right: 15%;
+            bottom: 1.25rem;
+            left: 15%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #fff;
+            text-align: center}; .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030}; .visually-hidden,.visually-hidden-focusable:not(:focus):not(:focus-within) {
+            position: absolute!important;
+            width: 1px!important;
+            height: 1px!important;
+            padding: 0!important;
+            margin: -1px!important;
+            overflow: hidden!important;
+            clip: rect(0,0,0,0)!important;
+            white-space: nowrap!important;
+            border: 0!important}; .mb-3 {
+            margin-bottom: 1rem!important}; 
+
+        * {margin: 0;
+            padding: 0;
+            user-select: none;
+            box-sizing: border-box;}; .contenido-container-prueba {
+            background-color: black;}; a {
+            text-decoration: none;}; .main-cont {
+            padding-left: 0;
+            padding-right: 0;}; .header-index {
+            width: 99%;
+            margin: 0 auto 5em;}; .header-index .navbar-index div {
+            padding: 2%;
+            flex-wrap: nowrap;}; .header-index .navbar-index div .logo-prueba {
+            z-index: 1000;}; .header-index .navbar-index div .logo-prueba .logo-estudioprueba {
+            width: 55%;
+            max-width: 40%;}; .header-index .navbar-index div .navbar-toggler {
+            max-width: 26.5%;
+            width: 55%;
+            color: #e0115325;
+            border-color: #e0115318;
+            transition: all 0.8s ease-out;
+            z-index: 1000;}; .header-index .navbar-index div .navbar-toggler .haburguer-toggle-container img {
+            width: 100%;
+            min-width: 1.5em;}; .header-index .navbar-index div .navbar-collapse {
+            position: absolute;
+            top: 80%;
+            right: 0;
+            background: #020202e1;
+            border-radius: 0.3em;
+            outline: solid #020202e1 60em;
+            transition: all 0.2s ease-out;
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+            width: 100%;}; .header-index .navbar-index .banner-shadow {
+            position: fixed;
+            top: 0;
+            max-height: 10em;
+            left: 0;
+            z-index: -1;
+            width: fit-content;}; .header-index .banner-container-prueba {
+            margin: 0 auto;
+            padding-top: 14em;}; .header-index .banner-container-prueba div .frase-banner {
+            display: none;}; .header-index .banner-container-prueba div .banner-main {
+            display: none;}; .header-index .banner-container-prueba div .frase-banner-mobile {
+            text-align: center;
+            font-family: "raleway-lightita";
+            color: #F6F2F3;
+            font-size: 1.25em;};@media (min-width: 320px) and (max-width: 449.9px) {
+            .header-index .banner-container-prueba div .frase-banner-mobile {
+                font-size: 1.45em;}}; .ip-container {
+            background-image: url("../imagenes/imageswebp/fondo-tarjetas3.webp");
+            background-size: cover;
+            background-position-y: 5em;
+            background-repeat: no-repeat;
+            padding-top: 5em;
+            padding-bottom: 8em;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .ip-container {
+                background-position-y: 6em;}}; .ip-container .ip-title-continer .trademark-seal {
+            width: 40%;
+            position: absolute;
+            left: -2em;
+            top: 4em;
+            z-index: -1;};.ip-container .ip-title-continer .ip-title {
+            font-family: "raleway-bold";
+            font-size: 1.5em;
+            color: #F6F2F3;
+            text-align: center;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .ip-container .ip-title-continer .ip-title {
+                font-size: 2.15em;}}; .ip-container .ip-paragraph-container .ip-paragraph {
+            display: none;}; .ip-container .ip-paragraph-container .ip-paragraph-mobile {
+            font-family: "raleway-regular";
+            font-size: 1em;
+            color: #F6F2F3;
+            text-align: center;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .ip-container .ip-paragraph-container .ip-paragraph-mobile {
+                font-size: 1.25em;}}; .ip-container .registrar-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;}; .ip-container .registrar-button-container .registrar-link {
+            font-family: "raleway-semibold";
+            color: #F6F2F3;
+            text-align: center;
+            border-bottom: 2px solid #F6F2F3;
+            border-top: 2px solid #F6F2F3;
+            font-size: 1em;
+            transition: all 0.2s ease-out;}; @media (min-width: 320px) and (max-width: 449.9px) { .ip-container .registrar-button-container .registrar-link {
+                font-size: 1.25em;}}; .article-noticias {
+            padding-top: 5em;};@media (min-width: 320px) and (max-width: 449.9px) {
+            .article-noticias {
+                padding-bottom: 4em;}}; .article-noticias .containernews {
+            background-image: url("../imagenes/imageswebp/fondo-article3.webp");
+            background-size: cover;
+            height: 28rem;
+            background-repeat: no-repeat;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .article-noticias .containernews {
+                height: 28em;}}; .article-noticias .containernews .news-title-container {
+            padding-top: 0.9em;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .article-noticias .containernews .news-title-container {
+                padding-top: 1.3em;}}; .article-noticias .containernews .news-title-container .news-title {
+            display: none;}; .article-noticias .containernews .news-title-container .news-title-mobile {
+            font-family: "raleway-bold";
+            font-size: 1.5em;
+            color: #F6F2F3;
+            text-align: left;
+            transform: rotate(-3.5deg);
+            -o-transform: rotate(-3.5deg);
+            -ms-transform: rotate(-3.5deg);
+            -moz-transform: rotate(-3.5deg);
+            -webkit-transform: rotate(-3.5deg);
+            border-bottom: 3px solid #F6F2F3;
+            border-top: 3px solid #F6F2F3;
+            width: 7.42em;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .article-noticias .containernews .news-title-container .news-title-mobile {
+                font-size: 1.75em;}}; .article-noticias .containernews .news-title-container .news-ima-container .news-ima {
+            width: 6em;
+            position: absolute;
+            right: 1em;
+            top: 0.5em;
+            transform: rotate(15deg);
+            -o-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+            -moz-transform: rotate(15deg);
+            -webkit-transform: rotate(15deg);}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .article-noticias .containernews .news-title-container .news-ima-container .news-ima {
+                width: 8em;
+                right: 0.7em;
+                top: 0em;}}; .article-noticias .containernews .news-container .carousel-noticias {
+            padding-top: 1em;
+            align-items: center;
+            width: 100%;}; .article-noticias .containernews .news-container .carousel-noticias .carousel-inner .carousel-item .noticia {
+            transform: rotate(-3.5deg);
+            -o-transform: rotate(-3.5deg);
+            -ms-transform: rotate(-3.5deg);
+            -moz-transform: rotate(-3.5deg);
+            -webkit-transform: rotate(-3.5deg);
+            width: 90%;
+            margin: 0 auto;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .article-noticias .containernews .news-container .carousel-noticias .carousel-inner .carousel-item .noticia {
+                padding-top: 0.75em;}}; .article-noticias .containernews .news-container .carousel-noticias .carousel-inner .carousel-item .noticia .container-titulo-noticia .titulo-noticia {
+            text-align: right;
+            font-family: "raleway-semibold";
+            font-size: 1.15em;
+            color: #F6F2F3;
+            text-align: right;
+            padding-right: 1em;}; .article-noticias .containernews .news-container .carousel-noticias .carousel-inner .carousel-item .noticia .container-parrafo-noticia {
+            font-family: "raleway-light";
+            font-size: 1em;
+            color: #F6F2F3;
+            text-align: justify;}; .article-noticias .containernews .news-container .carousel-noticias .carousel-inner .carousel-item .noticia .container-parrafo-noticia .noticia-ima {
+            width: 100%;
+            margin: 0 auto;}; .article-noticias .containernews .news-container .carousel-noticias .carousel-inner .carousel-item .noticia .container-parrafo-noticia .paragraph-noticia {
+            display: none;}; .article-noticias .containernews .news-container .carousel-noticias .carousel-inner .carousel-item .noticia .container-parrafo-noticia .paragraph-noticia-mobile {
+            text-indent: 1em;}; .article-noticias .containernews .news-container .carousel-noticias .carousel-inner .carousel-item .noticia .ver-mas-noticia {
+            display: none;}; .article-noticias .containernews .news-container .carousel-noticias .carousel-control-prev {
+            position: absolute;
+            left: 5em;
+            top: 22.3em;
+            z-index: 3000;
+            transform: rotate(-4deg);
+            -o-transform: rotate(-4deg);
+            -ms-transform: rotate(-4deg);
+            -moz-transform: rotate(-4deg);
+            -webkit-transform: rotate(-4deg);}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .article-noticias .containernews .news-container .carousel-noticias .carousel-control-prev {
+                top: 22em;}}; .article-noticias .containernews .news-container .carousel-noticias .carousel-control-next {
+            position: absolute;
+            right: 5em;
+            top: 22em;
+            z-index: 3000;
+            transform: rotate(-4deg);
+            -o-transform: rotate(-4deg);
+            -ms-transform: rotate(-4deg);
+            -moz-transform: rotate(-4deg);
+            -webkit-transform: rotate(-4deg);}; 
+            @media (min-width: 320px) and (max-width: 449.9px) {
+            .article-noticias .containernews .news-container .carousel-noticias .carousel-control-next {
+                top: 21.8em;}}; .article-noticias .containernews .news-container .carousel-noticias-lg {
+            display: none;}; .servicios-container {
+            padding-top: 10em;
+            background-image: url("https://i.ibb.co/fdDkvCB/fondo-tarjetas4.png");
+            background-size: 200%;
+            background-position-y: 12em;
+            background-repeat: no-repeat;}; .servicios-container .servicios-titulo-container .servicios-title {
+            display: none;}; .servicios-container .servicios-titulo-container .servicios-title-mobile {
+            font-family: "raleway-bold";
+            font-size: 1.5em;
+            color: #F6F2F3;
+            text-align: center;}; @media (min-width: 320px) and (max-width: 450px) {
+            .servicios-container .servicios-titulo-container .servicios-title-mobile {
+                font-size: 2.15em;}}; .servicios-container .carousel-servicios {
+            margin-top: 1em;
+            height: 15em;}; @media (min-width: 320px) and (max-width: 450px) {
+            .servicios-container .carousel-servicios {
+                margin-top: 0.4em;
+                height: 20em;}}; .servicios-container .carousel-servicios .carousel-indicators {
+            width: 50%;
+            margin: 0 auto;}; .servicios-container .carousel-servicios .carousel-indicators .boton {
+            width: 0.8em;
+            height: 0.8em;
+            clip-path: circle();
+            margin: 0 auto;
+            background-color: #b10d41;}; .servicios-container .carousel-servicios .carousel-indicators .active {
+            background-color: #ee1d5f;
+            opacity: 1;}; .servicios-container .carousel-servicios .carousel-inner .carousel-item .servicio-ima {
+            margin: 0 auto;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            width: 95%;}; .servicios-container .servicios-ima-container {
+            display: none;
+            flex-direction: column;}; .servicios-container .servicios-paragraph-container {
+            margin: 0 auto;}; .servicios-container .servicios-paragraph-container .servicios-paragraph {
+            display: none;}; .servicios-container .servicios-paragraph-container .servicios-paragraph-mobile {
+            font-family: "raleway-regular";
+            font-size: 1em;
+            color: #F6F2F3;
+            text-align: center;}; @media (min-width: 320px) and (max-width: 450px) {
+            .servicios-container .servicios-paragraph-container .servicios-paragraph-mobile {
+                font-size: 1.15em;}}; .reviews-container {
+            padding-top: 10em;}; .reviews-container .inner-container-reviews {
+            background-image: url("../imagenes/imageswebp/fondo-article4.webp");
+            background-size: cover;
+            height: 28em;}; .reviews-container .inner-container-reviews .reviews-title-container {
+            padding-top: 1em;}; .reviews-container .inner-container-reviews .reviews-title-container .reviews-title {
+            font-family: "raleway-bold";
+            font-size: 1.5em;
+            color: #F6F2F3;
+            text-align: left;
+            transform: rotate(-1deg);
+            -o-transform: rotate(-1deg);
+            -ms-transform: rotate(-1deg);
+            -moz-transform: rotate(-1deg);
+            -webkit-transform: rotate(-1deg);
+            border-bottom: 3px solid #F6F2F3;
+            border-top: 3px solid #F6F2F3;
+            text-align: center;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .reviews-container .inner-container-reviews .reviews-title-container .reviews-title {
+                transform: rotate(-1deg);
+                -o-transform: rotate(-1deg);
+                -ms-transform: rotate(-1deg);
+                -moz-transform: rotate(-1deg);
+                -webkit-transform: rotate(-1deg);}};.reviews-container .inner-container-reviews .reviews-title-container .reviews-title2 {
+            display: none;}; .reviews-container .inner-container-reviews .carousel-reviews-mobile {
+            padding-top: 2em;};  @media (min-width: 320px) and (max-width: 449.9px) {
+            .reviews-container .inner-container-reviews .carousel-reviews-mobile .carousel-inner .carousel-item .single-review-container {
+                transform: rotate(-1deg);
+                -o-transform: rotate(-1deg);
+                -ms-transform: rotate(-1deg);
+                -moz-transform: rotate(-1deg);
+                -webkit-transform: rotate(-1deg);}}; .reviews-container .inner-container-reviews .carousel-reviews-mobile .carousel-inner .carousel-item .single-review-container .header-review-profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;}; .reviews-container .inner-container-reviews .carousel-reviews-mobile .carousel-inner .carousel-item .single-review-container .header-review-profile .imagen-review-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;};  .reviews-container .inner-container-reviews .carousel-reviews-mobile .carousel-inner .carousel-item .single-review-container .header-review-profile .imagen-review-container .profile-image {
+            width: 40%;
+            border-radius: 5em;}; .reviews-container .inner-container-reviews .carousel-reviews-mobile .carousel-inner .carousel-item .single-review-container .header-review-profile .nombre-review-container .nombre-review {
+            font-family: "raleway-semibold";
+            font-size: 1.15em;
+            color: #F6F2F3;
+            text-align: right;
+            padding-right: 1em;
+            text-align: center;
+            padding-right: 0em;}; .reviews-container .inner-container-reviews .carousel-reviews-mobile .carousel-inner .carousel-item .single-review-container .texto-review-container {
+            width: 95%;
+            margin: 0 auto;}; .reviews-container .inner-container-reviews .carousel-reviews-mobile .carousel-inner .carousel-item .single-review-container .texto-review-container .review-paragraph {
+            font-family: "raleway-light";
+            font-size: 1em;
+            color: #F6F2F3;
+            text-align: justify;
+            text-indent: 1.5em;
+            border-top: 0.1px solid #ccb6bb;
+            padding-top: 0.5em;}; .reviews-container .inner-container-reviews .carousel-reviews-desktop {
+            display: none;}; .footer-mobile-version {
+            padding-top: 5em;
+            width: 90%;
+            margin: 0 auto;
+            background-image: url("../imagenes/imageswebp/footerfondo.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover;}; .footer-mobile-version .mobile-footer-inner-container .social-net-container-mobile {
+            padding-inline-start: 0px; list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;}; .footer-mobile-version .mobile-footer-inner-container .social-net-container-mobile .left-elem {
+            text-align: end;}; .footer-mobile-version .mobile-footer-inner-container .social-net-container-mobile .social-net-element .link-social-network .social-icon {
+            width: 40%;
+            border-radius: 10em;
+            background-color: #e01153;
+            transition: all 0.2s ease-out;}; .footer-mobile-version .mobile-footer-inner-container .social-net-container-mobile .separation-element {
+            height: 0.5em;}; .footer-mobile-version .mobile-footer-inner-container .foot-dat-container-mobile {
+            border-top: 2px solid #e01153;
+            padding-inline-start: 0px; padding-top: 1em;}; .footer-mobile-version .mobile-footer-inner-container .foot-dat-container-mobile .foot-dat-container-item {
+            list-style: none;}; .footer-mobile-version .mobile-footer-inner-container .foot-dat-container-mobile .foot-dat-container-item .foot-cont-dat {
+            font-family: "raleway-medium";
+            font-size: 1em;
+            color: #F6F2F3;
+            text-align: center;}; .footer-mobile-version .mobile-footer-inner-container .footer-copyright-text-mobile {
+            padding-top: 0.2em;}; .footer-mobile-version .mobile-footer-inner-container .footer-copyright-text-mobile .footer-copyright {
+            font-family: "raleway-light";
+            font-size: 1em;
+            color: #F6F2F3;
+            text-align: center;
+            color: rgba(246, 242, 243, 0.7);}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .modal-login-index .login-index-modal {
+                width: 80%;
+                margin: 0 auto;}}; .modal-login-index .login-index-modal .modal-content {
+            background-color: rgba(32, 32, 32, 0.862745098);
+            background-image: linear-gradient(to bottom, #131313dc, rgba(32, 32, 32, 0.862745098));}; .modal-login-index .login-index-modal .modal-content .modal-body {
+            width: 80%;
+            margin: 0 auto;}; .modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .form-control {
+            background-color: rgba(57, 57, 57, 0.862745098);
+            border: none;
+            color: #F6F2F3;
+            transition: all 0.2s ease-out;}; ol, ul {
+            padding-left: 0;
+            list-style: inside;}; a {
+            color: unset;}; .footer-desktop-container {
+            display: none;
+            padding-top: 5em;
+            width: 90%;
+            margin: 0 auto;
+            background-image: url("../imagenes/imageswebp/footerfondo.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: -8em;}; a {
+            text-decoration: none;}; .main-cont {
+            padding-left: 0;
+            padding-right: 0;};  ol, ul {
+            padding-left: 0;
+            list-style-type: disc;}; ::marker {
+            content: " ";}; a {
+            text-decoration: none;}; .main-cont {
+            padding-left: 0;
+            padding-right: 0;}; ol, ul {
+            padding-left: 0;}; .modal-tocs-index {
+            display: none;}; .contacto-button {
+            background-color: transparent;
+            border: none;
+            border-radius: 100em;}; .contacto-button .contacto-button-ima {
+            position: fixed;
+            bottom: 1.5em;
+            right: 1em;
+            border-radius: 10em;
+            width: 3em;
+            background-color: rgba(224, 17, 83, 0.5);
+            transition: all 0.2s ease-out;}; @media (min-width: 320px) and (max-width: 449.9px) {
+            .contacto-button .contacto-button-ima {
+                width: 3.5em;}}; .modal-contacto-index .contacto-index-modal .modal-content {
+            background-color: rgba(32, 32, 32, 0.862745098);
+            border-radius: 0.65em;}; .modal-contacto-index .contacto-index-modal .modal-content .modal-form {
+            border-color: transparent;
+            background-color: rgba(32, 32, 32, 0.862745098);
+            background-image: linear-gradient(to bottom, #131313dc, rgba(32, 32, 32, 0.862745098));}; .modal-contacto-index .contacto-index-modal .modal-content .modal-form .modal-body {
+            width: 98%;
+            margin: 0.8em 0.9em 0.8em 0;}; .modal-contacto-index .contacto-index-modal .modal-content .modal-form .modal-body .form-floating .form-control:invalid {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%e01153'%3e%3ccircle cx='15' cy='15' r='1'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%e01153' stroke='none'/%3e%3c/svg%3e");}; .modal-contacto-index .contacto-index-modal .modal-content .modal-form .modal-body .form-floating {
+            color: #F6F2F3;}; .modal-contacto-index .contacto-index-modal .modal-content .modal-form .modal-body .form-floating .form-control {
+            background-color: rgba(57, 57, 57, 0.862745098);
+            border: none;
+            color: #F6F2F3;}; .modal-contacto-index .contacto-index-modal .modal-content .modal-form .modal-body .consulta-container {
+            margin-top: 1em;}; .modal-contacto-index .contacto-index-modal .modal-content .modal-form .modal-footer {
+            border-top: 1px solid rgba(246, 242, 243, 0.25);}; .modal-contacto-index .contacto-index-modal .modal-content .modal-form .modal-footer .btn-outline-primary {
+            color: #F6F2F3;
+            border: solid 1px #F6F2F3;
+            font-weight: 600;}; html {
+            scroll-behavior: smooth;};   
+    </style>
+        <!-- FIN Carga de estilos críticos - Mejora performance Lighthouse -->
+        <!-- Carga de Estilos NO Críticos deferida -->
+    <link rel="preload" href="css\styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css\styles.css"></noscript>
+        <!-- FIN Carga de Estilos NO Críticos deferida -->
+    <link rel="preload" href="https://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-ExtraLight.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-ExtraLightItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="https://iplawyers.000webhostapp.com/fuentes/Raleway/static/Raleway-MediumItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="imagenes\imageswebp\favicon-ico.webp" sizes="16x16"/>
+
     <!-- FONT-AWESOME KIT CDN -->
-    <script src="https://kit.fontawesome.com/e8837f6f3c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e8837f6f3c.js" crossorigin="anonymous" async></script>
+
+    <!-- Preconnect to required origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://ka-f.fontawesome.com/">
+
     <!-- Título de página -->
     <title>IP Lawyers – Que tus ideas te guíen, nosotros las protegemos</title>
 </head>
@@ -54,7 +744,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav col-lg-9 ">
                             <li class="nav-item">
-                                <a class="nav-link ip-popup" aria-current="page" href="#popup1" data-bs-toggle="modal" data-bs-target="#exampleModal2" title="Enlace a popup ¿Qué es IP?">¿Qué es IP?</a>
+                                <a class="nav-link ip-popup" aria-current="page" href="#popup1" data-bs-toggle="modal" data-bs-target="#fundamentosModal" title="Enlace a popup ¿Qué es IP?">¿Qué es IP?</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"  data-bs-toggle="dropdown" aria-expanded="false" title="Menú desplegable de servicios">
@@ -71,7 +761,7 @@
                             </li> 
                         </ul>
                         <li class="nav-item apart col-lg-3 text-start text-lg-end login-index-item">
-                            <a class="nav-link login-link" href="#popup2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" title="Enlace a Login">Login</a>
+                            <a class="nav-link login-link" href="#popup2" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo" title="Enlace a Login">Login</a>
                         </li>
                     </div>
                 </div>
@@ -126,8 +816,8 @@
         data-aos-duration="1500" id="noticias-aside-index">
             <div class="containernews container-fluid">
                 <div class="news-title-container row">
-                    <h3 class="news-title col-lg-10">LO ÚLTIMO EN PROPIEDAD INTELECTUAL</h3>
-                    <h3 class="news-title-mobile col-10">¡NOTICIAS IP!</h3>
+                    <h2 class="news-title col-lg-10">LO ÚLTIMO EN PROPIEDAD INTELECTUAL</h2>
+                    <h2 class="news-title-mobile col-10">¡NOTICIAS IP!</h2>
                     <div class="news-ima-container col-2 col-lg-2">
                         <img src="imagenes\imageswebp\newsima.webp" alt="Globos de diálogo con los términos Breaking News en color blanco sobre fondos fucsia y cian" class="news-ima" loading="lazy">
                     </div>
@@ -407,9 +1097,9 @@
                                         <img src="imagenes\imageswebp\descarga (1).webp" alt="Foto de perfil" class="profile-image" loading="lazy">
                                     </div>
                                     <div class="nombre-review-container col-12">
-                                        <h4 class="nombre-review">
+                                        <h3 class="nombre-review">
                                             John Doe
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                                 <div class="texto-review-container">
@@ -426,9 +1116,9 @@
                                         <img src="imagenes\imageswebp\neil_degrasse_tyson.webp" alt="Foto de perfil" class="profile-image" loading="lazy">
                                     </div>
                                     <div class="nombre-review-container">
-                                        <h4 class="nombre-review">
+                                        <h3 class="nombre-review">
                                             Neil Degrasse Tyson
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                                 <div class="texto-review-container">
@@ -445,9 +1135,9 @@
                                         <img src="imagenes\imageswebp\NIKOLA-TESLA.webp" alt="Foto de perfil" class="profile-image" loading="lazy">
                                     </div>
                                     <div class="nombre-review-container col-12">
-                                        <h4 class="nombre-review">
+                                        <h3 class="nombre-review">
                                             Nikola Tesla
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                                 <div class="texto-review-container">
@@ -464,9 +1154,9 @@
                                         <img src="imagenes\imageswebp\ruthbaderginsburg.webp" alt="Foto de perfil" class="profile-image" loading="lazy">
                                     </div>
                                     <div class="nombre-review-container">
-                                        <h4 class="nombre-review">
+                                        <h3 class="nombre-review">
                                             Ruth Bader Ginsburg
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                                 <div class="texto-review-container">
@@ -488,9 +1178,9 @@
                                             <img src="imagenes\imageswebp\descarga (1).webp" alt="Foto de perfil" class="profile-image" loading="lazy">
                                         </div>
                                         <div class="nombre-review-container col-12">
-                                            <h4 class="nombre-review">
+                                            <h3 class="nombre-review">
                                                 John Doe
-                                            </h4>
+                                            </h3>
                                         </div>
                                     </div>
                                     <div class="texto-review-container">
@@ -505,9 +1195,9 @@
                                             <img src="imagenes\imageswebp\neil_degrasse_tyson.webp" alt="Foto de perfil" class="profile-image" loading="lazy">
                                         </div>
                                         <div class="nombre-review-container">
-                                            <h4 class="nombre-review">
+                                            <h3 class="nombre-review">
                                                 Neil Degrasse Tyson
-                                            </h4>
+                                            </h3>
                                         </div>
                                     </div>
                                     <div class="texto-review-container">
@@ -526,9 +1216,9 @@
                                             <img src="imagenes\imageswebp\NIKOLA-TESLA.webp" alt="Foto de perfil" class="profile-image" loading="lazy">
                                         </div>
                                         <div class="nombre-review-container col-12">
-                                            <h4 class="nombre-review">
+                                            <h3 class="nombre-review">
                                                 Nikola Tesla
-                                            </h4>
+                                            </h3>
                                         </div>
                                     </div>
                                     <div class="texto-review-container">
@@ -543,9 +1233,9 @@
                                             <img src="imagenes\imageswebp\ruthbaderginsburg.webp" alt="Foto de perfil" class="profile-image" loading="lazy">
                                         </div>
                                         <div class="nombre-review-container">
-                                            <h4 class="nombre-review">
+                                            <h3 class="nombre-review">
                                                 Ruth Bader Ginsburg
-                                            </h4>
+                                            </h3>
                                         </div>
                                     </div>
                                     <div class="texto-review-container">
@@ -576,7 +1266,9 @@
                             <img src="imagenes\imageswebp\whatsappico2.webp" alt="Whatsapp Logo" class="social-icon" loading="lazy">
                         </a>
                     </li>
-                    <div class="separation-element"></div>
+                    <li class="social-net-element col-6 col-md-2"></li>
+                        <div class="separation-element"></div>
+                    </li>
                     <li class="social-net-element left-elem col-6 col-md-2">
                         <a href="https://www.facebook.com/" class="link-social-network" title="Enlace a Facebook">
                             <img src="imagenes\imageswebp\facebookico2.webp" alt="Facebook Logo" class="social-icon" loading="lazy">
@@ -624,7 +1316,7 @@
                     <a href="" class="footer-nav-link-item faq-link" title="Enlace a página preguntas frecuentes">FAQ's</a>
                 </li>
                 <li class="footer-nav-link col-lg">
-                    <a href="#popup3" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="footer-nav-link-item" title="Enlace a popup de términos y condiciones">Términos y Condiciones</a>
+                    <a href="#popup3" aria-current="page" data-bs-toggle="modal" data-bs-target="#tocsModal" class="footer-nav-link-item" title="Enlace a popup de términos y condiciones">Términos y Condiciones</a>
                 </li>
             </ul>
             <div class="footer-index-content col-lg-12 row">
@@ -699,9 +1391,9 @@
                         </li>
                         <li class="site-map-item">
                             <ul class="site-map-subitem-container">
-                                <li><a href="#popup2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" title="Enlace a Login">Iniciar sesión</a></li>
-                                <li><a href="#popup1" data-bs-toggle="modal" data-bs-target="#exampleModal2" title="Enlace a popup ¿Qué es IP?">¿Qué es IP?</a></li>
-                                <li><a href="#popup3" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="footer-nav-link-item" title="Enlace a popup de términos y condiciones">Términos y Condiciones</a></li>
+                                <li><a href="#popup2" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@mdo" title="Enlace a Login">Iniciar sesión</a></li>
+                                <li><a href="#popup1" data-bs-toggle="modal" data-bs-target="#fundamentosModal" title="Enlace a popup ¿Qué es IP?">¿Qué es IP?</a></li>
+                                <li><a href="#popup3" aria-current="page" data-bs-toggle="modal" data-bs-target="#tocsModal" class="footer-nav-link-item" title="Enlace a popup de términos y condiciones">Términos y Condiciones</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -711,11 +1403,11 @@
         <!-- FIN FOOTER DESKTOP -->
 
         <!-- COMIENZO INDEX MODAL LOGIN -->
-        <div class="modal fade modal-login-index" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-login-index" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered login-index-modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                        <h5 class="modal-title" id="loginModalLabel">LOGIN</h5>
                         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                         <a class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Botón de cerrar ventana">&times;</a>
                     </div>
@@ -744,11 +1436,11 @@
          <!-- FIN INDEX MODAL LOGIN -->
 
          <!-- COMIENZO INDEX MODAL FUNDAMENTOS -->
-        <div class="modal fade modal-fundamentos-index" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-fundamentos-index" id="fundamentosModal" tabindex="-1" aria-labelledby="fundamentosModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable fundamentos-index-modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">¿Por que proteger la IP?</h5>
+                        <h5 class="modal-title" id="fundamentosModalLabel">¿Por que proteger la IP?</h5>
                         <a class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Botón para cerrar ventana">&times;</a>
                     </div>
                     <div class="modal-body">
@@ -766,11 +1458,11 @@
          <!-- FIN INDEX MODAL FUNDAMENTOS -->
 
          <!-- COMIENZO INDEX MODAL TOCS -->
-        <div class="modal fade modal-tocs-index" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-tocs-index" id="tocsModal" tabindex="-1" aria-labelledby="tocsModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable fundamentos-index-modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Términos y Condiciones</h5>
+                        <h5 class="modal-title" id="tocsModalLabel">Términos y Condiciones</h5>
                         <a class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Botón para cerrar ventana">&times;</a>
                     </div>
                     <div class="modal-body">
@@ -825,12 +1517,12 @@
          <button class="contacto-button" aria-current="page" data-bs-toggle="modal" data-bs-target="#contactoModalIndex" title="Enlace a popup de contacto">
             <img src="imagenes\imageswebp\chatico.webp" alt="ícono de chat para acceder al formulario de contacto en color fucsia" class="contacto-button-ima">
          </button>
-         <div class="modal fade modal-contacto-index" id="contactoModalIndex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal fade modal-contacto-index" id="contactoModalIndex" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable contacto-index-modal">
                 <div class="modal-content">
                     <form action="enviar.php" method="POST" name="contact-form" class="needs-validation modal-form" novalidate>
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Escribinos tu consulta</h5>
+                            <h5 class="modal-title" id="contactoModalLabel">Escribinos tu consulta</h5>
                             <a class="btn-close" href="index.html" title="Botón para cerrar ventana">&times;</a>
                         </div>
                         <div class="modal-body">
