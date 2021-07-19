@@ -5247,6 +5247,7 @@ a {
   }
 }
 .header-nosotros .banner-container-prueba div p {
+  margin-top: 0.3em;
   font-family: "raleway-regular";
   font-size: 1em;
   color: #F6F2F3;
@@ -5271,9 +5272,6 @@ a {
     font-size: 1.2em;
     line-height: 2em;
   }
-}
-.header-nosotros .banner-container-prueba div .paragraph-2 {
-  display: none;
 }
 
 .nosotros-mapa {

@@ -376,6 +376,7 @@ a {
                 }
              }
              p {
+                 margin-top: 0.30em;
                 @include mobileparagraphs(center, regular);
                 font-size: 1em;
                 line-height: 2em;
@@ -391,10 +392,7 @@ a {
                     font-size: 1.2em;
                     line-height: 2em;
                 }
-             }
-             .paragraph-2 {
-                 display: none;
-             }
+            }
         }
     }
 }
