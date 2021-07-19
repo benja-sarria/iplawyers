@@ -85,120 +85,122 @@
                     }
                 }
             }
-            .modal-body {
-                width: 80%;
-                margin: 0 auto;
-                @media (min-width: 768px) and (max-width: 991.99px) {
-                    margin: 0.8em auto;
-                }
-                @media (min-width: 992px) {
-                    margin: 0.8em auto;
-                }
-                .mb-3 {
-                    .col-form-label {
-                        @include mobileparagraphs(justify, regular);
-                        transition: map-get($map: $transitions, $key: normal);
-                        @media (min-width: 450px) and (max-width: 767.9px) {
-                            font-size: 1.35em;
-                        }
-                        @media (min-width: 320px) and (max-width: 449.9px) {
-                            font-size: 1.15em;
-                        }
-                        @media (min-width: 768px) and (max-width: 991.99px) {
-                            font-size: 1.15em;
-                            padding: 0.5em 0;
-                        }
-                        @media (min-width: 992px) {
-                            font-size: 1.15em;
-                            padding: 0.5em 0;
-                        }
-                        &:hover {
-                            color: map-get($map: $colorpallet, $key: maincolor);
-                            transition: map-get($map: $transitions, $key: rapid);
-                        }
-                    }
-                    .form-control {
-                        background-color: lighten($color: map-get($map: $colorpallet, $key: modaldark), $amount: 15%);
-                        border: none;
-                        color: map-get($map: $colorpallet, $key: colortext);
-                        transition: map-get($map: $transitions, $key: rapid);
-                        &:focus {
-                            box-shadow: 0 0 0 0.20rem rgba($color: map-get($map: $colorpallet, $key: maincolor), $alpha: 0.15);
-                            transition: map-get($map: $transitions, $key: rapid);
-                        }
-                    }
-                }
-            }
-            .register-field {
-                border-top: 1px solid rgba($color: map-get($map: $colorpallet, $key: colortext), $alpha: 0.25);
-                display: flex;
-                justify-content: space-around;
-                @include mobileparagraphs(justify, bold);
-                font-size: 0.80em;
-                @media (min-width: 450px) and (max-width: 767.9px) {
-                    font-size: 1em;
-                    padding-top: 0.5em;;
-                }
-                @media (min-width: 320px) and (max-width: 449.9px) {
-                    font-size: 0.90em;
-                }
-                @media (min-width: 768px) and (max-width: 991.99px) {
-                    font-size: 0.90em;
-                    padding-top: 0.5em;
-                }
-                @media (min-width: 992px) {
-                    font-size: 0.90em;
-                    padding-top: 0.5em;
-                }
-                .register-field-link {
-                    text-decoration: none;
-                    color: map-get($map: $colorpallet, $key: maincolor);
-                    transition: map-get($map: $transitions, $key: rapid);
-                    &:focus {
-                       color: map-get($map: $colorpallet, $key: loginfocus);
-                       transition: map-get($map: $transitions, $key: rapid);
-                    }
-                    &:hover {
-                        color: map-get($map: $colorpallet, $key: loginfocus);
-                        transition: map-get($map: $transitions, $key: rapid);
-                     }
-                }
-            }
-            .modal-footer {
-                border-top: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                @media (min-width: 768px) and (max-width: 991.99px) {
-                    padding-top: 0.5em;
-                }
-                .btn-primary {
-                    background-image: linear-gradient(to bottom,#a01541, #ff0015b2 );
-                    @include mobileparagraphs(center, medium);
-                    font-size: 0.8em;
-                    border: none;
-                    transition: map-get($map: $transitions, $key: rapid);
-                    @media (min-width: 450px) and (max-width: 767.9px) {
-                        font-size: 1.25em;
-                    }
-                    @media (min-width: 320px) and (max-width: 449.9px) {
-                        font-size: 1em;
-                    }
+            .login-form-container {
+                .modal-body {
+                    width: 80%;
+                    margin: 0 auto;
                     @media (min-width: 768px) and (max-width: 991.99px) {
-                        font-size: 1.25em;
+                        margin: 0.8em auto;
                     }
                     @media (min-width: 992px) {
-                        font-size: 1.05em;
+                        margin: 0.8em auto;
                     }
-                    &:focus {
-                        background-image: linear-gradient(to bottom, #1e5458, #56bbe2);
-                        box-shadow: 0 0 0 0.20rem rgba($color: #0aeafa46, $alpha: 0.20); ;
-                        transition: map-get($map: $transitions, $key: rapid);
+                    .mb-3 {
+                        .col-form-label {
+                            @include mobileparagraphs(justify, regular);
+                            transition: map-get($map: $transitions, $key: normal);
+                            @media (min-width: 450px) and (max-width: 767.9px) {
+                                font-size: 1.35em;
+                            }
+                            @media (min-width: 320px) and (max-width: 449.9px) {
+                                font-size: 1.15em;
+                            }
+                            @media (min-width: 768px) and (max-width: 991.99px) {
+                                font-size: 1.15em;
+                                padding: 0.5em 0;
+                            }
+                            @media (min-width: 992px) {
+                                font-size: 1.15em;
+                                padding: 0.5em 0;
+                            }
+                            &:hover {
+                                color: map-get($map: $colorpallet, $key: maincolor);
+                                transition: map-get($map: $transitions, $key: rapid);
+                            }
+                        }
+                        .form-control {
+                            background-color: lighten($color: map-get($map: $colorpallet, $key: modaldark), $amount: 15%);
+                            border: none;
+                            color: map-get($map: $colorpallet, $key: colortext);
+                            transition: map-get($map: $transitions, $key: rapid);
+                            &:focus {
+                                box-shadow: 0 0 0 0.20rem rgba($color: map-get($map: $colorpallet, $key: maincolor), $alpha: 0.15);
+                                transition: map-get($map: $transitions, $key: rapid);
+                            }
+                        }
                     }
-                    &:hover {
-                        background-image: linear-gradient(to bottom, #1e5458, #56bbe2);
-                        box-shadow: 0 0 0 0.20rem rgba($color: #0aeafa46, $alpha: 0.20); ;
+                }
+                .register-field {
+                    border-top: 1px solid rgba($color: map-get($map: $colorpallet, $key: colortext), $alpha: 0.25);
+                    display: flex;
+                    justify-content: space-around;
+                    @include mobileparagraphs(justify, bold);
+                    font-size: 0.80em;
+                    @media (min-width: 450px) and (max-width: 767.9px) {
+                        font-size: 1em;
+                        padding-top: 0.5em;;
+                    }
+                    @media (min-width: 320px) and (max-width: 449.9px) {
+                        font-size: 0.90em;
+                    }
+                    @media (min-width: 768px) and (max-width: 991.99px) {
+                        font-size: 0.90em;
+                        padding-top: 0.5em;
+                    }
+                    @media (min-width: 992px) {
+                        font-size: 0.90em;
+                        padding-top: 0.5em;
+                    }
+                    .register-field-link {
+                        text-decoration: none;
+                        color: map-get($map: $colorpallet, $key: maincolor);
                         transition: map-get($map: $transitions, $key: rapid);
+                        &:focus {
+                           color: map-get($map: $colorpallet, $key: loginfocus);
+                           transition: map-get($map: $transitions, $key: rapid);
+                        }
+                        &:hover {
+                            color: map-get($map: $colorpallet, $key: loginfocus);
+                            transition: map-get($map: $transitions, $key: rapid);
+                         }
+                    }
+                }
+                .modal-footer {
+                    border-top: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media (min-width: 768px) and (max-width: 991.99px) {
+                        padding-top: 0.5em;
+                    }
+                    .btn-primary {
+                        background-image: linear-gradient(to bottom,#a01541, #ff0015b2 );
+                        @include mobileparagraphs(center, medium);
+                        font-size: 0.8em;
+                        border: none;
+                        transition: map-get($map: $transitions, $key: rapid);
+                        @media (min-width: 450px) and (max-width: 767.9px) {
+                            font-size: 1.25em;
+                        }
+                        @media (min-width: 320px) and (max-width: 449.9px) {
+                            font-size: 1em;
+                        }
+                        @media (min-width: 768px) and (max-width: 991.99px) {
+                            font-size: 1.25em;
+                        }
+                        @media (min-width: 992px) {
+                            font-size: 1.05em;
+                        }
+                        &:focus {
+                            background-image: linear-gradient(to bottom, #1e5458, #56bbe2);
+                            box-shadow: 0 0 0 0.20rem rgba($color: #0aeafa46, $alpha: 0.20); ;
+                            transition: map-get($map: $transitions, $key: rapid);
+                        }
+                        &:hover {
+                            background-image: linear-gradient(to bottom, #1e5458, #56bbe2);
+                            box-shadow: 0 0 0 0.20rem rgba($color: #0aeafa46, $alpha: 0.20); ;
+                            transition: map-get($map: $transitions, $key: rapid);
+                        }
                     }
                 }
             }

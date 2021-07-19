@@ -345,28 +345,39 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="loginModalLabel">LOGIN</h5>
-                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                         <a class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Botón cerrar ventana emergente">&times;</a>
                     </div>
-                    <div class="modal-body">
-                        <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Usuario</label>
-                            <input type="text" class="form-control" id="recipient-name">
+                    <form class="needs-validation  login-form-container" action="login.php" method="POST" name="login-data" novalidate>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="user-name" class="col-form-label">Usuario</label>
+                                <input type="text" class="form-control" id="user-name" name="usuario"  required>
+                                <div class="valid-feedback">
+                                    Perfecto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    No olvides ingresar tu usuario
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="user-password" class="col-form-label">Password</label>
+                                <input type="password" class="form-control" id="user-password" name="password"  required>
+                                <div class="valid-feedback">
+                                    Perfecto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    No olvides ingresar tu contraseña
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Password</label>
-                            <input type="password" class="form-control" id="user-password"></textarea>
+                        <div class="register-field">
+                            <a href="" class="register-field-link" title="Enlace a crear nuevo usuario">Registrarme</a>
+                            <a href="" class="register-field-link" title="Enlace a necesito recuperar mi clave">Olvide mi clave</a>
                         </div>
-                        </form>
-                    </div>
-                    <div class="register-field">
-                        <a href="" class="register-field-link" title="Enlace a crear nuevo usuario">Registrarme</a>
-                        <a href="" class="register-field-link" title="Enlace a necesito recordar mi contraseña">Olvide mi clave</a>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Iniciar Sesión</button>
-                    </div>
+                        <div class="modal-footer">
+                            <button type="submit" value="Enviar" class="btn btn-primary">Iniciar Sesión</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

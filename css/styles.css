@@ -151,6 +151,7 @@ a {
   }
 }
 .header-index .navbar-index div .navbar-toggler .haburguer-toggle-container img {
+  max-width: 60%;
   width: 100%;
   height: 100%;
   min-width: 1.5em;
@@ -662,7 +663,7 @@ a {
 }
 @media (min-width: 320px) and (max-width: 449.9px) {
   .ip-container {
-    background-position-y: 6em;
+    background-position-y: 2em;
   }
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -1109,7 +1110,7 @@ a {
 @media (min-width: 320px) and (max-width: 449.9px) {
   .article-noticias .containernews .news-title-container .news-ima-container .news-ima {
     width: 8em;
-    right: 0.7em;
+    right: 1em;
     top: 0em;
   }
 }
@@ -1220,7 +1221,7 @@ a {
 }
 @media (min-width: 320px) and (max-width: 449.9px) {
   .article-noticias .containernews .news-container .carousel-noticias .carousel-control-prev {
-    top: 22em;
+    top: 20.2em;
   }
 }
 .article-noticias .containernews .news-container .carousel-noticias .carousel-control-next {
@@ -1242,7 +1243,7 @@ a {
 }
 @media (min-width: 320px) and (max-width: 449.9px) {
   .article-noticias .containernews .news-container .carousel-noticias .carousel-control-next {
-    top: 21.8em;
+    top: 19.6em;
   }
 }
 .article-noticias .containernews .news-container .carousel-noticias-lg {
@@ -1472,7 +1473,7 @@ a {
 
 .servicios-container {
   padding-top: 10em;
-  background-image: url("https://i.ibb.co/fdDkvCB/fondo-tarjetas4.png");
+  background-image: url("../imagenes/imageswebp/fondo-tarjetas4.webp");
   background-size: 200%;
   background-position-y: 12em;
   background-repeat: no-repeat;
@@ -3114,21 +3115,21 @@ a {
   color: #e01153;
   transition: all 0.2s ease-out;
 }
-.modal-login-index .login-index-modal .modal-content .modal-body {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-body {
   width: 80%;
   margin: 0 auto;
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
-  .modal-login-index .login-index-modal .modal-content .modal-body {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-body {
     margin: 0.8em auto;
   }
 }
 @media (min-width: 992px) {
-  .modal-login-index .login-index-modal .modal-content .modal-body {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-body {
     margin: 0.8em auto;
   }
 }
-.modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .col-form-label {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-body .mb-3 .col-form-label {
   font-family: "raleway-regular";
   font-size: 1em;
   color: #F6F2F3;
@@ -3136,42 +3137,42 @@ a {
   transition: all 0.8s ease-out;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
-  .modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .col-form-label {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-body .mb-3 .col-form-label {
     font-size: 1.35em;
   }
 }
 @media (min-width: 320px) and (max-width: 449.9px) {
-  .modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .col-form-label {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-body .mb-3 .col-form-label {
     font-size: 1.15em;
   }
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
-  .modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .col-form-label {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-body .mb-3 .col-form-label {
     font-size: 1.15em;
     padding: 0.5em 0;
   }
 }
 @media (min-width: 992px) {
-  .modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .col-form-label {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-body .mb-3 .col-form-label {
     font-size: 1.15em;
     padding: 0.5em 0;
   }
 }
-.modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .col-form-label:hover {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-body .mb-3 .col-form-label:hover {
   color: #e01153;
   transition: all 0.2s ease-out;
 }
-.modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .form-control {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-body .mb-3 .form-control {
   background-color: rgba(57, 57, 57, 0.862745098);
   border: none;
   color: #F6F2F3;
   transition: all 0.2s ease-out;
 }
-.modal-login-index .login-index-modal .modal-content .modal-body .mb-3 .form-control:focus {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-body .mb-3 .form-control:focus {
   box-shadow: 0 0 0 0.2rem rgba(224, 17, 83, 0.15);
   transition: all 0.2s ease-out;
 }
-.modal-login-index .login-index-modal .modal-content .register-field {
+.modal-login-index .login-index-modal .modal-content .login-form-container .register-field {
   border-top: 1px solid rgba(246, 242, 243, 0.25);
   display: flex;
   justify-content: space-around;
@@ -3182,53 +3183,53 @@ a {
   font-size: 0.8em;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
-  .modal-login-index .login-index-modal .modal-content .register-field {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .register-field {
     font-size: 1em;
     padding-top: 0.5em;
   }
 }
 @media (min-width: 320px) and (max-width: 449.9px) {
-  .modal-login-index .login-index-modal .modal-content .register-field {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .register-field {
     font-size: 0.9em;
   }
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
-  .modal-login-index .login-index-modal .modal-content .register-field {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .register-field {
     font-size: 0.9em;
     padding-top: 0.5em;
   }
 }
 @media (min-width: 992px) {
-  .modal-login-index .login-index-modal .modal-content .register-field {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .register-field {
     font-size: 0.9em;
     padding-top: 0.5em;
   }
 }
-.modal-login-index .login-index-modal .modal-content .register-field .register-field-link {
+.modal-login-index .login-index-modal .modal-content .login-form-container .register-field .register-field-link {
   text-decoration: none;
   color: #e01153;
   transition: all 0.2s ease-out;
 }
-.modal-login-index .login-index-modal .modal-content .register-field .register-field-link:focus {
+.modal-login-index .login-index-modal .modal-content .login-form-container .register-field .register-field-link:focus {
   color: #83d6de;
   transition: all 0.2s ease-out;
 }
-.modal-login-index .login-index-modal .modal-content .register-field .register-field-link:hover {
+.modal-login-index .login-index-modal .modal-content .login-form-container .register-field .register-field-link:hover {
   color: #83d6de;
   transition: all 0.2s ease-out;
 }
-.modal-login-index .login-index-modal .modal-content .modal-footer {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer {
   border-top: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
-  .modal-login-index .login-index-modal .modal-content .modal-footer {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer {
     padding-top: 0.5em;
   }
 }
-.modal-login-index .login-index-modal .modal-content .modal-footer .btn-primary {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer .btn-primary {
   background-image: linear-gradient(to bottom, #a01541, #ff0015b2);
   font-family: "raleway-medium";
   font-size: 1em;
@@ -3239,31 +3240,31 @@ a {
   transition: all 0.2s ease-out;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
-  .modal-login-index .login-index-modal .modal-content .modal-footer .btn-primary {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer .btn-primary {
     font-size: 1.25em;
   }
 }
 @media (min-width: 320px) and (max-width: 449.9px) {
-  .modal-login-index .login-index-modal .modal-content .modal-footer .btn-primary {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer .btn-primary {
     font-size: 1em;
   }
 }
 @media (min-width: 768px) and (max-width: 991.99px) {
-  .modal-login-index .login-index-modal .modal-content .modal-footer .btn-primary {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer .btn-primary {
     font-size: 1.25em;
   }
 }
 @media (min-width: 992px) {
-  .modal-login-index .login-index-modal .modal-content .modal-footer .btn-primary {
+  .modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer .btn-primary {
     font-size: 1.05em;
   }
 }
-.modal-login-index .login-index-modal .modal-content .modal-footer .btn-primary:focus {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer .btn-primary:focus {
   background-image: linear-gradient(to bottom, #1e5458, #56bbe2);
   box-shadow: 0 0 0 0.2rem rgba(10, 234, 250, 0.2);
   transition: all 0.2s ease-out;
 }
-.modal-login-index .login-index-modal .modal-content .modal-footer .btn-primary:hover {
+.modal-login-index .login-index-modal .modal-content .login-form-container .modal-footer .btn-primary:hover {
   background-image: linear-gradient(to bottom, #1e5458, #56bbe2);
   box-shadow: 0 0 0 0.2rem rgba(10, 234, 250, 0.2);
   transition: all 0.2s ease-out;
@@ -3618,7 +3619,9 @@ a {
   }
 }
 .header-onboarding .navbar-onboarding div .navbar-toggler .haburguer-toggle-container img {
+  max-width: 60%;
   width: 100%;
+  height: 100%;
   min-width: 1.5em;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
@@ -4864,7 +4867,9 @@ a {
   }
 }
 .header-nosotros .navbar-nosotros div .navbar-toggler .haburguer-toggle-container img {
+  max-width: 60%;
   width: 100%;
+  height: 100%;
   min-width: 1.5em;
 }
 @media (min-width: 450px) and (max-width: 767.9px) {
