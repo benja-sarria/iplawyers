@@ -1,3 +1,4 @@
+// COMIENZO NOSOTROS DESKTOP FOOTER
 ol, ul {
     padding-left: 0;
 }
@@ -12,19 +13,19 @@ ol, ul {
        display: flex;
        padding-top: 12em;
        background-size: cover;
-   } 
-   .footer-nav-list {
-       display: flex;
-       flex-direction: row;
-       justify-content: flex-start;
-       width: 70%;
-       margin: 0 auto;
-       list-style: none;
-       text-align: center;
-       margin-bottom: 0.8em;
-       @media (min-width: 992px) {
-        margin-left: 1em;
     } 
+    .footer-nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 70%;
+        margin: 0 auto;
+        list-style: none;
+        text-align: center;
+        margin-bottom: 0.8em;
+        @media (min-width: 992px) {
+        margin-left: 1em;
+        } 
        .footer-nav-link {
            display: flex;
            justify-content: left;
@@ -87,56 +88,57 @@ ol, ul {
            }
        }
        .footer-copyright-text {
-           .footer-copyright {
+            .footer-copyright {
                @include mobileparagraphs (justify, light);
                font-size: 1.25em;
                line-height: 1.8em;
-           }
-           ul {
-            list-style: inside;
-        }
-        .site-map-container {
-            padding-left: 2em;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: space-between;
-            list-style: none;
-            &::marker {
-                display: none
             }
-            .site-map-item  {
-                @include mobileparagraphs(left, medium);
-                font-size: 1.1em;
-                color: map-get($map: $colorpallet, $key: colortext);
-                line-height: 1.8em;
-                text-decoration: none;
-                transition: map-get($map: $transitions, $key: rapid);
-                &:last-child {
-                    .site-map-subitem-container {
-                        text-align: center;
-                    }
+            ul {
+            list-style: inside;
+            }
+            .site-map-container {
+                padding-left: 2em;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                list-style: none;
+                &::marker {
+                    display: none
                 }
-                .map-item-title:hover {
-                    color: map-get($map: $colorpallet, $key: maincolor);
+                .site-map-item  {
+                    @include mobileparagraphs(left, medium);
+                    font-size: 1.1em;
+                    color: map-get($map: $colorpallet, $key: colortext);
+                    line-height: 1.8em;
+                    text-decoration: none;
                     transition: map-get($map: $transitions, $key: rapid);
-                }
-                .site-map-subitem-container {
-                    text-align: left;
-                    li {
-                        color: darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 40);
-                        font-size: 0.8em;
-                        line-height: 1.35em;
+                    &:last-child {
+                        .site-map-subitem-container {
+                            text-align: center;
+                        }
+                    }
+                    .map-item-title:hover {
+                        color: map-get($map: $colorpallet, $key: maincolor);
                         transition: map-get($map: $transitions, $key: rapid);
-                        &:hover {
-                            color: map-get($map: $colorpallet, $key: maincolor);
+                    }
+                    .site-map-subitem-container {
+                        text-align: left;
+                        li {
+                            color: darken($color: map-get($map: $colorpallet, $key: colortext), $amount: 40);
+                            font-size: 0.8em;
+                            line-height: 1.35em;
                             transition: map-get($map: $transitions, $key: rapid);
+                            &:hover {
+                                color: map-get($map: $colorpallet, $key: maincolor);
+                                transition: map-get($map: $transitions, $key: rapid);
+                            }
                         }
                     }
                 }
             }
         }
-       }
-   }
+    }
 }
+// FIN NOSOTROS DESKTOP FOOTER

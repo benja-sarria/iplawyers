@@ -1,21 +1,21 @@
-// COMIENZO INDEX MODAL FUNDAMENTOS
+// COMIENZO INDEX MODAL TOCS
 .modal-tocs-index {
     display: none;
-    @media (min-width: 450px) and (max-width: 767.9px) {
+    @media (min-width: 450px) and (max-width: 768px) {
         max-height: 98%;
     }
-    @media (min-width: 768px) and (max-width: 991.99px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         max-height: 98%;
     }
     .fundamentos-index-modal {
-        @media (min-width: 450px) and (max-width: 767.9px) {
+        @media (min-width: 450px) and (max-width: 768px) {
             width: 90%;
             margin: 1em auto 0;
         }
         .modal-content {
             background-color: map-get($map: $colorpallet, $key: modallight);
             background-image: linear-gradient(to bottom, map-get($map: $colorpallet, $key: modaldark) , map-get($map: $colorpallet, $key: modallight));
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 width: 90%;
                 margin: 1em auto 0;
             }
@@ -25,17 +25,16 @@
             }
             .modal-header {
                 @include mobileparagraphs(justify, semibold);
-                // align-self: center;
                 border-bottom: 1px solid rgba($color: map-get($map: $colorpallet, $key: colortext), $alpha: 0.25);
                 .modal-title {
                     width: 100%;
                     margin-left: 1em;
                     text-align: center;
                     font-size: 1.10em;
-                    @media (min-width: 450px) and (max-width: 767.9px) {
+                    @media (min-width: 450px) and (max-width: 768px) {
                         font-size: 1.5em;
                     }
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         font-size: 1.5em;
                     }
                 }
@@ -49,12 +48,12 @@
                     top: -0.55em;
                     right: 0.55em;
                     transition: map-get($map: $transitions, $key: rapid);
-                    @media (min-width: 450px) and (max-width: 767.9px) {
+                    @media (min-width: 450px) and (max-width: 768px) {
                         top: -0.55em;
                         right: 0.60em;
                         font-size: 4em;
                     }
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         font-size: 3em;
                         top: -0.50em;
                         right: 0.65em;
@@ -79,10 +78,10 @@
                 p {
                     @include mobileparagraphs(justify, regular);
                     text-indent: 2em;
-                    @media (min-width: 450px) and (max-width: 767.9px) {
+                    @media (min-width: 450px) and (max-width: 768px) {
                         font-size: 1.25em;
                     }
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         font-size: 1.25em;
                     }
                 }
@@ -91,10 +90,10 @@
                         @include mobileparagraphs(justify, bold);
                         color: lighten($color: map-get($map: $colorpallet, $key: maincolor), $amount: 5%) ;
                         font-size: 1.05em;
-                        @media (min-width: 450px) and (max-width: 767.9px) {
+                        @media (min-width: 450px) and (max-width: 768px) {
                             font-size: 1.15em;
                         }
-                        @media (min-width: 768px) and (max-width: 991.99px) {
+                        @media (min-width: 768px) and (max-width: 992px) {
                             font-size: 1.15em;
                         }
                     }
@@ -106,4 +105,4 @@
         }
     }
 }
-// FIN INDEX MODAL FUNDAMENTOS
+// FIN INDEX MODAL TOCS

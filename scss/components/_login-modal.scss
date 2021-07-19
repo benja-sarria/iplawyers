@@ -1,17 +1,17 @@
 // COMIENZO INDEX MODAL LOGIN
 .modal-login-index {
     .login-index-modal {
-        @media (min-width: 450px) and (max-width: 767.9px) {
+        @media (min-width: 450px) and (max-width: 768px) {
             width: 20em;
             max-width: 20em;
             min-width: 50%;
             margin: 0 auto;
         }
-        @media (min-width: 320px) and (max-width: 449.9px) {
+        @media (min-width: 320px) and (max-width: 450px) {
             width: 80%;
             margin: 0 auto;
         }
-        @media (min-width: 768px) and (max-width: 991.99px) {
+        @media (min-width: 768px) and (max-width: 992px) {
             max-width: 40%;
             margin: 0 auto;
         }
@@ -24,20 +24,19 @@
             background-image: linear-gradient(to bottom, map-get($map: $colorpallet, $key: modaldark) , map-get($map: $colorpallet, $key: modallight));
             .modal-header {
                 @include mobileparagraphs(justify, semibold);
-                // align-self: center;
                 border-bottom: 1px solid rgba($color: map-get($map: $colorpallet, $key: colortext), $alpha: 0.25);
                 .modal-title {
                     width: 100%;
                     margin-left: 1em;
                     text-align: center;
                     font-size: 1.10em;
-                    @media (min-width: 450px) and (max-width: 767.9px) {
+                    @media (min-width: 450px) and (max-width: 768px) {
                         font-size: 2em;
                     }
-                    @media (min-width: 320px) and (max-width: 449.9px) {
+                    @media (min-width: 320px) and (max-width: 450px) {
                         font-size: 1.85em;
                     }
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         font-size: 1.5em;
                         padding: 0.2em 0;
                     }
@@ -57,15 +56,15 @@
                     top: -0.55em;
                     right: 0.55em;
                     transition: map-get($map: $transitions, $key: rapid);
-                    @media (min-width: 450px) and (max-width: 767.9px) {
+                    @media (min-width: 450px) and (max-width: 768px) {
                         top: -0.55em;
                         right: 0.60em;
                         font-size: 4em;
                     }
-                    @media (min-width: 320px) and (max-width: 449.9px) {
+                    @media (min-width: 320px) and (max-width: 450px) {
                         font-size: 3.7em;
                     }
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         font-size: 3.7em;
                     }
                     @media (min-width: 992px) {
@@ -89,7 +88,7 @@
                 .modal-body {
                     width: 80%;
                     margin: 0 auto;
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         margin: 0.8em auto;
                     }
                     @media (min-width: 992px) {
@@ -99,13 +98,13 @@
                         .col-form-label {
                             @include mobileparagraphs(justify, regular);
                             transition: map-get($map: $transitions, $key: normal);
-                            @media (min-width: 450px) and (max-width: 767.9px) {
+                            @media (min-width: 450px) and (max-width: 768px) {
                                 font-size: 1.35em;
                             }
-                            @media (min-width: 320px) and (max-width: 449.9px) {
+                            @media (min-width: 320px) and (max-width: 450px) {
                                 font-size: 1.15em;
                             }
-                            @media (min-width: 768px) and (max-width: 991.99px) {
+                            @media (min-width: 768px) and (max-width: 992px) {
                                 font-size: 1.15em;
                                 padding: 0.5em 0;
                             }
@@ -136,14 +135,14 @@
                     justify-content: space-around;
                     @include mobileparagraphs(justify, bold);
                     font-size: 0.80em;
-                    @media (min-width: 450px) and (max-width: 767.9px) {
+                    @media (min-width: 450px) and (max-width: 768px) {
                         font-size: 1em;
                         padding-top: 0.5em;;
                     }
-                    @media (min-width: 320px) and (max-width: 449.9px) {
+                    @media (min-width: 320px) and (max-width: 450px) {
                         font-size: 0.90em;
                     }
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         font-size: 0.90em;
                         padding-top: 0.5em;
                     }
@@ -170,7 +169,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         padding-top: 0.5em;
                     }
                     .btn-primary {
@@ -179,13 +178,13 @@
                         font-size: 0.8em;
                         border: none;
                         transition: map-get($map: $transitions, $key: rapid);
-                        @media (min-width: 450px) and (max-width: 767.9px) {
+                        @media (min-width: 450px) and (max-width: 768px) {
                             font-size: 1.25em;
                         }
-                        @media (min-width: 320px) and (max-width: 449.9px) {
+                        @media (min-width: 320px) and (max-width: 450px) {
                             font-size: 1em;
                         }
-                        @media (min-width: 768px) and (max-width: 991.99px) {
+                        @media (min-width: 768px) and (max-width: 992px) {
                             font-size: 1.25em;
                         }
                         @media (min-width: 992px) {

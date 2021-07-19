@@ -1,3 +1,4 @@
+// COMIENZO NOSOTROS NUESTRO EQUIPO
 .nosotros-container {
     padding-top: 5em;
     h4 {
@@ -6,9 +7,8 @@
     }
     .carousel-nuestro-equipo {
         .carousel-inner {
-            // padding-left: 3.2em;
             flex-wrap: wrap;
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: none;
             }
             @media (min-width: 992px) {
@@ -47,14 +47,14 @@
             }
         }
         .carousel-control-prev {
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: none;
             }
             @media (min-width: 992px) {
                 display: none;
             }
             .carousel-control-prev-icon {
-                @media (min-width: 768px) and (max-width: 991.99px) {
+                @media (min-width: 768px) and (max-width: 992px) {
                     display: none;
                 }
                 @media (min-width: 992px) {
@@ -63,26 +63,22 @@
             }
         }
         .carousel-control-next {
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: none;
             }
             @media (min-width: 992px) {
                 display: none;
             }
             .carousel-control-next-icon {
-                @media (min-width: 768px) and (max-width: 991.99px) {
+                @media (min-width: 768px) and (max-width: 992px) {
                     display: none;
                     visibility: hidden;
                     z-index: -300;
-                    height: 0 !important;
-                    width: 0 !important;
                 }
                 @media (min-width: 992px) {
                     display: none;
                     visibility: hidden;
                     z-index: -300;
-                    height: 0 !important;
-                    width: 0 !important;
                 }
             }
         }
@@ -90,7 +86,7 @@
 
     .nuestro-equipo-container-desktop {
         display: none;
-        @media (min-width: 768px) and (max-width: 991.99px) {
+        @media (min-width: 768px) and (max-width: 992px) {
             display: flex;
         }
         @media (min-width: 992px) {
@@ -152,3 +148,4 @@
         }
     }
 }
+// FIN NOSOTROS NUESTRO EQUIPO

@@ -1,3 +1,4 @@
+// COMIENZO NOSOTROS MAPA
 .nosotros-mapa {
     background-image: linear-gradient(to bottom, rgb(15, 15, 15), #f6f2f309 );
     padding-top: 6em;
@@ -62,7 +63,7 @@
         font-size: 1.8em;
         opacity: 0.45;
         transition: map-get($map: $transitions, $key: faster);
-        @media (min-width: 768px) and (max-width: 991.99px) {
+        @media (min-width: 768px) and (max-width: 992px) {
             @include mobileparagraphs(left, bold);
             font-size: 1.8em;
             margin-left: 2em;
@@ -84,13 +85,13 @@
         @media (min-width: 320px) and (max-width: 410px) {
             max-width: 16em;
         }
-        @media (min-width: 411px) and (max-width: 550px) {
+        @media (min-width: 410px) and (max-width: 550px) {
             max-width: 21em;
         }
-        @media (min-width: 551px) and (max-width: 767.9px) {
+        @media (min-width: 550px) and (max-width: 768px) {
             max-width: 30em;
         }
-        @media (min-width: 768px) and (max-width: 991.99px) {
+        @media (min-width: 768px) and (max-width: 992px) {
             max-width: 42em;;
         }
         @media (min-width: 992px) {
@@ -98,3 +99,4 @@
         }
     }
 }
+// FIN NOSOTROS MAPA

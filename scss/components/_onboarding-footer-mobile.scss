@@ -1,4 +1,4 @@
-// COMIENZO INDEX MOBILE FOOTER
+// COMIENZO ONBOARDING MOBILE FOOTER
 .footer-mobile-version-onboarding {
     padding-top: 10em;
     width: 90%;
@@ -15,7 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            @media (min-width: 768px) and (max-width: 991.99px) {
+            @media (min-width: 768px) and (max-width: 992px) {
                 display: flex;
                 flex-direction: row;
 
@@ -38,7 +38,7 @@
                             background-color: darken(map-get($map: $colorpallet, $key: maincolor), $amount: 15);
                             transition: map-get($map: $transitions, $key: rapid);
                         }
-                        @media (min-width: 768px) and (max-width: 991.99px) {
+                        @media (min-width: 768px) and (max-width: 992px) {
                             width: 100%;
                             justify-items: stretch;
                         }
@@ -47,7 +47,7 @@
             }
             .separation-element {
                 height: 0.5em;
-                @media (min-width: 768px) and (max-width: 991.99px) {
+                @media (min-width: 768px) and (max-width: 992px) {
                     display: none;
                 }
             }
@@ -60,13 +60,13 @@
                 list-style: none;
                 .foot-cont-dat {
                     @include mobileparagraphs(center, medium);
-                    @media (min-width: 450px) and (max-width: 599.9px) {
+                    @media (min-width: 450px) and (max-width: 600px) {
                         font-size: 1.25em;
                     }
-                    @media (min-width: 600px) and (max-width: 767.9px) {
+                    @media (min-width: 600px) and (max-width: 768px) {
                         font-size: 1.5em;
                     }
-                    @media (min-width: 768px) and (max-width: 991.99px) {
+                    @media (min-width: 768px) and (max-width: 992px) {
                         font-size: 1.5em;
                     }
                 }
@@ -77,17 +77,17 @@
             .footer-copyright {
                 @include mobileparagraphs(center, light);
                 color: rgba($color:  map-get($map: $colorpallet, $key: colortext), $alpha: 0.70);
-                @media (min-width: 450px) and (max-width: 599.9px) {
+                @media (min-width: 450px) and (max-width: 600px) {
                     font-size: 1.15em;
                 }
-                @media (min-width: 600px) and (max-width: 767.9px) {
+                @media (min-width: 600px) and (max-width: 768px) {
                     font-size: 1.25em;
                 }
-                @media (min-width: 768px) and (max-width: 991.99px) {
+                @media (min-width: 768px) and (max-width: 992px) {
                     font-size: 1.25em;
                 }
             }
         }
     }
 }
-// FIN INDEX MOBILE FOOTER
+// FIN ONBOARDING MOBILE FOOTER
