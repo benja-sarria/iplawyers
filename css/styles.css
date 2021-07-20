@@ -2938,11 +2938,11 @@ a {
     justify-items: stretch;
   }
 }
-.footer-mobile-version .mobile-footer-inner-container .social-net-container-mobile .social-net-element .separation-element {
+.footer-mobile-version .mobile-footer-inner-container .social-net-container-mobile .separation-element {
   height: 0.5em;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .footer-mobile-version .mobile-footer-inner-container .social-net-container-mobile .social-net-element .separation-element {
+  .footer-mobile-version .mobile-footer-inner-container .social-net-container-mobile .separation-element {
     display: none;
   }
 }

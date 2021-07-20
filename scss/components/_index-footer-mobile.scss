@@ -46,11 +46,11 @@
                         }
                     }
                 }
-                .separation-element {
-                    height: 0.5em;
-                    @media (min-width: 768px) and (max-width: 992px) {
-                        display: none;
-                    }
+            }
+            .separation-element {
+                height: 0.5em;
+                @media (min-width: 768px) and (max-width: 992px) {
+                    display: none;
                 }
             }
         }
